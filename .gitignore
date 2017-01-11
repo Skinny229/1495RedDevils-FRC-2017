@@ -1,4 +1,4 @@
-/OfficialCode/bin/
+/OfficialCode/bin/**
 /.metadata/
 *.prefs
 *.log
