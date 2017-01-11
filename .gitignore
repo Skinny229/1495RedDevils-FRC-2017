@@ -1,5 +1,5 @@
 /OfficialCode/bin/**
-/.metadata/**
+.metadata
 *.prefs
 *.log
 *.lock
