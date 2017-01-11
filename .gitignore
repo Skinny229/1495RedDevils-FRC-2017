@@ -16,3 +16,6 @@
 *.json
 *.setup
 *.properties
+*.xmi
+*.resources
+*.properties
