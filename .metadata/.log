@@ -242,3 +242,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-01-12 12:17:31.789
 !MESSAGE Project: SteamWorksRobot Package: org.usfirst.frc.team1495.robot Project Type: edu.wpi.first.wpilib.plugins.java.wizards.newproject.JavaProjectType$3@176c917
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-12 12:27:17.510
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-12 12:27:17.515
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
