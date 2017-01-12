@@ -24,4 +24,7 @@ public class RobotMap {
 	
 	public static final int JOYSTICK_PORT = 1;
 	
+	// Ultrasonic sensor ports
+	public static final int ULTRASONIC_PING = 0;
+	public static final int ULTRASONIC_ECHO = 0;
 }
