@@ -2084,3 +2084,38 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-01-12 15:14:06.656
 !MESSAGE Class: UltrasonicTestCommand Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-01-12 15:18:11.758
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\charsets.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\access-bridge-32.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\cldrdata.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\dnsns.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\jaccess.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\jfxrt.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\localedata.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\nashorn.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunec.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunmscapi.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\zipfs.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\jce.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\jfr.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\jsse.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\resources.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_101\lib\rt.jar
+  [+] C:\Users\bduff\wpilib\java\current\lib\NetworkTables.jar
+  [+] C:\Users\bduff\wpilib\java\current\lib\WPILib.jar
+  [+] C:\Users\bduff\wpilib\java\current\lib\cscore.jar
+  [+] C:\Users\bduff\wpilib\java\current\lib\opencv.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)

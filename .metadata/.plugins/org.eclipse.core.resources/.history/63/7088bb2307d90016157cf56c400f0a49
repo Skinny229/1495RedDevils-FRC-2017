@@ -26,8 +26,12 @@ public class UltrasonicSensor extends Subsystem {
         //setDefaultCommand(new MySpecialCommand());
     }
     
-    public void setAutoMode(boolean e) {
-    	uss.setAutomaticMode(e);
+    public void setEnabled(boolean e) {
+    	uss.setEnabled(e);
+    }
+    
+    public boolean isEnabled() {
+    	return uss.isEnabled();
     }
     
     public double pidGetRange() {
@@ -41,7 +45,6 @@ public class UltrasonicSensor extends Subsystem {
     public void destroy() {
     	uss.free();
     }  
-    
 
 }
 
