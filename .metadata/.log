@@ -4581,3 +4581,94 @@ java.io.FileNotFoundException: C:\Users\Brendan\wpilib\wpilib.properties (The sy
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-01-12 18:46:55.316
 !MESSAGE Updating projects
+!SESSION 2017-01-17 15:00:38.793 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-01-17 15:00:45.500
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'P:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-17 15:00:45.796
+!MESSAGE Removing part descriptor with the 'org.eclipse.buildship.ui.views.taskview' id and the 'Gradle Tasks' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-17 15:00:45.812
+!MESSAGE Removing part descriptor with the 'org.eclipse.buildship.ui.views.executionview' id and the 'Gradle Executions' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-17 15:00:45.812
+!MESSAGE Removing part descriptor with the 'org.eclipse.mylyn.builds.navigator.builds' id and the 'Builds' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-17 15:00:45.812
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.snipmatch.rcp.views.snippets' id and the 'Snippets' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-17 15:00:46.424
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-17 15:00:46.428
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-17 15:00:46.457
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-17 15:00:46.525
+!MESSAGE Installedcpp
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2017-01-17 15:00:46.537
+!MESSAGE Updating projects
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-17 15:00:46.574
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-17 15:00:46.639
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-17 15:00:46.646
+!MESSAGE Updating projects
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-17 15:03:08.418
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-17 15:03:08.421
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-17 15:20:56.811
+!MESSAGE [org.usfirst.frc.team1495.robot.subsystems [in src [in SteamWorksRobot]]
+  ExampleSubsystem.java
+    package org.usfirst.frc.team1495.robot.subsystems
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ExampleSubsystem
+      void initDefaultCommand()
+  [Working copy] UltrasonicSensor.java
+    package org.usfirst.frc.team1495.robot.subsystems
+    import edu.wpi.first.wpilibj.DigitalInput
+    import edu.wpi.first.wpilibj.DigitalOutput
+    import edu.wpi.first.wpilibj.Ultrasonic
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class UltrasonicSensor
+      Ultrasonic uss
+      UltrasonicSensor(int, int, Ultrasonic.Unit)
+      UltrasonicSensor(DigitalOutput, DigitalInput, Ultrasonic.Unit)
+      void initDefaultCommand()
+      void setAutoMode(boolean)
+      double pidGetRange()
+      boolean isRangeValid()
+      void destroy()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-17 15:20:56.830
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-17 15:20:56.858
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-17 15:20:56.862
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-17 15:21:06.572
+!MESSAGE Class: InfraredSensor Package: org.usfirst.frc.team1495.robot.subsystems

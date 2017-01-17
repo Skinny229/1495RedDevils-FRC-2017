@@ -20,16 +20,14 @@ public class UltrasonicTestCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	if(Robot.stick.getTrigger() && Robot.ultra.isRangeValid()) {
-    		if(Robot.ultra.pidGetRange() < 1) {
-    			Robot.roboDrive.mecanumDrive_Cartesian(0.0, -0.3f, 0.0, 0.0);
-    		}
+    	if(Robot.ultra.isRangeValid() && Robot.ultra.pidGetRange() < 1) {
+    		Robot.roboDrive.mecanumDrive_Cartesian(0.0, -0.5f, 0.0, 0.0);
     	}
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-    	
+
         return false;
     }
 
