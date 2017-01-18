@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 </qualifiedTypeNameHistroy>
