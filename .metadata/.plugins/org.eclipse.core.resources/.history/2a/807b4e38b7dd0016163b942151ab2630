@@ -21,7 +21,7 @@ public class UltrasonicTestCommand extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	if(Robot.ultra.isRangeValid() && Robot.ultra.pidGetRange() < 1) {
-    		Robot.roboDrive.mecanumDrive_Cartesian(0, .1, 0, 0);
+    		Robot.roboDrive.mecanumDrive_Cartesian(0.0, -0.5f, 0.0, 0.0);
     	}
     }
 
