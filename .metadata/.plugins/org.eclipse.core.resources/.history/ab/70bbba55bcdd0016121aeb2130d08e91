@@ -16,7 +16,6 @@ public class UltrasonicSensor extends Subsystem {
 	
 	public UltrasonicSensor (double s) {
 		ai = new AnalogInput(RobotMap.ULTRASONIC_CHANNEL);
-		sensitivity = s;
 	}
 	
 	public double getDistanceInches()

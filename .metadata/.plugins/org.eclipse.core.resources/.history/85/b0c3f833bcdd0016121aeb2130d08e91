@@ -10,6 +10,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.Ultrasonic;
 
 import org.usfirst.frc.team1495.robot.commands.ExampleCommand;
 import org.usfirst.frc.team1495.robot.subsystems.ExampleSubsystem;
@@ -30,7 +31,7 @@ public class Robot extends IterativeRobot {
 	public static RobotDrive roboDrive = new RobotDrive(new VictorSP(RobotMap.LEFT_FRONT),new VictorSP(RobotMap.LEFT_BACK),new VictorSP(RobotMap.RIGHT_FRONT),new VictorSP(RobotMap.RIGHT_BACK));
 	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
 	
-	public static UltrasonicSensor ultra = new UltrasonicSensor(1);
+	public static UltrasonicSensor ultra = new UltrasonicSensor(RobotMap.ULTRASONIC_CHANNEL, 1);
 	
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();

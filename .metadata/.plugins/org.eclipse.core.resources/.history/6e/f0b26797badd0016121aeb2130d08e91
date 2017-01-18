@@ -2,7 +2,6 @@ package org.usfirst.frc.team1495.robot;
 
 import org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand;
 
-import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
@@ -39,9 +38,7 @@ public class OI {
 	// until it is finished as determined by it's isFinished method.
 	// button.whenReleased(new ExampleCommand());
 	
-	static Joystick stick = new Joystick(1);
-	
-	public static Button UltrasonicSensorTrigger = new JoystickButton(stick, 1);
+	public static Button UltrasonicSensorTrigger = new JoystickButton(Robot.stick, 1);
 	
 	public OI()
 	{
