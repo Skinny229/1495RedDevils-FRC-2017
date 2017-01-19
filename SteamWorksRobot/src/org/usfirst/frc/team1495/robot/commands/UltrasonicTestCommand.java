@@ -20,8 +20,9 @@ public class UltrasonicTestCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	if(Robot.ultra.getDistanceInches() < 1) {
+    	if(Robot.ultra.getDistance() < 1) {
     		Robot.roboDrive.mecanumDrive_Cartesian(0, .1, 0, 0);
+    		System.out.println("Ultrasonic" + Robot.ultra.getDistance());
     	}
     }
 

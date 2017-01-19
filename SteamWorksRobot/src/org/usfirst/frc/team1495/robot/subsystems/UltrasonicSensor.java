@@ -12,24 +12,14 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 public class UltrasonicSensor extends Subsystem {
 
 	protected AnalogInput ai;
-	double sensitivity;
 	
-	public UltrasonicSensor (double s) {
+	public UltrasonicSensor () {
 		ai = new AnalogInput(RobotMap.ULTRASONIC_CHANNEL);
-		sensitivity = s;
 	}
 	
-	public double getDistanceInches()
+	public double getDistance()
 	{
-		return ai.getVoltage() * sensitivity;
-	}
-	
-	public double getSensitivity() {
-		return sensitivity;
-	}
-	
-	public void setSensitivity(double s) {
-		sensitivity = s;
+		return ai.getVoltage();
 	}
 
 	@Override

@@ -30,7 +30,7 @@ public class Robot extends IterativeRobot {
 	public static RobotDrive roboDrive = new RobotDrive(new VictorSP(RobotMap.LEFT_FRONT),new VictorSP(RobotMap.LEFT_BACK),new VictorSP(RobotMap.RIGHT_FRONT),new VictorSP(RobotMap.RIGHT_BACK));
 	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
 	
-	public static UltrasonicSensor ultra = new UltrasonicSensor(1);
+	public static UltrasonicSensor ultra = new UltrasonicSensor();
 	
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
