@@ -4766,3 +4766,287 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jface.text 2 0 2017-01-18 15:24:53.988
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-01-19 15:09:40.159 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-01-19 15:09:49.779
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'P:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.614
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.debug.ui.executablesView' id and the 'Executables' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.626
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.debug.ui.SignalsView' id and the 'Signals' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.636
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.debug.ui.debuggerConsoleView' id and the 'Debugger Console' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.646
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view' id and the 'Trace Control' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.655
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.dsf.gdb.ui.osresources.view' id and the 'OS Resources' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.664
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.dsf.debug.ui.disassembly.view' id and the 'Disassembly' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.674
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.make.ui.views.MakeView' id and the 'Build Targets' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.682
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.CView' id and the 'C/C++ Projects' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.692
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.IndexView' id and the 'C/C++ Index' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.701
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.includeBrowser' id and the 'Include Browser' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.709
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.callHierarchy' id and the 'Call Hierarchy' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.717
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.typeHierarchy' id and the 'Type Hierarchy' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-01-19 15:09:50.724
+!MESSAGE Removing part descriptor with the 'org.eclipse.remote.ui.view.connections' id and the 'Connections' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2017-01-19 15:09:52.257
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: dev.eclipse.org. ; version: 2.0.3.v20161205-0933
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:09:53.999
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:09:54.056
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:09:54.154
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:09:54.249
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:09:54.401
+!MESSAGE Updating projects
+!SESSION 2017-01-19 15:31:02.246 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-01-19 15:31:10.170
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'P:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2017-01-19 15:31:10.358
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: dev.eclipse.org. ; version: 2.0.3.v20161205-0933
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:31:11.786
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:31:11.853
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:31:11.997
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-01-19 15:31:12.322
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:31:12.524
+!MESSAGE Updating projects
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:32:57.813
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:32:57.840
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:37:45.397
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:37:45.432
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-19 15:46:11.751
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-01-19 15:46:11.778
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:47:00.798
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:47:00.832
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-01-19 15:49:23.780
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\access-bridge.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar
+  [+] C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\access-bridge.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\rt.jar
+  [+] C:\Users\rlopez3\wpilib\java\current\lib\NetworkTables.jar
+  [+] C:\Users\rlopez3\wpilib\java\current\lib\WPILib.jar
+  [+] C:\Users\rlopez3\wpilib\java\current\lib\cscore.jar
+  [+] C:\Users\rlopez3\wpilib\java\current\lib\opencv.jar
+  [-] C:\Users\bduff\wpilib\java\current\lib\opencv.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunjce_provider.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\jsse.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunpkcs11.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunmscapi.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\localedata.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\resources.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\jaccess.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\cldrdata.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\nashorn.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\rt.jar
+  [-] C:\Users\bduff\wpilib\java\current\lib\cscore.jar
+  [-] C:\Users\bduff\wpilib\java\current\lib\NetworkTables.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\charsets.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\access-bridge-32.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\sunec.jar
+  [-] C:\Users\bduff\wpilib\java\current\lib\WPILib.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\dnsns.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\jfr.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\jce.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\jfxrt.jar
+  [-] C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\zipfs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:51:32.239
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:51:32.249
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:55:42.227
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:55:42.233
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:56:06.683
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:56:06.693
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:59:38.055
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 15:59:38.067
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 16:02:13.784
+!MESSAGE Running ant file: C:\Users\rlopez3\Desktop\Jeve\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-01-19 16:02:13.793
+!MESSAGE Targets: deploy, Mode: run
