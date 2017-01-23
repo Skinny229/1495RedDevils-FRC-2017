@@ -1,5 +1,6 @@
 package org.usfirst.frc.team1495.robot;
 
+import org.usfirst.frc.team1495.robot.commands.GyroTestCommand;
 import org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -42,9 +43,11 @@ public class OI {
 	static Joystick stick = new Joystick(1);
 	
 	public static Button UltrasonicSensorTrigger = new JoystickButton(stick, 1);
+	public static Button GyroTrigger = new JoystickButton(stick, 2); 
 	
 	public OI()
 	{
 		UltrasonicSensorTrigger.whenPressed(new UltrasonicTestCommand());
+		GyroTrigger.whileHeld(new GyroTestCommand());
 	}
 }

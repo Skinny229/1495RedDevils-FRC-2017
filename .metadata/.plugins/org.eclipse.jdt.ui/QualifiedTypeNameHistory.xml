@@ -4,7 +4,12 @@
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogGyro"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.ADXRS450_Gyro"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.GyroTestCommand"/>
 </qualifiedTypeNameHistroy>

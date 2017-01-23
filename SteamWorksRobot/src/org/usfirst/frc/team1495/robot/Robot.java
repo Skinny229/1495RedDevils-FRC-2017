@@ -12,6 +12,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc.team1495.robot.commands.ExampleCommand;
+import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
 import org.usfirst.frc.team1495.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
 
@@ -31,6 +32,7 @@ public class Robot extends IterativeRobot {
 	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
 	
 	public static UltrasonicSensor ultra = new UltrasonicSensor();
+	public static ADXRS450Gyro gyro = new ADXRS450Gyro();
 	
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
@@ -46,6 +48,7 @@ public class Robot extends IterativeRobot {
 		chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
+		gyro.calibrate();
 	}
 
 	/**
@@ -114,7 +117,7 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
-		roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), stick.getTwist(), 0);
+		roboDrive.mecanumDrive_Cartesian(-stick.getX(),-stick.getTwist(), -stick.getY(), 0);
 	}
 
 	/**
