@@ -9,28 +9,32 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class UltrasonicTestCommand extends Command {
 
+	double average = 0;
+	boolean finished;
+	
     public UltrasonicTestCommand() {
         requires(Robot.ultra);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.ultra.setAutoMode(true);
+
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	if(Robot.stick.getTrigger() && Robot.ultra.isRangeValid()) {
-    		if(Robot.ultra.pidGetRange() < 1) {
-    			Robot.roboDrive.mecanumDrive_Cartesian(0.0, -0.3f, 0.0, 0.0);
-    		}
+    	average = 0;
+    	for (int i = 0; i < 30; i++) {
+    		average += Robot.ultra.getDistanceInches();
     	}
+    	average *= 100 / 30; average = (int)average; average /= 100;
+    	System.out.println("Ultrasonic Test: " + average);
+    	finished = true;
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-    	
-        return false;
+        return finished;
     }
 
     // Called once after isFinished returns true
