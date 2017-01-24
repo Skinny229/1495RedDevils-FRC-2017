@@ -47,7 +47,7 @@ public class OI {
 	
 	public OI()
 	{
-		UltrasonicSensorTrigger.whenPressed(new UltrasonicTestCommand());
+		UltrasonicSensorTrigger.whileHeld(new UltrasonicTestCommand());
 		GyroTrigger.whileHeld(new GyroTestCommand());
 	}
 }
