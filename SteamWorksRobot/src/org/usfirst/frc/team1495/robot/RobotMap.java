@@ -25,4 +25,6 @@ public class RobotMap {
 	public static final int JOYSTICK_PORT = 1;
 	
 	public static final int ULTRASONIC_CHANNEL = 0;
+	
+	public static final int SINGLE_WHEEL = 5;
 }

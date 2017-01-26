@@ -11,9 +11,8 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team1495.robot.commands.ExampleCommand;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
-import org.usfirst.frc.team1495.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team1495.robot.subsystems.SingleWheelShooter;
 import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
 
 /**
@@ -24,8 +23,6 @@ import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
  * directory.
  */
 public class Robot extends IterativeRobot {
-
-	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
 	
 	public static RobotDrive roboDrive = new RobotDrive(new VictorSP(RobotMap.LEFT_FRONT),new VictorSP(RobotMap.LEFT_BACK),new VictorSP(RobotMap.RIGHT_FRONT),new VictorSP(RobotMap.RIGHT_BACK));
@@ -33,6 +30,7 @@ public class Robot extends IterativeRobot {
 	
 	public static UltrasonicSensor ultra = new UltrasonicSensor();
 	public static ADXRS450Gyro gyro = new ADXRS450Gyro();
+	public static SingleWheelShooter shooter = new SingleWheelShooter();
 	
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
@@ -45,7 +43,7 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		oi = new OI();
 		roboDrive.setSafetyEnabled(true);
-		chooser.addDefault("Default Auto", new ExampleCommand());
+		//chooser.addDefault("Default Auto", );
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 		gyro.calibrate();
