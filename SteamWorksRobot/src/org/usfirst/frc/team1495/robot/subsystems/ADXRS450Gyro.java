@@ -24,7 +24,7 @@ public class ADXRS450Gyro extends Subsystem {
     }
     
     public double getAngleDegrees() {
-    	return adxrs450.getAngle();
+    	return (int)adxrs450.getAngle();
     }
 }
 
