@@ -11,8 +11,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class UltrasonicSensor extends Subsystem {
 
-	final float baseToInches = .282f;
-	final float toInchesDivider = .0145f;
+	final float toMM = 5120;
 	protected AnalogInput ai;
 	
 	public UltrasonicSensor () {
@@ -21,8 +20,8 @@ public class UltrasonicSensor extends Subsystem {
 	
 	public double getDistanceInches()
 	{
-		return (ai.getVoltage() - baseToInches) / toInchesDivider;
-	}
+		return ((ai.getVoltage() / toMM) * 25.4);
+	}   
 
 	@Override
 	protected void initDefaultCommand() {

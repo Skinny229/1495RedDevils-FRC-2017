@@ -7,25 +7,26 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class UltrasonicTestCommand extends Command {
-	
-    public UltrasonicTestCommand() {
-        requires(Robot.ultra);
+public class GyroTestCommand extends Command {
+
+    public GyroTestCommand() {
+        // Use requires() here to declare subsystem dependencies
+        requires(Robot.gyro);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-
+    	Robot.gyro.reset();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	System.out.println("ultra:" + Robot.ultra.getDistanceInches());
+    	System.out.println("gyro:" + Robot.gyro.getAngleDegrees());
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-    	return false;
+        return false;
     }
 
     // Called once after isFinished returns true
