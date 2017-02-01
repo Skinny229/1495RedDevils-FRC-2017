@@ -5,7 +5,7 @@ import org.usfirst.frc.team1495.robot.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ * Prints ultrasonic distance
  */
 public class UltrasonicTestCommand extends Command {
 

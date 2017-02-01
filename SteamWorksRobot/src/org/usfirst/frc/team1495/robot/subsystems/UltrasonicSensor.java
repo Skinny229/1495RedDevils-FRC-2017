@@ -19,6 +19,10 @@ public class UltrasonicSensor extends Subsystem {
 		ai = new AnalogInput(RobotMap.ULTRASONIC_CHANNEL);
 	}
 	
+	
+	/* 
+	 * Returns distance in inches
+	 * */
 	public double getDistanceInches()
 	{
 		return (ai.getVoltage() - baseToInches) / toInchesDivider;
