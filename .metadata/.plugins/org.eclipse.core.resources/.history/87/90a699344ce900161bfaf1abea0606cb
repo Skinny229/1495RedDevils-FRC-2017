@@ -1,0 +1,12 @@
+package org.usfirst.frc.team1495.robot;
+
+public class VisionClass {
+
+	Thread visionThread;
+	public VisionClass(){}
+	
+	public void startVision(){
+		
+	}
+	
+}

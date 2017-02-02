@@ -4,6 +4,7 @@ package org.usfirst.frc.team1495.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
+import edu.wpi.first.wpilibj.RobotDrive.MotorType;
 import edu.wpi.first.wpilibj.VictorSP;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -24,14 +25,23 @@ import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
  */
 public class Robot extends IterativeRobot {
 
+	// Initiating Subsystes
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+	public static final UltrasonicSensor ultra = new UltrasonicSensor();
+	// Declaring OI containing buttons with commands
 	public static OI oi;
+	// Declaring Vision Class
+	public VisionClass vision;
+	// Initiating RobotDrive
+	public static RobotDrive roboDrive = new RobotDrive(
+	new VictorSP(RobotMap.LEFT_FRONT),
+	new VictorSP(RobotMap.LEFT_BACK), 
+	new VictorSP(RobotMap.RIGHT_FRONT), 
+	new VictorSP(RobotMap.RIGHT_BACK));
 	
-	public static RobotDrive roboDrive = new RobotDrive(new VictorSP(RobotMap.LEFT_FRONT),new VictorSP(RobotMap.LEFT_BACK),new VictorSP(RobotMap.RIGHT_FRONT),new VictorSP(RobotMap.RIGHT_BACK));
+	//Initating the Joystick
 	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
-	
-	public static UltrasonicSensor ultra = new UltrasonicSensor();
-	
+
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
 
@@ -42,6 +52,12 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void robotInit() {
 		oi = new OI();
+		vision = new VisionClass();
+		//Setting inverted Motors
+		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
+		roboDrive.setInvertedMotor(MotorType.kRearLeft, RobotMap.isLeftSideInverted);
+		roboDrive.setInvertedMotor(MotorType.kFrontRight, RobotMap.isRightSideInverted);
+		roboDrive.setInvertedMotor(MotorType.kRearRight, RobotMap.isRightSideInverted);
 		roboDrive.setSafetyEnabled(true);
 		chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());
@@ -77,7 +93,7 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void autonomousInit() {
 		autonomousCommand = chooser.getSelected();
-		
+
 		/*
 		 * String autoSelected = SmartDashboard.getString("Auto Selector",
 		 * "Default"); switch(autoSelected) { case "My Auto": autonomousCommand
@@ -114,6 +130,7 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
+		// SmartDashboard.putBoolean("", );
 		roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), stick.getTwist(), 0);
 	}
 

@@ -16,14 +16,31 @@ public class RobotMap {
 	// number and the module. For example you with a rangefinder:
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
-	
+
+	// Initiating RobotDrive Motors PWM ports
 	public static final int LEFT_FRONT = 0;
 	public static final int LEFT_BACK = 1;
 	public static final int RIGHT_FRONT = 2;
 	public static final int RIGHT_BACK = 3;
-	
+	//Inverts Motors if true
+	public static final boolean isRightSideInverted = false;
+	public static final boolean isLeftSideInverted = true;
+	// Joystick Port
 	public static final int JOYSTICK_PORT = 1;
-	
+
 	// Ultrasonic sensor ports
 	public static final int ULTRASONIC_CHANNEL = 0;
+
+	/*
+	 * START Vision Code stuff
+	 */
+	public static final int MJPEG_PORT = 1185;
+	public static final String MJPEG_SERVERNAME = "MJPEG Server";
+	// 0 being the Camera Name and 1 being camera location
+	public static final String USB_CAM[] = { "cam0", "/dev/video0" };
+	public static final String USB_CAM2[] = { "cam1", "/dev/video1" };
+	/*
+	 * End vision Code
+	 */
+
 }
