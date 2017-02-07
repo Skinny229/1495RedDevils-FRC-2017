@@ -14,7 +14,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc.team1495.robot.commands.ExampleCommand;
 import org.usfirst.frc.team1495.robot.subsystems.ExampleSubsystem;
-import org.usfirst.frc.team1495.robot.subsystems.ShooterSubsystem;
 import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
 
 /**
@@ -26,12 +25,13 @@ import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
  */
 public class Robot extends IterativeRobot {
 
-	// Initiating Subsystems
+	// Initiating Subsystes
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static final UltrasonicSensor ultra = new UltrasonicSensor();
-	public static final ShooterSubsystem shooterSub = new ShooterSubsystem();
 	// Declaring OI containing buttons with commands
 	public static OI oi;
+	// Declaring Vision Class
+	public VisionClass vision;
 	// Initiating RobotDrive
 	public static RobotDrive roboDrive = new RobotDrive(
 	new VictorSP(RobotMap.LEFT_FRONT),

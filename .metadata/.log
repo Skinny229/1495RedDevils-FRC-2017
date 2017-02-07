@@ -4814,3 +4814,103 @@ Please open a Bugzilla to add it to an official Oomph catalog.
 For initial testing, use the file system local version of the resource.
 Alternatively, run the setup archiver application as follows:
   C:\Program Files\eclipse\eclipsec.exe -application org.eclipse.oomph.setup.core.SetupArchiver -consoleLog -noSplash -uris http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/org.eclipse.setup
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 08:41:32.012
+!MESSAGE [org.usfirst.frc.team1495.robot.subsystems [in src [in SteamWorksRobot]]
+  ExampleSubsystem.java
+    package org.usfirst.frc.team1495.robot.subsystems
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ExampleSubsystem
+      void initDefaultCommand()
+  UltrasonicSensor.java
+    package org.usfirst.frc.team1495.robot.subsystems
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.AnalogInput
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class UltrasonicSensor
+      float baseToInches
+      float toInchesDivider
+      AnalogInput ai
+      UltrasonicSensor()
+      double getDistanceInches()
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 08:41:32.017
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 08:41:32.071
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 08:41:32.076
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 08:41:45.184
+!MESSAGE Class: ShooterSubsystem Package: org.usfirst.frc.team1495.robot.subsystems
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-07 08:46:36.823
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-07 08:46:36.828
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-07 08:52:55.145
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-07 08:52:55.158
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 09:06:09.767
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  UltrasonicTestCommand.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class UltrasonicTestCommand
+      double average
+      boolean finished
+      UltrasonicTestCommand()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ExampleCommand.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import org.usfirst.frc.team1495.robot.Robot
+    class ExampleCommand
+      ExampleCommand()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 09:06:09.773
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 09:06:09.798
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 09:06:09.804
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-07 09:06:27.520
+!MESSAGE Class: Shoot Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-02-07 09:06:44.038
+!MESSAGE Full project indexing required:
+  [*] C:\Users\skinn\wpilib\java\current\lib\NetworkTables.jar
+  [*] C:\Users\skinn\wpilib\java\current\lib\WPILib.jar
+  [*] C:\Users\skinn\wpilib\java\current\lib\cscore.jar
+  [*] C:\Users\skinn\wpilib\java\current\lib\opencv.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)

@@ -22,11 +22,11 @@ public class RobotMap {
 	// Joystick Port
 	public static final int JOYSTICK_PORT = 1;
 
-	//Analog inputs
+	// Ultrasonic sensor ports
 	public static final int ULTRASONIC_CHANNEL = 0;
-	public static final int POTENTIOMETER_PORT = 1;
 	
-	//Gyro 
+	
+	//
 	
 	
 	
