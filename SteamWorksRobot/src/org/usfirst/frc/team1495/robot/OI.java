@@ -42,14 +42,12 @@ public class OI {
 
 	static Joystick stick = new Joystick(1);
 
-	public static Button UltrasonicSensorTrigger = new JoystickButton(stick, 1);
 	public static Button shootFullSpeed = new JoystickButton(stick, 5);
 	public static Button shootFullSpeedB = new JoystickButton(stick, 3);
 	public static Button shootHalfSpeed = new JoystickButton(stick, 6);
 	public static Button shootHalfSpeedB = new JoystickButton(stick, 4);
 
 	public OI() {
-		UltrasonicSensorTrigger.whenPressed(new UltrasonicTestCommand());
 		shootFullSpeed.whileHeld(new Shoot(1.0));
 		shootFullSpeedB.whileHeld(new Shoot(-1.0));
 		shootHalfSpeed.whileHeld(new Shoot(.5));
