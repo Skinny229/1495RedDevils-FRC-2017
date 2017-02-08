@@ -11,23 +11,20 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class UltrasonicSensor extends Subsystem {
 
-	final float baseToInches = .282f;
-	final float toInchesDivider = .0145f;
+	final float tomm = 5120;
+	final float zero = .28f;
 	protected AnalogInput ai;
 	
 	public UltrasonicSensor () {
 		ai = new AnalogInput(RobotMap.ULTRASONIC_CHANNEL);
+		ai.setOversampleBits(4);
+		ai.setAverageBits(2);
 	}
 	
-	
-	/* 
-	 * Returns distance in inches
-	 * */
 	public double getDistanceInches()
 	{
-		
-		return (ai.getVoltage() - baseToInches) / toInchesDivider;
-	}
+		return ((int)((ai.getAverageVoltage() - zero)*1000))/1000;
+	}   
 
 	@Override
 	protected void initDefaultCommand() {
