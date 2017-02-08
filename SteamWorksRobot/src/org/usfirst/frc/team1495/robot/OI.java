@@ -1,5 +1,6 @@
 package org.usfirst.frc.team1495.robot;
 
+import org.usfirst.frc.team1495.robot.commands.Shoot;
 import org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -38,13 +39,20 @@ public class OI {
 	// Start the command when the button is released and let it run the command
 	// until it is finished as determined by it's isFinished method.
 	// button.whenReleased(new ExampleCommand());
-	
+
 	static Joystick stick = new Joystick(1);
-	
+
 	public static Button UltrasonicSensorTrigger = new JoystickButton(stick, 1);
-	
-	public OI()
-	{
+	public static Button shootFullSpeed = new JoystickButton(stick, 5);
+	public static Button shootFullSpeedB = new JoystickButton(stick, 3);
+	public static Button shootHalfSpeed = new JoystickButton(stick, 6);
+	public static Button shootHalfSpeedB = new JoystickButton(stick, 4);
+
+	public OI() {
 		UltrasonicSensorTrigger.whenPressed(new UltrasonicTestCommand());
+		shootFullSpeed.whileHeld(new Shoot(1.0));
+		shootFullSpeedB.whileHeld(new Shoot(-1.0));
+		shootHalfSpeed.whileHeld(new Shoot(.5));
+		shootHalfSpeedB.whileHeld(new Shoot(-.5));
 	}
 }

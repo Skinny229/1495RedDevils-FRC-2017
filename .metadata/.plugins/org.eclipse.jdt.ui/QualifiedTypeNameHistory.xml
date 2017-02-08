@@ -3,12 +3,17 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="edu.wpi.cscore.MjpegServer"/>
 <fullyQualifiedTypeName name="edu.wpi.cscore.VideoSource"/>
 <fullyQualifiedTypeName name="edu.wpi.cscore.UsbCamera"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.VictorSP"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.Shoot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.PotentiometerSubsystem"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 </qualifiedTypeNameHistroy>

@@ -14,6 +14,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc.team1495.robot.commands.ExampleCommand;
 import org.usfirst.frc.team1495.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team1495.robot.subsystems.LoaderWheel;
+import org.usfirst.frc.team1495.robot.subsystems.PotentiometerSubsystem;
 import org.usfirst.frc.team1495.robot.subsystems.ShooterSubsystem;
 import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
 
@@ -30,16 +32,15 @@ public class Robot extends IterativeRobot {
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static final UltrasonicSensor ultra = new UltrasonicSensor();
 	public static final ShooterSubsystem shooterSub = new ShooterSubsystem();
-	// Declaring OI containing buttons with commands
+	public static final PotentiometerSubsystem potSub = new PotentiometerSubsystem();
+	public static final LoaderWheel loadSub = new LoaderWheel();
+	// Declaring OI containing buttons with command conditions
 	public static OI oi;
 	// Initiating RobotDrive
-	public static RobotDrive roboDrive = new RobotDrive(
-	new VictorSP(RobotMap.LEFT_FRONT),
-	new VictorSP(RobotMap.LEFT_BACK), 
-	new VictorSP(RobotMap.RIGHT_FRONT), 
-	new VictorSP(RobotMap.RIGHT_BACK));
-	
-	//Initating the Joystick
+	public static RobotDrive roboDrive = new RobotDrive(new VictorSP(RobotMap.LEFT_FRONT),
+			new VictorSP(RobotMap.LEFT_BACK), new VictorSP(RobotMap.RIGHT_FRONT), new VictorSP(RobotMap.RIGHT_BACK));
+
+	// Initating the Joystick
 	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
 
 	Command autonomousCommand;
@@ -52,8 +53,8 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void robotInit() {
 		oi = new OI();
-		//vision = new VisionClass();
-		//Setting inverted Motors
+		// vision = new VisionClass();
+		// Setting inverted Motors
 		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kFrontRight, RobotMap.isRightSideInverted);
@@ -131,7 +132,7 @@ public class Robot extends IterativeRobot {
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
 		// SmartDashboard.putBoolean("", );
-		if(! RobotMap.isCMDRoboDrive)
+		if (!RobotMap.isCMDRoboDrive)
 			roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), stick.getTwist(), 0);
 	}
 
