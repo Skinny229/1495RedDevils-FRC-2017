@@ -34,6 +34,11 @@ public class Robot extends IterativeRobot {
 	public static final ShooterSubsystem shooterSub = new ShooterSubsystem();
 	public static final PotentiometerSubsystem potSub = new PotentiometerSubsystem();
 	public static final LoaderWheel loadSub = new LoaderWheel();
+	public static ADXRS450Gyro gyro = new ADXRS450Gyro();
+	public static SingleWheelShooter shooter = new SingleWheelShooter();
+	public static CollectionWheel collector = new CollectionWheel();
+	
+	public static OSolenoid sole= new OSolenoid();
 	// Declaring OI containing buttons with command conditions
 	public static OI oi;
 	// Initiating RobotDrive
@@ -63,6 +68,7 @@ public class Robot extends IterativeRobot {
 		chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
+		gyro.calibrate();
 	}
 
 	/**
@@ -133,7 +139,14 @@ public class Robot extends IterativeRobot {
 		Scheduler.getInstance().run();
 		// SmartDashboard.putBoolean("", );
 		if (!RobotMap.isCMDRoboDrive)
-			roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), stick.getTwist(), 0);
+			roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), -stick.getTwist(), 0);
+		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
+		SmartDashboard.putData(" ", gyro.getSendable());
+		SmartDashboard.putData("ResetGyro: ", new ResetGyro());
+		SmartDashboard.putString("SolenoidState: ", sole.getState());
+		SmartDashboard.putData("SolenoidOff: ", new SolenoidOff());
+		SmartDashboard.putData("SolenoidForward", new SolenoidForward());
+		SmartDashboard.putData("SolenoidReverse", new SolenoidReverse());
 	}
 
 	/**
