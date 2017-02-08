@@ -1,7 +1,6 @@
 package org.usfirst.frc.team1495.robot;
 
 import org.usfirst.frc.team1495.robot.commands.Shoot;
-import org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
