@@ -1,18 +1,22 @@
 package org.usfirst.frc.team1495.robot.commands;
 
+import org.usfirst.frc.team1495.robot.Robot;
+
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class DefAuto extends Command {
+public class ResetGyro extends Command {
 
-    public DefAuto() {
-    	
+    public ResetGyro() {
+        // Use requires() here to declare subsystem dependencies
+        requires(Robot.gyro);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	Robot.gyro.reset();
     }
 
     // Called repeatedly when this Command is scheduled to run

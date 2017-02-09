@@ -30,6 +30,10 @@ public class RobotMap {
 	public static final int ULTRASONIC_CHANNEL = 0;
 	public static final int POTENTIOMETER_PORT = 1;
 
+	// Gyro
+
+	// Shooter Stuff
+	public static final double MAX_SPEED = 1;
 
 	/* FROM HERE ON OUT... DO NOT EDIT THIS VARIABLES OR STUFF WILL GO WRONG */
 	/* FROM HERE ON OUT... DO NOT EDIT THIS VARIABLES OR STUFF WILL GO WRONG */

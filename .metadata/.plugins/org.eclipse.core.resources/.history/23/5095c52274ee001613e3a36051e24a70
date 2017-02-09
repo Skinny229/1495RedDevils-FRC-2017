@@ -52,7 +52,7 @@ public class Robot extends IterativeRobot {
 			new VictorSP(RobotMap.RIGHT_BACK));
 
 	// Initating the Joystick
-	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
+	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();

@@ -43,7 +43,7 @@ public class Robot extends IterativeRobot {
 	public static final CollectionWheel collector = new CollectionWheel();
 	public static final OSolenoid sole= new OSolenoid();
 	// Declaring OI containing buttons with command conditions
-	public OI oi;
+	public  OI oi;
 	// Initiating RobotDrive with victor SP
 	public static RobotDrive roboDrive = new RobotDrive(
 			new VictorSP(RobotMap.LEFT_FRONT),
@@ -52,7 +52,7 @@ public class Robot extends IterativeRobot {
 			new VictorSP(RobotMap.RIGHT_BACK));
 
 	// Initating the Joystick
-	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
+	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
