@@ -18,8 +18,8 @@ public class RobotMap {
 	public static final int SHOOTER_SC_PORT = 5;
 	//Loader
 	public static final int LOADER_SC_PORT = 6;
-	//Collection
-	public static final int COLLECTION_WHEEL = 7;
+	
+	
 	// Inverts Motors if true
 	public static final boolean isRightSideInverted = false;
 	public static final boolean isLeftSideInverted = true;
