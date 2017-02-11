@@ -1,7 +1,9 @@
 package org.usfirst.frc.team1495.robot;
 
-import org.usfirst.frc.team1495.robot.commands.Shoot;
+import org.usfirst.frc.team1495.robot.commands.MovePistonGear;
+import org.usfirst.frc.team1495.robot.commands.TestLimitSwitch;
 
+import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -39,17 +41,18 @@ public class OI {
 	// until it is finished as determined by it's isFinished method.
 	// button.whenReleased(new ExampleCommand());
 
-	static Joystick stick = new Joystick(1);
-
-	public static Button shootFullSpeed = new JoystickButton(stick, 5);
-	public static Button shootFullSpeedB = new JoystickButton(stick, 3);
-	public static Button shootHalfSpeed = new JoystickButton(stick, 6);
-	public static Button shootHalfSpeedB = new JoystickButton(stick, 4);
+	Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
+	//Joystick operatorStick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
+	Button solenoidFoward = new JoystickButton(stick,1);
+	Button solenoidBack = new JoystickButton(stick,2);
+	Button testLimitSwitch = new JoystickButton(stick,3);
+	
+	
 
 	public OI() {
-		shootFullSpeed.whileHeld(new Shoot(1.0));
-		shootFullSpeedB.whileHeld(new Shoot(-1.0));
-		shootHalfSpeed.whileHeld(new Shoot(.5));
-		shootHalfSpeedB.whileHeld(new Shoot(-.5));
+		solenoidFoward.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kForward));
+		solenoidBack.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kReverse));
+
+		
 	}
 }

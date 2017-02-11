@@ -5,7 +5,7 @@ import org.usfirst.frc.team1495.robot.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ * WILL NOT WORK!!!!!!!!!!!!!!
  */
 public class ShooterTurnOnce extends Command {
 
@@ -14,12 +14,10 @@ public class ShooterTurnOnce extends Command {
 
 	public ShooterTurnOnce() {
 		System.out.println("Starting ShooterTurnOnce ....");
-		requires(Robot.shooterSub);
-		requires(Robot.potSub);
-		requires(Robot.loadSub);
-		Robot.shooterSub.setSaftey(true);
+		requires(Robot.potentiometer);
+		requires(Robot.loaderSub);
 		hasFinished = false;
-		startAngle = Robot.potSub.getAngle();
+		startAngle = Robot.potentiometer.getAngle();
 		System.out.println("Starting out at angle: "+ startAngle);
 	}
 
@@ -44,16 +42,12 @@ public class ShooterTurnOnce extends Command {
 
 	// Called once after isFinished returns true
 	protected void end() {
-		Robot.shooterSub.stopShooting();
-		Robot.shooterSub.setSaftey(false);
 		System.out.println("ShooterTurnOnce ended Sucessfully");
 	}
 
 	// Called when another command which requires one or more of the same
 	// subsystems is scheduled to run
 	protected void interrupted() {
-		Robot.shooterSub.stopShooting();
-		Robot.shooterSub.setSaftey(false);
 		System.out.println("WARNING: ShooterTurnOnce interrupted! Stopping Shoot Motor and setting safety to false");
 	}
 }

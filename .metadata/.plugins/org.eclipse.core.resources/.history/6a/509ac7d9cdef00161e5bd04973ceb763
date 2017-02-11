@@ -1,0 +1,41 @@
+package org.usfirst.frc.team1495.robot.subsystems;
+
+import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.Solenoid;
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+/**
+ *
+ */
+public class OSolenoid extends Subsystem {
+
+    DoubleSolenoid sole = new DoubleSolenoid(0,0,1);
+    String state;
+
+    public OSolenoid()
+    {
+    	sole.set(DoubleSolenoid.Value.kOff);
+    	state = "Off";
+    }
+    
+    public void initDefaultCommand() {
+        // Set the default command for a subsystem here.
+        //setDefaultCommand(new MySpecialCommand());
+    }
+    
+    public String getState() {
+    	return state;
+    }
+    
+    public void set(DoubleSolenoid.Value direction){
+    	sole.set(direction);
+    	switch(direction)
+    	{
+    	case kOff: state = "Off"; break;
+    	case kForward: state = "Forward"; break;
+    	case kReverse: state = "Reverse"; break;
+    	}
+    }
+    
+}
+

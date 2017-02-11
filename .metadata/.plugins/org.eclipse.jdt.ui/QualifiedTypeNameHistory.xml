@@ -11,9 +11,19 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.VictorSP"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.Shoot"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.PotentiometerSubsystem"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.Subsystem"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems._DoubleSolenoid"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.MovePistonGear"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid.Value"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Counter"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.LimitSwitch"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestLimitSwitch"/>
 </qualifiedTypeNameHistroy>

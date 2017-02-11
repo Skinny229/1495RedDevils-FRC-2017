@@ -12,18 +12,14 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team1495.robot.commands.DefAuto;
-import org.usfirst.frc.team1495.robot.commands.ResetGyro;
-import org.usfirst.frc.team1495.robot.commands.SolenoidForward;
-import org.usfirst.frc.team1495.robot.commands.SolenoidOff;
-import org.usfirst.frc.team1495.robot.commands.SolenoidReverse;
+import org.usfirst.frc.team1495.robot.commands.AutonomousDefault;
+
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
-import org.usfirst.frc.team1495.robot.subsystems.CollectionWheel;
-import org.usfirst.frc.team1495.robot.subsystems.LoaderWheel;
-import org.usfirst.frc.team1495.robot.subsystems.OSolenoid;
-import org.usfirst.frc.team1495.robot.subsystems.PotentiometerSubsystem;
-import org.usfirst.frc.team1495.robot.subsystems.ShooterSubsystem;
-import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
+import org.usfirst.frc.team1495.robot.subsystems.LimitSwitch;
+import org.usfirst.frc.team1495.robot.subsystems.SingleMotor;
+import org.usfirst.frc.team1495.robot.subsystems._DoubleSolenoid;
+import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
+import org.usfirst.frc.team1495.robot.subsystems._Potentiometer;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -35,13 +31,15 @@ import org.usfirst.frc.team1495.robot.subsystems.UltrasonicSensor;
 public class Robot extends IterativeRobot {
 
 	// Initiating Subsystems
-	public static final UltrasonicSensor ultra = new UltrasonicSensor();
-	public static final ShooterSubsystem shooterSub = new ShooterSubsystem();
-	public static final PotentiometerSubsystem potSub = new PotentiometerSubsystem();
-	public static final LoaderWheel loadSub = new LoaderWheel();
+	public static final _Ultrasonic ultra = new _Ultrasonic(RobotMap.ULTRASONIC_PORT);
+	public static final _Potentiometer potentiometer = new _Potentiometer(RobotMap.POTENTIOMETER_PORT);
 	public static final ADXRS450Gyro gyro = new ADXRS450Gyro();
-	public static final CollectionWheel collector = new CollectionWheel();
-	public static final OSolenoid sole= new OSolenoid();
+	public static final _DoubleSolenoid gameGearSolenoid = new _DoubleSolenoid(0, 0, 1);
+	public static final LimitSwitch limitSwitch1 = new LimitSwitch(0);
+	public static final SingleMotor shooterSub = new SingleMotor(RobotMap.SHOOTER_SC_PORT);
+	public static final SingleMotor loaderSub = new SingleMotor(RobotMap.LOADER_SC_PORT);
+	public static final SingleMotor collectorSub = new SingleMotor(RobotMap.COLLECTOR_SC_PORT);
+	public static final SingleMotor climberSub = new SingleMotor(RobotMap.CLIMBER_SC_PORT);
 	// Declaring OI containing buttons with command conditions
 	public OI oi;
 	// Initiating RobotDrive with victor SP
@@ -52,7 +50,7 @@ public class Robot extends IterativeRobot {
 			new VictorSP(RobotMap.RIGHT_BACK));
 
 	// Initating the Joystick
-	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT);
+	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
@@ -71,7 +69,7 @@ public class Robot extends IterativeRobot {
 		roboDrive.setInvertedMotor(MotorType.kFrontRight, RobotMap.isRightSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearRight, RobotMap.isRightSideInverted);
 		roboDrive.setSafetyEnabled(true);
-		chooser.addDefault("Default Auto", new DefAuto());
+		chooser.addDefault("Default Auto", new AutonomousDefault());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 		gyro.calibrate();
@@ -148,11 +146,7 @@ public class Robot extends IterativeRobot {
 			roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), -stick.getTwist(), 0);
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
-		SmartDashboard.putData("ResetGyro: ", new ResetGyro());
-		SmartDashboard.putString("SolenoidState: ", sole.getState());
-		SmartDashboard.putData("SolenoidOff: ", new SolenoidOff());
-		SmartDashboard.putData("SolenoidForward", new SolenoidForward());
-		SmartDashboard.putData("SolenoidReverse", new SolenoidReverse());
+		SmartDashboard.putNumber("PotentiometerAngle: ", potentiometer.getAngle());
 	}
 
 	/**
