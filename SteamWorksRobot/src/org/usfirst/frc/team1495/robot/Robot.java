@@ -12,12 +12,12 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team1495.robot.commands.AutonomousDefault;
-
+import org.usfirst.frc.team1495.robot.commands.ChaChaDance;
+import org.usfirst.frc.team1495.robot.commands.FiveFootAndTurn;
+import org.usfirst.frc.team1495.robot.commands.GoBackNShoot;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
-import org.usfirst.frc.team1495.robot.subsystems.LimitSwitch;
-import org.usfirst.frc.team1495.robot.subsystems.SingleMotor;
-import org.usfirst.frc.team1495.robot.subsystems._DoubleSolenoid;
+import org.usfirst.frc.team1495.robot.subsystems.ServoMotor;
+import org.usfirst.frc.team1495.robot.subsystems.TalonSingleMotor;
 import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
 import org.usfirst.frc.team1495.robot.subsystems._Potentiometer;
 
@@ -34,26 +34,32 @@ public class Robot extends IterativeRobot {
 	public static final _Ultrasonic ultra = new _Ultrasonic(RobotMap.ULTRASONIC_PORT);
 	public static final _Potentiometer potentiometer = new _Potentiometer(RobotMap.POTENTIOMETER_PORT);
 	public static final ADXRS450Gyro gyro = new ADXRS450Gyro();
-	public static final _DoubleSolenoid gameGearSolenoid = new _DoubleSolenoid(0, 0, 1);
-	public static final LimitSwitch limitSwitch1 = new LimitSwitch(0);
-	public static final SingleMotor shooterSub = new SingleMotor(RobotMap.SHOOTER_SC_PORT);
-	public static final SingleMotor loaderSub = new SingleMotor(RobotMap.LOADER_SC_PORT);
-	public static final SingleMotor collectorSub = new SingleMotor(RobotMap.COLLECTOR_SC_PORT);
-	public static final SingleMotor climberSub = new SingleMotor(RobotMap.CLIMBER_SC_PORT);
+	public static final TalonSingleMotor shooterSub = new TalonSingleMotor(RobotMap.SHOOTER_SC_PORT);
+	public static final TalonSingleMotor climberSub = new TalonSingleMotor(RobotMap.CLIMBER_SC_PORT);
+	public static final TalonSingleMotor loaderSub = new TalonSingleMotor(RobotMap.LOADER_SC_PORT);
+	public static final ServoMotor loaderServoSub = new ServoMotor(RobotMap.LOADERSERVO_PORT);
 	// Declaring OI containing buttons with command conditions
+
 	public OI oi;
-	// Initiating RobotDrive with victor SP
+
+	// Initiating RobotDrive with VictorSp's as the motors
 	public static RobotDrive roboDrive = new RobotDrive(
-			new VictorSP(RobotMap.LEFT_FRONT),
-			new VictorSP(RobotMap.LEFT_BACK),
-			new VictorSP(RobotMap.RIGHT_FRONT),
-			new VictorSP(RobotMap.RIGHT_BACK));
+			new VictorSP(RobotMap.LEFT_FRONT), // 0
+			new VictorSP(RobotMap.LEFT_BACK), // 1
+			new VictorSP(RobotMap.RIGHT_FRONT), // 2
+			new VictorSP(RobotMap.RIGHT_BACK)); // 3
 
 	// Initating the Joystick
 	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
+	public Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 
+	// Creating Choosers
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
+	SendableChooser<Boolean> roboDriveEnabled = new SendableChooser<>();
+
+	// Misc
+	public boolean isRoboDriveEnabled;
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -61,18 +67,37 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void robotInit() {
+		// init Button Stuff
 		oi = new OI();
-		// vision = new VisionClass();
+		roboDrive.setExpiration(.5);
+		roboDrive.setSensitivity(.1);
 		// Setting inverted Motors
 		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kFrontRight, RobotMap.isRightSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearRight, RobotMap.isRightSideInverted);
-		roboDrive.setSafetyEnabled(true);
-		chooser.addDefault("Default Auto", new AutonomousDefault());
-		// chooser.addObject("My Auto", new MyAutoCommand());
+		// Enabling Safety
+		roboDrive.setSafetyEnabled(RobotMap.STARTING_MOTOR_SAFETY);
+		
+		// Adding Autonomous
+		chooser.addDefault("Autonomous Default", new FiveFootAndTurn());
+		chooser.addObject("Cha Cha Dance", new ChaChaDance());
+		// Adding RobotDrive Options
+		roboDriveEnabled.addDefault("RobotDrive Enabled", true);
+		roboDriveEnabled.addObject("RobotDrive Disable", false);
+		// Uploading Autonomous to Dashboard
 		SmartDashboard.putData("Auto mode", chooser);
-		gyro.calibrate();
+		SmartDashboard.putData("RoboDrive State", roboDriveEnabled);
+		SmartDashboard.putData("BackAndShoot", new GoBackNShoot());
+
+		// Ensure all data boxes are sent and created before starting match(just
+		// in case)
+		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
+		SmartDashboard.putData(" ", gyro.getSendable());
+		SmartDashboard.putNumber("PotentiometerAngle: ", potentiometer.getAngle());
+		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
+		SmartDashboard.putNumber("Percent Strength Shooter", RobotMap.shooterSpeed);
+
 	}
 
 	/**
@@ -105,6 +130,10 @@ public class Robot extends IterativeRobot {
 	public void autonomousInit() {
 		autonomousCommand = chooser.getSelected();
 
+		// Recalibrating Gyro right before Match Start so it doesnt callibrate
+		// as soon as you turn on
+		gyro.calibrate();
+
 		/*
 		 * String autoSelected = SmartDashboard.getString("Auto Selector",
 		 * "Default"); switch(autoSelected) { case "My Auto": autonomousCommand
@@ -133,6 +162,7 @@ public class Robot extends IterativeRobot {
 		// this line or comment it out.
 		if (autonomousCommand != null)
 			autonomousCommand.cancel();
+
 	}
 
 	/**
@@ -141,12 +171,17 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
-		// SmartDashboard.putBoolean("", );
-		if (!RobotMap.isCMDRoboDrive)
-			roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), -stick.getTwist(), 0);
+			if ((!RobotMap.isRoboDriveCMDOn) && isEnabled() && isOperatorControl() && (!RobotMap.n00bM0d3)) {
+				roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), -stick.getTwist(), 0);
+			} else if ((!RobotMap.isRoboDriveCMDOn) && isEnabled() && isOperatorControl() && RobotMap.n00bM0d3) {
+				roboDrive.mecanumDrive_Cartesian(operatorStick.getX() * .1, operatorStick.getY() * .1, -.1 *operatorStick.getTwist(), 0);
+			}
+		
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("PotentiometerAngle: ", potentiometer.getAngle());
+		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
+		SmartDashboard.putNumber("Percent Strength Shooter", RobotMap.shooterSpeed);
 	}
 
 	/**

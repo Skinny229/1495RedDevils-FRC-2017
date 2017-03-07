@@ -3,9 +3,6 @@ package org.usfirst.frc.team1495.robot.subsystems;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-/**
- *
- */
 public class _DoubleSolenoid extends Subsystem {
 
 	DoubleSolenoid solenoid;

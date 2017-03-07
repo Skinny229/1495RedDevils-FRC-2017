@@ -1,9 +1,12 @@
 package org.usfirst.frc.team1495.robot;
 
-import org.usfirst.frc.team1495.robot.commands.MovePistonGear;
-import org.usfirst.frc.team1495.robot.commands.TestLimitSwitch;
+import org.usfirst.frc.team1495.robot.commands.Climb;
+import org.usfirst.frc.team1495.robot.commands.LoadServoV2;
+import org.usfirst.frc.team1495.robot.commands.ResetShooterSpeed;
+import org.usfirst.frc.team1495.robot.commands.Shoot;
+import org.usfirst.frc.team1495.robot.commands.ToggleDriveMode;
+import org.usfirst.frc.team1495.robot.commands.adjustShooter;
 
-import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -14,45 +17,34 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
  */
 public class OI {
 	//// CREATING BUTTONS
-	// One type of button is a joystick button which is any button on a
-	//// joystick.
-	// You create one by telling it which joystick it's on and which button
-	// number it is.
-	// Joystick stick = new Joystick(port);
-	// Button button = new JoystickButton(stick, buttonNumber);
-
-	// There are a few additional built in buttons you can use. Additionally,
-	// by subclassing Button you can create custom triggers and bind those to
-	// commands the same as any other Button.
-
-	//// TRIGGERING COMMANDS WITH BUTTONS
-	// Once you have a button, it's trivial to bind it to a button in one of
-	// three ways:
-
-	// Start the command when the button is pressed and let it run the command
-	// until it is finished as determined by it's isFinished method.
-	// button.whenPressed(new ExampleCommand());
-
-	// Run the command while the button is being held down and interrupt it once
-	// the button is released.
-	// button.whileHeld(new ExampleCommand());
-
-	// Start the command when the button is released and let it run the command
-	// until it is finished as determined by it's isFinished method.
-	// button.whenReleased(new ExampleCommand());
+    //
 
 	Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
-	//Joystick operatorStick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
-	Button solenoidFoward = new JoystickButton(stick,1);
-	Button solenoidBack = new JoystickButton(stick,2);
-	Button testLimitSwitch = new JoystickButton(stick,3);
-	
-	
-
+	Joystick operatorController = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
+	//Operator
+	Button climb = new JoystickButton(operatorController,1);
+	Button gearUp = new JoystickButton(operatorController,2);
+	Button gearDown = new JoystickButton(operatorController,3);
+	Button toggleN00b = new JoystickButton(operatorController,8);
+	//Driver
+	Button shoot = new JoystickButton(stick,1);
+	Button servoRelease = new JoystickButton(stick,2);
+	Button posAdjust = new JoystickButton(stick, 5);
+	Button negAdjust = new JoystickButton(stick, 3);
+	Button resetSpeed = new JoystickButton(stick, 6);
 	public OI() {
-		solenoidFoward.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kForward));
-		solenoidBack.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kReverse));
-
-		
+		//Driver Buttons
+         shoot.whileHeld(new Shoot(RobotMap.shooterSpeed * -1));
+         posAdjust.whenPressed(new adjustShooter(true));
+         negAdjust.whenPressed(new adjustShooter(false));
+         resetSpeed.whenPressed(new ResetShooterSpeed());
+         servoRelease.whileHeld(new LoadServoV2());
+         //toggleN00b.whenPressed();
+        //Operator
+         climb.whileHeld(new Climb(RobotMap.CLIMB_SPEED));
+       //  gearUp.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kForward));
+        // gearDown.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kReverse));
+         toggleN00b.whenPressed(new ToggleDriveMode());
+         
 	}
 }

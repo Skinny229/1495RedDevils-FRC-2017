@@ -5,9 +5,6 @@ import edu.wpi.first.wpilibj.AnalogPotentiometer;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.interfaces.Potentiometer;
 
-/**
- *
- */
 public class _Potentiometer extends Subsystem {
 	Potentiometer pot;
 	AnalogInput aInput;
@@ -17,11 +14,11 @@ public class _Potentiometer extends Subsystem {
 
 	public _Potentiometer(int port) {
 		aInput = new AnalogInput(port);
-		pot = new AnalogPotentiometer(aInput, 360, 180);
+		pot = new AnalogPotentiometer(aInput, 3600, 0);
 	}
 
 	public double getAngle() {
-		return pot.get();
+		return (int) pot.get();
 	}
 
 }

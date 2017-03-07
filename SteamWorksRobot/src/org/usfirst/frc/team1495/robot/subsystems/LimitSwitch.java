@@ -4,9 +4,6 @@ import edu.wpi.first.wpilibj.Counter;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-/**
- *
- */
 public class LimitSwitch extends Subsystem {
 
 	DigitalInput limitSwitch;
@@ -17,15 +14,10 @@ public class LimitSwitch extends Subsystem {
 		counter = new Counter(limitSwitch);
 	}
 
-	@Override
 	protected void initDefaultCommand() {
-		// TODO Auto-generated method stub
-
 	}
-	
-	/*
-	 * Returns true if limit swtich is pressed on
-	 * */
+
+	// Returns true if limit switch is pressed on
 	public boolean isSwitchOn() {
 		boolean bool;
 		if (counter.get() != 0)
