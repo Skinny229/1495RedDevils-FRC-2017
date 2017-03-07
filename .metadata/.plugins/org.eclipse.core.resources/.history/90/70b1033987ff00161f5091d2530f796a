@@ -1,0 +1,205 @@
+
+package org.usfirst.frc.team1495.robot;
+
+import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.RobotDrive;
+import edu.wpi.first.wpilibj.RobotDrive.MotorType;
+import edu.wpi.first.wpilibj.VictorSP;
+import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
+import org.usfirst.frc.team1495.robot.commands.ChaChaDance;
+import org.usfirst.frc.team1495.robot.commands.FiveFootAndTurn;
+import org.usfirst.frc.team1495.robot.commands.GoBackNShoot;
+import org.usfirst.frc.team1495.robot.commands.adjustShooter;
+import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
+import org.usfirst.frc.team1495.robot.subsystems.SingleMotor;
+import org.usfirst.frc.team1495.robot.subsystems.SparkSingleMotor;
+import org.usfirst.frc.team1495.robot.subsystems._AnalogInput;
+import org.usfirst.frc.team1495.robot.subsystems._DoubleSolenoid;
+import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
+import org.usfirst.frc.team1495.robot.subsystems._Potentiometer;
+
+/**
+ * The VM is configured to automatically run this class, and to call the
+ * functions corresponding to each mode, as described in the IterativeRobot
+ * documentation. If you change the name of this class or the package after
+ * creating this project, you must also update the manifest file in the resource
+ * directory.
+ */
+public class Robot extends IterativeRobot {
+
+	// Initiating Subsystems
+	public static final _Ultrasonic ultra = new _Ultrasonic(RobotMap.ULTRASONIC_PORT);
+	public static final _Potentiometer potentiometer = new _Potentiometer(RobotMap.POTENTIOMETER_PORT);
+	public static final ADXRS450Gyro gyro = new ADXRS450Gyro();
+	public static final _DoubleSolenoid gameGearSolenoid = new _DoubleSolenoid(RobotMap.PCM_MODULE_PORT,
+			RobotMap.FORWARD_CHANNEL, RobotMap.BACKWARD_CHANNEL);
+	public static final SparkSingleMotor shooterSub = new SparkSingleMotor(RobotMap.SHOOTER_SC_PORT);
+	public static final SingleMotor loaderSub = new SingleMotor(RobotMap.LOADER_SC_PORT);
+	public static final SparkSingleMotor climberSub = new SparkSingleMotor(RobotMap.CLIMBER_SC_PORT);
+	public static final _AnalogInput reedSwitch = new _AnalogInput(RobotMap.REED_PORT);
+	// Declaring OI containing buttons with command conditions
+
+	public OI oi;
+
+	// Initiating RobotDrive with VictorSp's as the motors
+	public static RobotDrive roboDrive = new RobotDrive(
+			new VictorSP(RobotMap.LEFT_FRONT), // 0
+			new VictorSP(RobotMap.LEFT_BACK), // 1
+			new VictorSP(RobotMap.RIGHT_FRONT), // 2
+			new VictorSP(RobotMap.RIGHT_BACK)); // 3
+
+	// Initating the Joystick
+	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
+
+	// Creating Choosers
+	Command autonomousCommand;
+	SendableChooser<Command> chooser = new SendableChooser<>();
+	SendableChooser<Boolean> roboDriveEnabled = new SendableChooser<>();
+
+	// Misc
+	public boolean isRoboDriveEnabled;
+
+	/**
+	 * This function is run when the robot is first started up and should be
+	 * used for any initialization code.
+	 */
+	@Override
+	public void robotInit() {
+		// init Button Stuff
+		oi = new OI();
+		roboDrive.setExpiration(.5);
+		// Setting inverted Motors
+		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
+		roboDrive.setInvertedMotor(MotorType.kRearLeft, RobotMap.isLeftSideInverted);
+		roboDrive.setInvertedMotor(MotorType.kFrontRight, RobotMap.isRightSideInverted);
+		roboDrive.setInvertedMotor(MotorType.kRearRight, RobotMap.isRightSideInverted);
+		// Enabling Safety
+		roboDrive.setSafetyEnabled(RobotMap.STARTING_MOTOR_SAFETY);
+		
+		// Adding Autonomous
+		chooser.addDefault("Autonomous Default", new FiveFootAndTurn());
+		chooser.addObject("Cha Cha Dance", new ChaChaDance());
+		// Adding RobotDrive Options
+		roboDriveEnabled.addDefault("RobotDrive Enabled", true);
+		roboDriveEnabled.addObject("RobotDrive Disable", false);
+		// Uploading Autonomous to Dashboard
+		SmartDashboard.putData("Auto mode", chooser);
+		SmartDashboard.putData("RoboDrive State", roboDriveEnabled);
+		SmartDashboard.putData("BackAndShoot", new GoBackNShoot());
+
+		// Ensure all data boxes are sent and created before starting match(just
+		// in case)
+		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
+		SmartDashboard.putData(" ", gyro.getSendable());
+		SmartDashboard.putNumber("PotentiometerAngle: ", potentiometer.getAngle());
+		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
+		SmartDashboard.putNumber("ReedSwitch: ", reedSwitch.getVoltage());
+		SmartDashboard.putNumber("Percent Strength Shooter", adjustShooter.shooterStrength);
+
+		// Please Do not Edit This
+		adjustShooter.setDefSpeed();
+
+	}
+
+	/**
+	 * This function is called once each time the robot enters Disabled mode.
+	 * You can use it to reset any subsystem information you want to clear when
+	 * the robot is disabled.
+	 */
+	@Override
+	public void disabledInit() {
+
+	}
+
+	@Override
+	public void disabledPeriodic() {
+		Scheduler.getInstance().run();
+	}
+
+	/**
+	 * This autonomous (along with the chooser code above) shows how to select
+	 * between different autonomous modes using the dashboard. The sendable
+	 * chooser code works with the Java SmartDashboard. If you prefer the
+	 * LabVIEW Dashboard, remove all of the chooser code and uncomment the
+	 * getString code to get the auto name from the text box below the Gyro
+	 *
+	 * You can add additional auto modes by adding additional commands to the
+	 * chooser code above (like the commented example) or additional comparisons
+	 * to the switch structure below with additional strings & commands.
+	 */
+	@Override
+	public void autonomousInit() {
+		autonomousCommand = chooser.getSelected();
+
+		// Recalibrating Gyro right before Match Start so it doesnt callibrate
+		// as soon as you turn on
+		gyro.calibrate();
+
+		/*
+		 * String autoSelected = SmartDashboard.getString("Auto Selector",
+		 * "Default"); switch(autoSelected) { case "My Auto": autonomousCommand
+		 * = new MyAutoCommand(); break; case "Default Auto": default:
+		 * autonomousCommand = new ExampleCommand(); break; }
+		 */
+
+		// schedule the autonomous command (example)
+		if (autonomousCommand != null)
+			autonomousCommand.start();
+	}
+
+	/**
+	 * This function is called periodically during autonomous
+	 */
+	@Override
+	public void autonomousPeriodic() {
+		Scheduler.getInstance().run();
+	}
+
+	@Override
+	public void teleopInit() {
+		// This makes sure that the autonomous stops running when
+		// teleop starts running. If you want the autonomous to
+		// continue until interrupted by another command, remove
+		// this line or comment it out.
+		if (autonomousCommand != null)
+			autonomousCommand.cancel();
+		isRoboDriveEnabled = roboDriveEnabled.getSelected();
+
+	}
+
+	/**
+	 * This function is called periodically during operator control
+	 */
+	@Override
+	public void teleopPeriodic() {
+		Scheduler.getInstance().run();
+		roboDrive.setSafetyEnabled(true);
+		if (isRoboDriveEnabled) {
+			if ((!RobotMap.isRoboDriveCMDOn) && isEnabled() && isOperatorControl() && (!RobotMap.n00bM0d3)) {
+				roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), -stick.getTwist(), 0);
+			} else if ((!RobotMap.isRoboDriveCMDOn) && isEnabled() && isOperatorControl() && RobotMap.n00bM0d3) {
+				roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), -stick.getTwist(), gyro.getAngleDegrees());
+			}
+		}
+		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
+		SmartDashboard.putData(" ", gyro.getSendable());
+		SmartDashboard.putNumber("PotentiometerAngle: ", potentiometer.getAngle());
+		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
+		SmartDashboard.putNumber("ReedSwitch: ", reedSwitch.getVoltage());
+		SmartDashboard.putNumber("Percent Strength Shooter", adjustShooter.shooterStrength);
+	}
+
+	/**
+	 * This function is called periodically during test mode
+	 */
+	@Override
+	public void testPeriodic() {
+		LiveWindow.run();
+	}
+}
