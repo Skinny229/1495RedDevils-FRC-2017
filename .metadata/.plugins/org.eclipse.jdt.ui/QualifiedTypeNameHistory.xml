@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.LimitSwitch"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestLimitSwitch"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogTrigger"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.ChaChaDance"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.Subsystem"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.VictorSP"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
@@ -25,7 +24,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.management.timer.Timer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.Shoot"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.GoBackNShoot"/>
 <fullyQualifiedTypeName name="edu.wpi.cscore.MjpegServer"/>
 <fullyQualifiedTypeName name="edu.wpi.cscore.VideoSource"/>
@@ -36,7 +34,18 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid.Value"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.ResetShooterSpeed"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.adjustShooter"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.DoNothing"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerAuto"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.ChaChaDance"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerAutoBlue"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerAutoRed"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TouchlineAuto"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.GearAuto"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.FastSpeed"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.SlowSpeed"/>
 </qualifiedTypeNameHistroy>

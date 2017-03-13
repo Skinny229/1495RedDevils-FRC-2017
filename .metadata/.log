@@ -9821,3 +9821,2078 @@ java.net.UnknownHostException: dev.eclipse.org
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 08:29:22.215
 !MESSAGE Updating projects
+!SESSION 2017-03-07 08:51:47.499 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui.intro 4 0 2017-03-07 08:52:01.489
+!MESSAGE C:\Program Files\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Program Files\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.parse(IntroContentParser.java:94)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.<init>(IntroContentParser.java:56)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadDOM(IntroModelRoot.java:891)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.processConfigExtension(IntroModelRoot.java:418)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveConfigExtensions(IntroModelRoot.java:388)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveChildren(IntroModelRoot.java:248)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroContainer.getChildren(AbstractIntroContainer.java:86)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadModel(IntroModelRoot.java:164)
+	at org.eclipse.ui.internal.intro.impl.model.loader.BaseExtensionPointManager.loadModel(BaseExtensionPointManager.java:96)
+	at org.eclipse.ui.internal.intro.impl.model.loader.ExtensionPointManager.getModel(ExtensionPointManager.java:89)
+	at org.eclipse.ui.internal.intro.impl.presentations.IntroLaunchBar.init(IntroLaunchBar.java:283)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:308)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:51)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:108)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:536)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:520)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:747)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1059)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-07 08:52:02.812
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-07 08:52:09.635
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-07 08:52:09.744
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-07 08:52:10.015
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-07 08:52:10.153
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 08:52:10.635
+!MESSAGE Updating projects
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 08:56:01.741
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] FiveFootAndTurn.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.Timer
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class FiveFootAndTurn
+      int phase
+      double startTime
+      FiveFootAndTurn()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GoBackNShoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GoBackNShoot
+      GoBackNShoot()
+      Boolean finished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 08:56:01.755
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 08:56:01.823
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 08:56:01.837
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 08:56:11.822
+!MESSAGE Class: BoilerAuto Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-07 08:58:00.150
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-07 08:58:00.163
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-03-07 09:18:23.739
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 16:22:48.998
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 16:22:49.010
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 16:23:31.333
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 16:23:31.353
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 16:24:51.509
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-07 16:24:51.520
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 17:45:55.594
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 17:45:55.605
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 20:23:12.714
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 20:23:12.724
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 20:24:18.487
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 20:24:18.496
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 20:26:40.729
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-09 20:26:40.738
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 14:50:18.007
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 14:50:18.015
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 14:54:39.968
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 14:54:39.976
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 14:56:44.663
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 14:56:44.670
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2017-03-10 15:34:31.279 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-03-10 15:34:48.401
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.intro 4 0 2017-03-10 15:35:20.896
+!MESSAGE C:\Program Files\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Program Files\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.parse(IntroContentParser.java:94)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.<init>(IntroContentParser.java:56)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadDOM(IntroModelRoot.java:891)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.processConfigExtension(IntroModelRoot.java:418)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveConfigExtensions(IntroModelRoot.java:388)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveChildren(IntroModelRoot.java:248)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroContainer.getChildren(AbstractIntroContainer.java:86)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadModel(IntroModelRoot.java:164)
+	at org.eclipse.ui.internal.intro.impl.model.loader.BaseExtensionPointManager.loadModel(BaseExtensionPointManager.java:96)
+	at org.eclipse.ui.internal.intro.impl.model.loader.ExtensionPointManager.getModel(ExtensionPointManager.java:89)
+	at org.eclipse.ui.internal.intro.impl.presentations.IntroLaunchBar.init(IntroLaunchBar.java:283)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:308)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:51)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:108)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:536)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:520)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:747)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1059)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-10 15:35:22.428
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.core 4 0 2017-03-10 15:35:24.100
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.A(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-10 15:35:30.303
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-10 15:35:30.382
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-10 15:35:30.527
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-10 15:35:30.532
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 15:35:30.539
+!MESSAGE Updating projects
+
+!ENTRY com.genuitec.eclipse.webclipse.evergreen 4 0 2017-03-10 15:35:32.063
+!MESSAGE Failed to access metadata repository under http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci3a
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unknown Host: http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci3a/content.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:243)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:196)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:456)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess.run(EvergreenUpdateProcess.java:210)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 15:35:32.064
+!MESSAGE Unknown Host: http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci3a/content.xml
+!STACK 0
+java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-10 15:36:29.094
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-10 15:36:29.105
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 16:16:49.652
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 16:16:49.668
+!MESSAGE Unknown Host: http://eclipse-color-theme.github.com/update/content.xml
+!STACK 0
+java.net.UnknownHostException: eclipse-color-theme.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 16:16:49.699
+!MESSAGE Unknown Host: https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.xml
+!STACK 0
+java.net.UnknownHostException: raw.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 16:16:49.721
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.6/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 16:16:49.755
+!MESSAGE Unknown Host: http://download.eclipse.org/webtools/repository/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 16:16:49.786
+!MESSAGE Unknown Host: http://first.wpi.edu/FRC/roborio/release/eclipse/content.xml
+!STACK 0
+java.net.UnknownHostException: first.wpi.edu
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-03-10 16:16:49.805
+!MESSAGE Unknown Host: http://www.genuitec.com/updates/webclipse/ci/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 17:51:48.647
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FiveFootAndTurn.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.Timer
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class FiveFootAndTurn
+      int phase
+      double startTime
+      FiveFootAndTurn()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAuto
+      BoilerAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  GoBackNShoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GoBackNShoot
+      GoBackNShoot()
+      Boolean finished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 17:51:48.664
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 17:51:48.732
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 17:51:48.748
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 17:51:51.922
+!MESSAGE Class: DoNothing Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:48.790
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAuto
+      BoilerAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:48.806
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:48.837
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:48.859
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:57.587
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAuto
+      BoilerAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:57.605
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:57.625
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:44:57.640
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:52:46.623
+!MESSAGE Class: BoilerAuto Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:14.703
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAuto
+      BoilerAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:14.724
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:14.756
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:14.771
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:21.887
+!MESSAGE Class: BoilerAutoBlue Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:26.589
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAuto
+      BoilerAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  BoilerAutoBlue.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoBlue
+      BoilerAutoBlue()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:26.592
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:26.624
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:26.639
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-10 20:53:32.673
+!MESSAGE Class: BoilerAutoRed Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:32:18.388
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoBlue.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoBlue
+      BoilerAutoBlue()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoRed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoRed
+      BoilerAutoRed()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:32:18.540
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:32:18.777
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:32:18.920
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:32:45.752
+!MESSAGE Class: GearAuto Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:47:07.978
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoBlue.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoBlue
+      BoilerAutoBlue()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoRed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoRed
+      BoilerAutoRed()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:47:08.114
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:47:08.394
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:47:08.500
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 08:47:14.020
+!MESSAGE Class: TouchlineAuto Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 09:24:42.750
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 09:24:42.764
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 09:25:22.324
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 09:25:22.339
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 09:26:03.445
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 09:26:03.459
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 10:33:55.016
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 10:33:55.030
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 10:58:27.615
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 10:58:27.627
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 11:49:13.133
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 11:49:13.163
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 11:50:33.037
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 11:50:33.063
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:20:04.559
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:20:04.617
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:39.366
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoBlue.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoBlue
+      BoilerAutoBlue()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoRed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoRed
+      BoilerAutoRed()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] TouchlineAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class TouchlineAuto
+      TouchlineAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:39.401
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:39.478
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:39.511
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:46.825
+!MESSAGE Class: FastSpeed Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:51.676
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  [Working copy] ChaChaDance.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class ChaChaDance
+      ChaChaDance()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ResetShooterSpeed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ResetShooterSpeed
+      ResetShooterSpeed()
+      boolean bool
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ToggleDriveMode
+      ToggleDriveMode()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoBlue.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoBlue
+      BoilerAutoBlue()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerAutoRed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerAutoRed
+      BoilerAutoRed()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] TouchlineAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class TouchlineAuto
+      TouchlineAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FastSpeed.java (not open)]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:51.715
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:51.788
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:51.824
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 14:51:56.081
+!MESSAGE Class: SlowSpeed Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:03:58.912
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:03:58.942
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:04:36.232
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:04:36.261
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:05:14.355
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:05:14.380
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:05:46.074
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:05:46.095
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:30:28.967
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:30:29.049
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2017-03-11 15:30:54.900
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:94)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:31:05.252
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 15:31:05.523
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 17:08:40.135
+!MESSAGE Last deploy running
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 17:08:40.174
+!MESSAGE Waiting
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 17:08:40.189
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 17:08:40.202
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2017-03-11 17:09:51.808
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:94)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 17:10:02.461
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 17:10:02.470
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 18:57:56.521
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-11 18:57:56.629
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 12:36:49.395
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 12:36:49.417
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 12:38:13.871
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 12:38:13.879
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 12:39:35.323
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 12:39:35.333
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:07:48.184
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:07:48.195
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:17:58.419
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:17:58.455
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:18:30.189
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:18:30.271
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:23:30.887
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:23:30.909
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:47:03.440
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 13:47:03.520
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 14:23:38.553
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksRobot\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-12 14:23:38.589
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2017-03-13 16:11:45.701
+!MESSAGE Exception during event notification
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.sameProfile(AutomaticUpdater.java:76)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$1.notify(AutomaticUpdater.java:63)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningEventBus.dispatchEvent(ProvisioningEventBus.java:108)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningEventBus.dispatchEvent(ProvisioningEventBus.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)

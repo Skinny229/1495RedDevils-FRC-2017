@@ -4,7 +4,6 @@ import org.usfirst.frc.team1495.robot.commands.Climb;
 import org.usfirst.frc.team1495.robot.commands.LoadServoV2;
 import org.usfirst.frc.team1495.robot.commands.ResetShooterSpeed;
 import org.usfirst.frc.team1495.robot.commands.Shoot;
-import org.usfirst.frc.team1495.robot.commands.ToggleDriveMode;
 import org.usfirst.frc.team1495.robot.commands.adjustShooter;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -20,21 +19,26 @@ public class OI {
     //
 
 	Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
-	Joystick operatorController = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
+	//Joystick operatorController = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 	//Operator
-	Button climb = new JoystickButton(operatorController,1);
+	
+	Button climb = new JoystickButton(stick,8);
+	/*
 	Button gearUp = new JoystickButton(operatorController,2);
 	Button gearDown = new JoystickButton(operatorController,3);
 	Button toggleN00b = new JoystickButton(operatorController,8);
+	*/
 	//Driver
 	Button shoot = new JoystickButton(stick,1);
 	Button servoRelease = new JoystickButton(stick,2);
 	Button posAdjust = new JoystickButton(stick, 5);
 	Button negAdjust = new JoystickButton(stick, 3);
+	Button slowclimb = new JoystickButton(stick, 9);
 	Button resetSpeed = new JoystickButton(stick, 6);
 	public OI() {
 		//Driver Buttons
-         shoot.whileHeld(new Shoot(RobotMap.shooterSpeed * -1));
+         shoot.whileHeld(new Shoot(-.81));
+         slowclimb.whileHeld(new Climb(.11));
          posAdjust.whenPressed(new adjustShooter(true));
          negAdjust.whenPressed(new adjustShooter(false));
          resetSpeed.whenPressed(new ResetShooterSpeed());
@@ -44,7 +48,6 @@ public class OI {
          climb.whileHeld(new Climb(RobotMap.CLIMB_SPEED));
        //  gearUp.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kForward));
         // gearDown.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kReverse));
-         toggleN00b.whenPressed(new ToggleDriveMode());
-         
+         //toggleN00b.whenPressed(new ToggleDriveMode());
 	}
 }

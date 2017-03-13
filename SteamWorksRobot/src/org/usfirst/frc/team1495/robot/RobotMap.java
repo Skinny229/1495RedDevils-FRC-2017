@@ -19,7 +19,6 @@ public class RobotMap {
 	public static final int SHOOTER_SC_PORT = 4;
 	public static final int CLIMBER_SC_PORT = 5;
 	public static final int LOADER_SC_PORT = 7;
-	public static final int LOADERSERVO_PORT = 8;
 	// Analog Inputs
 	public static final int ULTRASONIC_PORT = 0;
 	public static final int POTENTIOMETER_PORT = 1;
@@ -37,11 +36,11 @@ public class RobotMap {
 	public static final double DEFAULT_SHOOTER_SPEED = .97;
 	//Motor stuff
 	public static final double MOTOR_EXPIRATION = .5;
-	public static final boolean STARTING_MOTOR_SAFETY = true;
+	public static final boolean STARTING_MOTOR_SAFETY = false;
 	
 	//Do Not Edit From here down
 
-	public static double shooterSpeed = .71;
+	public static double shooterSpeed = .52;
 	public static boolean n00bM0d3 = false;
 	public static boolean isRoboDriveCMDOn = false;
 	
