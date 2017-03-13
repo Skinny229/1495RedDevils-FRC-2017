@@ -17,7 +17,7 @@ public class Climb extends Command {
 	}
 
 	protected void initialize() {
-		Robot.climberSub.updateSafety(true);
+		//Robot.climberSub.updateSafety(true);
 	}
 
 	protected void execute() {

@@ -10,33 +10,38 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class ChaChaDance extends Command {
 
-    public ChaChaDance() {
-        // Use requires() here to declare subsystem dependencies
-        // eg. requires(chassis);
-    }
+	public ChaChaDance() {
+		// Use requires() here to declare subsystem dependencies
+		// eg. requires(chassis);
+	}
 
-    // Called just before this Command runs the first time
-    protected void initialize() {
-    }
+	// Called just before this Command runs the first time
+	protected void initialize() {
 
-    // Called repeatedly when this Command is scheduled to run
-    protected void execute() {
-    	Robot.roboDrive.drive(-.2, -.2);
-    	Timer.delay(.5);
-    	Robot.roboDrive.stopMotor();
-    }
+		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
+		Timer.delay(2);
+		Robot.roboDrive.stopMotor();
+	}
 
-    // Make this return true when this Command no longer needs to run execute()
-    protected boolean isFinished() {
-        return false;
-    }
+	// Called repeatedly when this Command is scheduled to run
 
-    // Called once after isFinished returns true
-    protected void end() {
-    }
+	protected void execute() {
+		Robot.roboDrive.drive(-.2, -.2);
+		Timer.delay(.5);
+		Robot.roboDrive.stopMotor();
+	}
 
-    // Called when another command which requires one or more of the same
-    // subsystems is scheduled to run
-    protected void interrupted() {
-    }
+	// Make this return true when this Command no longer needs to run execute()
+	protected boolean isFinished() {
+		return false;
+	}
+
+	// Called once after isFinished returns true
+	protected void end() {
+	}
+
+	// Called when another command which requires one or more of the same
+	// subsystems is scheduled to run
+	protected void interrupted() {
+	}
 }
