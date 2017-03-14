@@ -54,7 +54,7 @@ public class Robot extends IterativeRobot {
 
 	// Initating the JoyonStick
 	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
-	public static Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
+	public static Joystick operatoronStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 	public static boolean onMainDriver = true;
 
 	// Creating Choosers
@@ -161,9 +161,9 @@ public class Robot extends IterativeRobot {
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
 		if (isEnabled() && isOperatorControl() && onMainDriver) {
-			driveOnStick(stick);
+			driveOnState(driveState, stick);
 		} else if (isEnabled() && isOperatorControl() && !onMainDriver) {
-		  driveOnStick(operatorStick);
+		  
 		}
 
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
@@ -180,11 +180,8 @@ public class Robot extends IterativeRobot {
 		LiveWindow.run();
 	}
 	
-	public void driveOnStick(Joystick onStick){
-		/*
-		 * Switchcase Determines which orientation to implement
-		 * */
-		switch (currentDriveState) {
+	public void driveOnState(RobotDriveState state,Joystick onStick){
+		switch (state) {
 		case HOPPERLEAD:
 			roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,
 					RobotMap.TWISTMULTIPLIER * onStick.getTwist(), 0);
@@ -198,7 +195,6 @@ public class Robot extends IterativeRobot {
 					onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
 			break;
 		default:
-			/*Usual Front*/
 			roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,
 					onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
 			break;

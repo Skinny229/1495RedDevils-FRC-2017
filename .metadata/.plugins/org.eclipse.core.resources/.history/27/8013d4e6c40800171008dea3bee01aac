@@ -181,9 +181,6 @@ public class Robot extends IterativeRobot {
 	}
 	
 	public void driveOnStick(Joystick onStick){
-		/*
-		 * Switchcase Determines which orientation to implement
-		 * */
 		switch (currentDriveState) {
 		case HOPPERLEAD:
 			roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,

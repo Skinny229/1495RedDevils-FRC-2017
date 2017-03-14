@@ -2,6 +2,7 @@ package org.usfirst.frc.team1495.robot;
 
 import org.usfirst.frc.team1495.robot.commands.Climb;
 import org.usfirst.frc.team1495.robot.commands.LoadServoV2;
+import org.usfirst.frc.team1495.robot.commands.ResetShooterSpeed;
 import org.usfirst.frc.team1495.robot.commands.Shoot;
 import org.usfirst.frc.team1495.robot.commands.adjustShooter;
 
@@ -40,6 +41,7 @@ public class OI {
          slowclimb.whileHeld(new Climb(.11));
          posAdjust.whenPressed(new adjustShooter(true));
          negAdjust.whenPressed(new adjustShooter(false));
+         resetSpeed.whenPressed(new ResetShooterSpeed());
          servoRelease.whileHeld(new LoadServoV2());
          //toggleN00b.whenPressed();
         //Operator

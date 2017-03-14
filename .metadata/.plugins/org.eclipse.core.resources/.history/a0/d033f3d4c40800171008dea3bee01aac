@@ -161,9 +161,9 @@ public class Robot extends IterativeRobot {
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
 		if (isEnabled() && isOperatorControl() && onMainDriver) {
-			driveOnStick(stick);
+			driveOnState(stick);
 		} else if (isEnabled() && isOperatorControl() && !onMainDriver) {
-		  driveOnStick(operatorStick);
+		  driveOnState(operatorStick);
 		}
 
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
@@ -180,10 +180,7 @@ public class Robot extends IterativeRobot {
 		LiveWindow.run();
 	}
 	
-	public void driveOnStick(Joystick onStick){
-		/*
-		 * Switchcase Determines which orientation to implement
-		 * */
+	public void driveOnState(Joystick onStick){
 		switch (currentDriveState) {
 		case HOPPERLEAD:
 			roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,
