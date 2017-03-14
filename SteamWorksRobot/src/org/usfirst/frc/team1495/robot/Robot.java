@@ -47,8 +47,7 @@ public class Robot extends IterativeRobot {
 	public OI oi;
 
 	// Initiating RobotDrive with VictorSp's as the motors
-	public static RobotDrive roboDrive = new RobotDrive(
-			new VictorSP(RobotMap.LEFT_FRONT), // 0
+	public static RobotDrive roboDrive = new RobotDrive(new VictorSP(RobotMap.LEFT_FRONT), // 0
 			new VictorSP(RobotMap.LEFT_BACK), // 1
 			new VictorSP(RobotMap.RIGHT_FRONT), // 2
 			new VictorSP(RobotMap.RIGHT_BACK)); // 3
@@ -57,6 +56,7 @@ public class Robot extends IterativeRobot {
 	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
 	public static Joystick operatoronStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 	public static Joystick onStick = stick;
+	public static boolean onMainDriver = true;
 
 	// Creating Choosers
 	Command autonomousCommand;
@@ -161,7 +161,7 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
-		if (isEnabled() && isOperatorControl()) {
+		if (isEnabled() && isOperatorControl() && onMainDriver) {
 			switch (driveState) {
 			case HOPPERLEAD:
 				roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,
@@ -176,11 +176,15 @@ public class Robot extends IterativeRobot {
 						onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
 				break;
 			default:
+				roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,
+						stick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
 				break;
 
 			}
-
+		} else if (isEnabled() && isOperatorControl() && !onMainDriver) {
+		 
 		}
+
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());

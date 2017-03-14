@@ -45,7 +45,7 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TouchlineAuto"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.GearAuto"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.FastSpeed"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.SlowSpeed"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 </qualifiedTypeNameHistroy>
