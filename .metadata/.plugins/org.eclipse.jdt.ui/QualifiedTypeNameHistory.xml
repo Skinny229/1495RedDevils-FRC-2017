@@ -47,5 +47,7 @@
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.GearAuto"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.FastSpeed"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.SlowSpeed"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot.RobotDriveState"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 </qualifiedTypeNameHistroy>
