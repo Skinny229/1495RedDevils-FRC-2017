@@ -26,7 +26,6 @@ public class RobotMap {
 	public static final int CONTROLLER_PORT_OPERATOR = 2;
 	//Speeds
 	public static final double CLIMB_SPEED = 1.0;
-	public static final double SLOW_CLIMB_SPEED = .11;
 	public static final double DEFAULT_SHOOTER_SPEED = .75;
 	public static final double YMULTIPLIER = .45;
 	public static final double TWISTMULTIPLIER = -.25;

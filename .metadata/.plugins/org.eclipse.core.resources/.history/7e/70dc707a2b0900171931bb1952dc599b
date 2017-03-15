@@ -46,7 +46,7 @@ public class Robot extends IterativeRobot {
 
 	public OI oi;
 
-	// Initiating RobotDrive with VictorSp's as the speed controllers
+	// Initiating RobotDrive with VictorSp's as the motors
 	public static RobotDrive roboDrive = new RobotDrive(
 			new VictorSP(RobotMap.LEFT_FRONT), // 0
 			new VictorSP(RobotMap.LEFT_BACK), // 1

@@ -46,7 +46,7 @@ public class Robot extends IterativeRobot {
 
 	public OI oi;
 
-	// Initiating RobotDrive with VictorSp's as the speed controllers
+	// Initiating RobotDrive with VictorSp's as the motors
 	public static RobotDrive roboDrive = new RobotDrive(
 			new VictorSP(RobotMap.LEFT_FRONT), // 0
 			new VictorSP(RobotMap.LEFT_BACK), // 1
@@ -54,8 +54,8 @@ public class Robot extends IterativeRobot {
 			new VictorSP(RobotMap.RIGHT_BACK)); // 3
 
 	// Initating the JoyonStick
-	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
-	public Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
+	public static Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
+	public  Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 	public static boolean onMainDriver = true;
 
 	// Creating Choosers

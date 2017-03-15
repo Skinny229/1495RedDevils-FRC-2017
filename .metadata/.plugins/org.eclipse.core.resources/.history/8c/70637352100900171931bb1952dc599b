@@ -25,7 +25,7 @@ public class OI {
 
 	//Driver
 	Button shoot = new JoystickButton(stick,1);
-	Button agitator = new JoystickButton(stick,2);
+	Button servoRelease = new JoystickButton(stick,2);
 	Button posAdjust = new JoystickButton(stick, 5);
 	Button negAdjust = new JoystickButton(stick, 3);
 	Button slowclimb = new JoystickButton(stick, 9);
@@ -36,7 +36,7 @@ public class OI {
          slowclimb.whileHeld(new Climb(RobotMap.SLOW_CLIMB_SPEED));
          posAdjust.whenPressed(new adjustShooter(true));
          negAdjust.whenPressed(new adjustShooter(false));
-         agitator.whileHeld(new LoadServoV2());
+         servoRelease.whileHeld(new LoadServoV2());
          climb.whileHeld(new Climb(RobotMap.CLIMB_SPEED));
 	}
 }
