@@ -35,7 +35,7 @@ public class RobotMap {
 	public static final boolean STARTING_MOTOR_SAFETY = false;
 	
 	
-	public static double shooterSpeed = .57;
+	//public static double shooterSpeed = .57;
 	
 	
 

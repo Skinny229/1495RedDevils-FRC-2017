@@ -73,7 +73,7 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		// init Button Stuff
 		oi = new OI();
-		roboDrive.setExpiration(.5);
+		//roboDrive.setExpiration(.5);
 		roboDrive.setSensitivity(.1);
 		// Setting inverted Motors
 		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
@@ -87,7 +87,7 @@ public class Robot extends IterativeRobot {
 		chooser.addDefault("Auto-Default: Touchline", new TouchlineAuto());
 		chooser.addObject("Boiler - Blue", new BoilerAutoBlue());
 		chooser.addObject("Boiler - Red", new BoilerAutoRed());
-		chooser.addObject("Gear", new GearAuto());
+		chooser.addObject("Middle Gear", new GearAuto());
 		chooser.addObject("Touchline", new TouchlineAuto());
 		chooser.addObject("Do Nothing", new DoNothing());
 		// Adding RobotDrive Options
@@ -192,11 +192,11 @@ public class Robot extends IterativeRobot {
 					RobotMap.TWISTMULTIPLIER * onStick.getTwist(), 0);
 			break;
 		case GEARLEAD:
-			roboDrive.mecanumDrive_Cartesian(onStick.getY(), onStick.getX() * RobotMap.YMULTIPLIER,
+			roboDrive.mecanumDrive_Cartesian(-onStick.getX(), -onStick.getY() * RobotMap.YMULTIPLIER,
 					onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
 			break;
 		case CLIMBSHOOTERLEAD:
-			roboDrive.mecanumDrive_Cartesian(onStick.getY(), onStick.getX() * RobotMap.YMULTIPLIER,
+			roboDrive.mecanumDrive_Cartesian(-onStick.getY(), onStick.getX() * RobotMap.YMULTIPLIER,
 					onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
 			break;
 		default:
