@@ -20,10 +20,10 @@ public class BoilerOnLeft extends Command {
 	// Called just before this Command runs the first time
 	protected void initialize() {
 		Robot.gyro.reset();
-		Robot.roboDrive.mecanumDrive_Cartesian(0, -.2, 0, 0);
+		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
 		Timer.delay(2);
 		Robot.shooterSub.spin(RobotMap.shootingSpeed);
-		while(Robot.gyro.getAngleDegrees() > 135) {
+		while(Robot.gyro.getAngleDegrees() > -45) {
 		Robot.roboDrive.mecanumDrive_Cartesian(0, 0, .2, 0);
 		}
 		Robot.roboDrive.stopMotor();

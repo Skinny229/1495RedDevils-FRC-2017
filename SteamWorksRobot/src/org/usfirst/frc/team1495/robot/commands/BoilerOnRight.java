@@ -23,8 +23,8 @@ public class BoilerOnRight extends Command {
 		Robot.roboDrive.mecanumDrive_Cartesian(0, -.2, 0, 0);
 		Timer.delay(2);
 		Robot.shooterSub.spin(RobotMap.shootingSpeed);
-		while(Robot.gyro.getAngleDegrees() > -135) {
-		Robot.roboDrive.mecanumDrive_Cartesian(0, 0, -.2, 0);
+		while(Robot.gyro.getAngleDegrees() > 45) {
+		Robot.roboDrive.mecanumDrive_Cartesian(0, 0, .2, 0);
 		}
 		Robot.roboDrive.stopMotor();
 		Robot.loaderSub.spin(RobotMap.LOAD_SPEED);
