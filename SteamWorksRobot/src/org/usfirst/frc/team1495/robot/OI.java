@@ -1,8 +1,9 @@
 package org.usfirst.frc.team1495.robot;
 
+import org.usfirst.frc.team1495.robot.commands.ChangeDriver;
+import org.usfirst.frc.team1495.robot.commands.ChangeRobotOrientation;
 import org.usfirst.frc.team1495.robot.commands.Climb;
 import org.usfirst.frc.team1495.robot.commands.LoadServoV2;
-import org.usfirst.frc.team1495.robot.commands.ResetShooterSpeed;
 import org.usfirst.frc.team1495.robot.commands.Shoot;
 import org.usfirst.frc.team1495.robot.commands.adjustShooter;
 
@@ -16,38 +17,57 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
  */
 public class OI {
 	//// CREATING BUTTONS
-    //
 
 	Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
-	//Joystick operatorController = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
+	Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 	//Operator
 	
-	Button climb = new JoystickButton(stick,8);
-	/*
-	Button gearUp = new JoystickButton(operatorController,2);
-	Button gearDown = new JoystickButton(operatorController,3);
-	Button toggleN00b = new JoystickButton(operatorController,8);
-	*/
 	//Driver
 	Button shoot = new JoystickButton(stick,1);
-	Button servoRelease = new JoystickButton(stick,2);
+	Button agitator = new JoystickButton(stick,2);
 	Button posAdjust = new JoystickButton(stick, 5);
 	Button negAdjust = new JoystickButton(stick, 3);
-	Button slowclimb = new JoystickButton(stick, 9);
 	Button resetSpeed = new JoystickButton(stick, 6);
+	Button slowClimb = new JoystickButton(stick, 7);
+	Button climb = new JoystickButton(stick, 8);
+	Button orientationReset = new JoystickButton(stick, 9);
+	Button orientationSwitchOther = new JoystickButton(stick, 10);
+	Button orientationSwitch = new JoystickButton(stick, 11);
+	Button switchDriver = new JoystickButton(stick,12);
+	
+	Button shoot1 = new JoystickButton(stick,1);
+	Button agitator1 = new JoystickButton(stick,2);
+	Button posAdjust1 = new JoystickButton(stick, 5);
+	Button negAdjust1 = new JoystickButton(stick, 3);
+	Button slowClimb1 = new JoystickButton(operatorStick, 7);
+	Button climb1 = new JoystickButton(operatorStick,8);
+	Button switchDriver1 = new JoystickButton(operatorStick,12);
+	Button orientationSwitch1 = new JoystickButton(operatorStick,11);
+	Button orientationSwitchOther1 = new JoystickButton(operatorStick,10);
+	Button orientationReset1 = new JoystickButton(operatorStick,9);
 	public OI() {
 		//Driver Buttons
          shoot.whileHeld(new Shoot(-.81));
-         slowclimb.whileHeld(new Climb(.11));
+         slowClimb.whileHeld(new Climb(RobotMap.SLOW_CLIMB_SPEED));
          posAdjust.whenPressed(new adjustShooter(true));
          negAdjust.whenPressed(new adjustShooter(false));
-         resetSpeed.whenPressed(new ResetShooterSpeed());
-         servoRelease.whileHeld(new LoadServoV2());
-         //toggleN00b.whenPressed();
-        //Operator
+         agitator.whileHeld(new LoadServoV2());
          climb.whileHeld(new Climb(RobotMap.CLIMB_SPEED));
-       //  gearUp.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kForward));
-        // gearDown.whenPressed(new MovePistonGear(DoubleSolenoid.Value.kReverse));
-         //toggleN00b.whenPressed(new ToggleDriveMode());
+         
+         shoot1.whileHeld(new Shoot(-.81));
+         slowClimb1.whileHeld(new Climb(RobotMap.SLOW_CLIMB_SPEED));
+         posAdjust1.whenPressed(new adjustShooter(true));
+         negAdjust1.whenPressed(new adjustShooter(false));
+         agitator1.whileHeld(new LoadServoV2());
+         climb1.whileHeld(new Climb(RobotMap.CLIMB_SPEED));       
+         
+         orientationSwitchOther1.whenPressed(new ChangeRobotOrientation(2));
+         orientationSwitchOther.whenPressed(new ChangeRobotOrientation(2));
+         orientationSwitch.whenPressed(new ChangeRobotOrientation(1));
+         orientationSwitch1.whenPressed(new ChangeRobotOrientation(1));
+         orientationReset.whenPressed(new ChangeRobotOrientation(0));
+         orientationReset1.whenPressed(new ChangeRobotOrientation(0));
+         switchDriver.whenPressed(new ChangeDriver());
+         switchDriver1.whenPressed(new ChangeDriver());
 	}
 }

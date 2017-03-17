@@ -17,9 +17,9 @@ public class adjustShooter extends Command {
 
 	protected void initialize() {
 		if(speed)
-			RobotMap.shooterSpeed +=  .01;
+			RobotMap.shootingSpeed += .01;
 		else
-			RobotMap.shooterSpeed +=-.01;
+			RobotMap.shootingSpeed -= .01;
 	}
 
 	protected void execute() {

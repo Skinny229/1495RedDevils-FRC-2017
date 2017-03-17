@@ -11,8 +11,7 @@ public class SingleMotor extends Subsystem {
 
 	public SingleMotor(int pwmPort) {
 		speedController = new VictorSP(pwmPort);
-		speedController.setExpiration(RobotMap.MOTOR_EXPIRATION);
-		updateSafety(RobotMap.STARTING_MOTOR_SAFETY);
+		this.updateSafety(RobotMap.STARTING_MOTOR_SAFETY);
 	}
 
 	public void initDefaultCommand() {
