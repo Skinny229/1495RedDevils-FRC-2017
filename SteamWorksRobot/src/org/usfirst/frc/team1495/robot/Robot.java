@@ -97,6 +97,7 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
 		SmartDashboard.putString("On Driver: ", "Main Driver");
+		SmartDashboard.putBoolean("Driver On", Robot.onMainDriver);
 		gyro.calibrate();
 
 	}

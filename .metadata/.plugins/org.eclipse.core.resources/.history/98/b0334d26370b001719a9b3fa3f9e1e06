@@ -12,11 +12,12 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team1495.robot.commands.BoilerAutoBlue;
-import org.usfirst.frc.team1495.robot.commands.BoilerAutoRed;
+import org.usfirst.frc.team1495.robot.commands.BoilerOnLeft;
+import org.usfirst.frc.team1495.robot.commands.BoilerOnRight;
 import org.usfirst.frc.team1495.robot.commands.DoNothing;
 import org.usfirst.frc.team1495.robot.commands.GearAuto;
-import org.usfirst.frc.team1495.robot.commands.TouchlineAuto;
+import org.usfirst.frc.team1495.robot.commands.LeftTurnGearAuto;
+import org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
 import org.usfirst.frc.team1495.robot.subsystems.TalonSingleMotor;
 import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
@@ -29,10 +30,9 @@ import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
  * directory.
  */
 public class Robot extends IterativeRobot {
-	
-	public enum RobotDriveState{
-		GEARLEAD/*Back*/, HOPPERLEAD/*Front*/, CLIMBSHOOTERLEAD/*Side*/
-		
+
+	public enum RobotDriveState {
+		GEARLEAD/* Back */, HOPPERLEAD/* Front */, CLIMBSHOOTERLEAD/* Side */
 	}
 
 	// Initiating Subsystems
@@ -40,31 +40,30 @@ public class Robot extends IterativeRobot {
 	public static final ADXRS450Gyro gyro = new ADXRS450Gyro();
 	public static final TalonSingleMotor shooterSub = new TalonSingleMotor(RobotMap.SHOOTER_SC_PORT);
 	public static final TalonSingleMotor climberSub = new TalonSingleMotor(RobotMap.CLIMBER_SC_PORT);
-	public static final TalonSingleMotor loaderSub = new TalonSingleMotor(RobotMap.LOADER_SC_PORT);
-	
+	public static final TalonSingleMotor loaderSub = new TalonSingleMotor(RobotMap.AGITATOR_SC_PORT);
+
 	// Declaring OI containing buttons with command conditions
 
 	public OI oi;
 
-	// Initiating RobotDrive with VictorSp's as the motors
+	// Initiating RobotDrive with VictorSp's as the speed controllers
 	public static RobotDrive roboDrive = new RobotDrive(
 			new VictorSP(RobotMap.LEFT_FRONT), // 0
 			new VictorSP(RobotMap.LEFT_BACK), // 1
 			new VictorSP(RobotMap.RIGHT_FRONT), // 2
 			new VictorSP(RobotMap.RIGHT_BACK)); // 3
 
-	// Initating the Joystick
+	// Initating the JoyonStick
 	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
 	public Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
+	public static boolean onMainDriver = true;
 
 	// Creating Choosers
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
-	
-	
-	//Enum
-	public static RobotDriveState driveState = RobotDriveState.HOPPERLEAD;
 
+	// Enum
+	public static RobotDriveState currentDriveState = RobotDriveState.HOPPERLEAD;
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -74,7 +73,7 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		// init Button Stuff
 		oi = new OI();
-		roboDrive.setExpiration(.5);
+		//roboDrive.setExpiration(.5);
 		roboDrive.setSensitivity(.1);
 		// Setting inverted Motors
 		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
@@ -83,17 +82,13 @@ public class Robot extends IterativeRobot {
 		roboDrive.setInvertedMotor(MotorType.kRearRight, RobotMap.isRightSideInverted);
 		// Enabling Safety
 		roboDrive.setSafetyEnabled(RobotMap.STARTING_MOTOR_SAFETY);
-		shooterSub.updateSafety(false);
-		climberSub.updateSafety(false);
-		loaderSub.updateSafety(false);
-		 
+
 		// Adding Autonomous
-		chooser.addDefault("Auto-Default: Touchline", new TouchlineAuto());
-		chooser.addObject("Boiler - Blue", new BoilerAutoBlue());
-		chooser.addObject("Boiler - Red", new BoilerAutoRed());
-		chooser.addObject("Gear", new GearAuto());
-		chooser.addObject("Touchline", new TouchlineAuto());
-		chooser.addObject("Do Nothing", new DoNothing());
+		chooser.addDefault("MiddleGear (Default)", new GearAuto());
+		chooser.addObject("LeftTurnGear", new LeftTurnGearAuto());
+		chooser.addObject("RightTurnGear", new RightTurnGearAuto());
+		chooser.addObject("BoilerOnRight", new BoilerOnRight());
+		chooser.addObject("BoilerOnLeft", new BoilerOnLeft());
 		// Adding RobotDrive Options
 		SmartDashboard.putData("Autonomous mode", chooser);
 		// Ensure all data boxes are sent and created before starting match(just
@@ -101,7 +96,8 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
-		SmartDashboard.putNumber("Percent Strength Shooter", RobotMap.shooterSpeed);
+		SmartDashboard.putString("On Driver: ", "Main Driver");
+		SmartDashboard.putBoolean("Driver On", true);
 		gyro.calibrate();
 
 	}
@@ -136,9 +132,6 @@ public class Robot extends IterativeRobot {
 	public void autonomousInit() {
 		autonomousCommand = chooser.getSelected();
 
-
-
-		
 		if (autonomousCommand != null)
 			autonomousCommand.start();
 	}
@@ -165,20 +158,18 @@ public class Robot extends IterativeRobot {
 	/**
 	 * This function is called periodically during operator control
 	 */
-	@Override 
+	@Override
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
-			if ( isEnabled() && isOperatorControl()) {
-				switch(driveState){
-				case
-				roboDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY()  * .45, -.25 * stick.getTwist(), 0);
-			} 
-				
-			}
+		if (isEnabled() && isOperatorControl() && onMainDriver) {
+			driveOnStick(stick);
+		} else if (isEnabled() && isOperatorControl() && !onMainDriver) {
+		  driveOnStick(operatorStick);
+		}
+
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
-		SmartDashboard.putNumber("Percent Strength Shooter", RobotMap.shooterSpeed);
 	}
 
 	/**
@@ -187,5 +178,31 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void testPeriodic() {
 		LiveWindow.run();
+	}
+	
+	public void driveOnStick(Joystick onStick){
+		/*
+		 * Switchcase Determines which orientation to implement
+		 * */
+		switch (currentDriveState) {
+		case HOPPERLEAD:
+			roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,
+					RobotMap.TWISTMULTIPLIER * onStick.getTwist(), 0);
+			break;
+		case GEARLEAD:
+			roboDrive.mecanumDrive_Cartesian(-onStick.getX(), -onStick.getY() * RobotMap.YMULTIPLIER,
+					onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
+			break;
+		case CLIMBSHOOTERLEAD:
+			roboDrive.mecanumDrive_Cartesian(-onStick.getY(), onStick.getX() * RobotMap.YMULTIPLIER,
+					onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
+			break;
+		default:
+			/*Usual Front*/
+			roboDrive.mecanumDrive_Cartesian(onStick.getX(), onStick.getY() * RobotMap.YMULTIPLIER,
+					onStick.getTwist() * RobotMap.TWISTMULTIPLIER, 0);
+			break;
+
+		}
 	}
 }
