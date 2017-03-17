@@ -30,14 +30,10 @@ public class RobotMap {
 	public static final double DEFAULT_SHOOTER_SPEED = .75;
 	public static final double YMULTIPLIER = .45;
 	public static final double TWISTMULTIPLIER = -.25;
+	public static final double LOAD_SPEED = .55f;
 	//Motor stuff
 	public static final double MOTOR_EXPIRATION = .5;
 	public static final boolean STARTING_MOTOR_SAFETY = false;
 	
-	
-	//public static double shooterSpeed = .57;
-	
-	
-
-	
+	public static double shootingSpeed = DEFAULT_SHOOTER_SPEED;
 }

@@ -12,11 +12,12 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team1495.robot.commands.BoilerAutoBlue;
-import org.usfirst.frc.team1495.robot.commands.BoilerAutoRed;
+import org.usfirst.frc.team1495.robot.commands.BoilerOnLeft;
+import org.usfirst.frc.team1495.robot.commands.BoilerOnRight;
 import org.usfirst.frc.team1495.robot.commands.DoNothing;
 import org.usfirst.frc.team1495.robot.commands.GearAuto;
-import org.usfirst.frc.team1495.robot.commands.TouchlineAuto;
+import org.usfirst.frc.team1495.robot.commands.LeftTurnGearAuto;
+import org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
 import org.usfirst.frc.team1495.robot.subsystems.TalonSingleMotor;
 import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
@@ -32,7 +33,6 @@ public class Robot extends IterativeRobot {
 
 	public enum RobotDriveState {
 		GEARLEAD/* Back */, HOPPERLEAD/* Front */, CLIMBSHOOTERLEAD/* Side */
-
 	}
 
 	// Initiating Subsystems
@@ -84,12 +84,11 @@ public class Robot extends IterativeRobot {
 		roboDrive.setSafetyEnabled(RobotMap.STARTING_MOTOR_SAFETY);
 
 		// Adding Autonomous
-		chooser.addDefault("Auto-Default: Touchline", new TouchlineAuto());
-		chooser.addObject("Boiler - Blue", new BoilerAutoBlue());
-		chooser.addObject("Boiler - Red", new BoilerAutoRed());
-		chooser.addObject("Middle Gear", new GearAuto());
-		chooser.addObject("Touchline", new TouchlineAuto());
-		chooser.addObject("Do Nothing", new DoNothing());
+		chooser.addDefault("MiddleGear (Default)", new GearAuto());
+		chooser.addObject("LeftTurnGear", new LeftTurnGearAuto());
+		chooser.addObject("RightTurnGear", new RightTurnGearAuto());
+		chooser.addObject("BoilerOnRight", new BoilerOnRight());
+		chooser.addObject("BoilerOnLeft", new BoilerOnLeft());
 		// Adding RobotDrive Options
 		SmartDashboard.putData("Autonomous mode", chooser);
 		// Ensure all data boxes are sent and created before starting match(just
@@ -97,8 +96,7 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
-		SmartDashboard.putNumber("Percent Strength Shooter", RobotMap.shooterSpeed);
-		SmartDashboard.putString("On Driver", "Main Driver");
+		SmartDashboard.putString("On Driver: ", "Main Driver");
 		gyro.calibrate();
 
 	}
@@ -171,7 +169,6 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
-		SmartDashboard.putNumber("Percent Strength Shooter", RobotMap.shooterSpeed);
 	}
 
 	/**

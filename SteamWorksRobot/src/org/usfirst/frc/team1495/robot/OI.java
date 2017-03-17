@@ -17,31 +17,26 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
  */
 public class OI {
 	//// CREATING BUTTONS
-    //
 
 	Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
 	Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 	//Operator
 	
-
-
 	//Driver
 	Button shoot = new JoystickButton(stick,1);
 	Button agitator = new JoystickButton(stick,2);
 	Button posAdjust = new JoystickButton(stick, 5);
 	Button negAdjust = new JoystickButton(stick, 3);
 	Button resetSpeed = new JoystickButton(stick, 6);
-	
-	Button switchDriver = new JoystickButton(stick,12);
-	Button orientationSwitch = new JoystickButton(stick, 11);
-	Button orientationSwitchOther = new JoystickButton(stick, 10);
+	Button slowClimb = new JoystickButton(stick, 7);
+	Button climb = new JoystickButton(stick, 8);
 	Button orientationReset = new JoystickButton(stick, 9);
+	Button orientationSwitchOther = new JoystickButton(stick, 10);
+	Button orientationSwitch = new JoystickButton(stick, 11);
+	Button switchDriver = new JoystickButton(stick,12);
 	
-	
-	
-	
-	Button slowClimb = new JoystickButton(operatorStick, 7);
-	Button climb = new JoystickButton(operatorStick,8);
+	Button slowClimb1 = new JoystickButton(operatorStick, 7);
+	Button climb1 = new JoystickButton(operatorStick,8);
 	Button switchDriver1 = new JoystickButton(operatorStick,12);
 	Button orientationSwitch1 = new JoystickButton(operatorStick,11);
 	Button orientationSwitchOther1 = new JoystickButton(operatorStick,10);
@@ -50,10 +45,12 @@ public class OI {
 		//Driver Buttons
          shoot.whileHeld(new Shoot(-.81));
          slowClimb.whileHeld(new Climb(RobotMap.SLOW_CLIMB_SPEED));
+         slowClimb1.whileHeld(new Climb(RobotMap.SLOW_CLIMB_SPEED));
          posAdjust.whenPressed(new adjustShooter(true));
          negAdjust.whenPressed(new adjustShooter(false));
          agitator.whileHeld(new LoadServoV2());
          climb.whileHeld(new Climb(RobotMap.CLIMB_SPEED));
+         climb1.whileHeld(new Climb(RobotMap.CLIMB_SPEED));
          
          
          orientationSwitchOther1.whenPressed(new ChangeRobotOrientation(2));

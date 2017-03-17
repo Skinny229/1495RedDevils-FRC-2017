@@ -13411,3 +13411,699 @@ Caused by: java.lang.IllegalArgumentException: Widget has the wrong parent
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 11:03:02.440
 !MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:51:40.023
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  ChaChaDance.java (not open)
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java (not open)
+  LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      double midGearAutoAngle
+      boolean isAutoFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+      void phase1()
+      void phase2()
+      void phase3()
+  [Working copy] ChangeRobotOrientation.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.Robot.RobotDriveState
+    import edu.wpi.first.wpilibj.command.Command
+    class ChangeRobotOrientation
+      int update
+      ChangeRobotOrientation(int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ChangeDriver
+      ChangeDriver()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:51:40.044
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:51:40.126
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:51:40.140
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:52:16.262
+!MESSAGE Class: RightTurnGearAuto Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:52:22.791
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  ChaChaDance.java (not open)
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java (not open)
+  LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      double midGearAutoAngle
+      boolean isAutoFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+      void phase1()
+      void phase2()
+      void phase3()
+  [Working copy] ChangeRobotOrientation.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.Robot.RobotDriveState
+    import edu.wpi.first.wpilibj.command.Command
+    class ChangeRobotOrientation
+      int update
+      ChangeRobotOrientation(int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ChangeDriver
+      ChangeDriver()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:52:22.806
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:52:22.843
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:52:22.862
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 15:52:37.719
+!MESSAGE Class: LeftTurnGearAuto Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:18.123
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  ChaChaDance.java (not open)
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java (not open)
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChangeRobotOrientation.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.Robot.RobotDriveState
+    import edu.wpi.first.wpilibj.command.Command
+    class ChangeRobotOrientation
+      int update
+      ChangeRobotOrientation(int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ChangeDriver
+      ChangeDriver()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:18.160
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:18.203
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:18.224
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:33.538
+!MESSAGE Class: BoilerOnLeft Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:38.620
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  ChaChaDance.java (not open)
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java (not open)
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChangeRobotOrientation.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.Robot.RobotDriveState
+    import edu.wpi.first.wpilibj.command.Command
+    class ChangeRobotOrientation
+      int update
+      ChangeRobotOrientation(int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ChangeDriver
+      ChangeDriver()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:38.638
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:38.682
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:38.698
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:31:47.595
+!MESSAGE Class: BoilerOnRight Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:45:05.890
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  ChaChaDance.java (not open)
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] adjustShooter.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class adjustShooter
+      boolean speed
+      adjustShooter(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ToggleDriveMode.java (not open)
+  [Working copy] LoadServoV2.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LoadServoV2
+      LoadServoV2()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Climb.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Climb
+      double speed
+      Climb(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ChangeRobotOrientation.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.Robot.RobotDriveState
+    import edu.wpi.first.wpilibj.command.Command
+    class ChangeRobotOrientation
+      int update
+      ChangeRobotOrientation(int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ChangeDriver
+      ChangeDriver()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shoot
+      double speed
+      Shoot(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BoilerOnRight.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnRight
+      BoilerOnRight()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:45:05.907
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:45:05.950
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:45:05.969
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-16 16:45:21.356
+!MESSAGE Class: AgitatedShooting Package: org.usfirst.frc.team1495.robot.commands
