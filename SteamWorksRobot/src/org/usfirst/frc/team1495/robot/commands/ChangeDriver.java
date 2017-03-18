@@ -23,6 +23,8 @@ public class ChangeDriver extends Command {
     		newDriver = "Main Driver";
     	else
     		newDriver = "2nd Driver";
+    	Command resetOrientationOnSwitch = new ChangeRobotOrientation(0);
+    	resetOrientationOnSwitch.start();
     	SmartDashboard.putString("On Driver", newDriver);
     }
 

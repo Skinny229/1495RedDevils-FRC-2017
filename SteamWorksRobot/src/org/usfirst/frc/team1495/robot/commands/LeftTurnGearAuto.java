@@ -18,12 +18,12 @@ public class LeftTurnGearAuto extends Command {
 	protected void initialize() {
 		Robot.gyro.reset();
 		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
-		Timer.delay(4.5);
-		while(Robot.gyro.getAngleDegrees() > -45) {
+		Timer.delay(4);
+		while(Robot.gyro.getAngleDegrees() > -30) {
 		Robot.roboDrive.mecanumDrive_Cartesian(0, 0, -.2, 0);
 		}
 		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
-		Timer.delay(2.5);
+		Timer.delay(3);
     	Robot.roboDrive.stopMotor();
     	Timer.delay(2.5);
     	Robot.roboDrive.mecanumDrive_Cartesian(0, -.2, 0, 0);

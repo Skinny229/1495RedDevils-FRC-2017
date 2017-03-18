@@ -89,6 +89,7 @@ public class Robot extends IterativeRobot {
 		chooser.addObject("RightTurnGear", new RightTurnGearAuto());
 		chooser.addObject("BoilerOnRight", new BoilerOnRight());
 		chooser.addObject("BoilerOnLeft", new BoilerOnLeft());
+		chooser.addObject("Do Nothing", new DoNothing());
 		// Adding RobotDrive Options
 		SmartDashboard.putData("Autonomous mode", chooser);
 		// Ensure all data boxes are sent and created before starting match(just

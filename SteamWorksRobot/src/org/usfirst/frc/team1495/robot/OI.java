@@ -35,10 +35,10 @@ public class OI {
 	Button orientationSwitch = new JoystickButton(stick, 11);
 	Button switchDriver = new JoystickButton(stick,12);
 	
-	Button shoot1 = new JoystickButton(stick,1);
-	Button agitator1 = new JoystickButton(stick,2);
-	Button posAdjust1 = new JoystickButton(stick, 5);
-	Button negAdjust1 = new JoystickButton(stick, 3);
+	Button shoot1 = new JoystickButton(operatorStick,1);
+	Button agitator1 = new JoystickButton(operatorStick,2);
+	Button posAdjust1 = new JoystickButton(operatorStick, 5);
+	Button negAdjust1 = new JoystickButton(operatorStick, 3);
 	Button slowClimb1 = new JoystickButton(operatorStick, 7);
 	Button climb1 = new JoystickButton(operatorStick,8);
 	Button switchDriver1 = new JoystickButton(operatorStick,12);
@@ -47,14 +47,14 @@ public class OI {
 	Button orientationReset1 = new JoystickButton(operatorStick,9);
 	public OI() {
 		//Driver Buttons
-         shoot.whileHeld(new Shoot(-.81));
+         shoot.whileHeld(new Shoot(RobotMap.shootingSpeed));
          slowClimb.whileHeld(new Climb(RobotMap.SLOW_CLIMB_SPEED));
          posAdjust.whenPressed(new adjustShooter(true));
          negAdjust.whenPressed(new adjustShooter(false));
          agitator.whileHeld(new LoadServoV2());
          climb.whileHeld(new Climb(RobotMap.CLIMB_SPEED));
          
-         shoot1.whileHeld(new Shoot(-.81));
+         shoot1.whileHeld(new Shoot(RobotMap.shootingSpeed));
          slowClimb1.whileHeld(new Climb(RobotMap.SLOW_CLIMB_SPEED));
          posAdjust1.whenPressed(new adjustShooter(true));
          negAdjust1.whenPressed(new adjustShooter(false));

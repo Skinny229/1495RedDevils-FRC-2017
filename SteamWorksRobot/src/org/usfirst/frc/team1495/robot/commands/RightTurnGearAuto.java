@@ -19,7 +19,7 @@ public class RightTurnGearAuto extends Command {
     		Robot.gyro.reset();
     		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
     		Timer.delay(4.5);
-    		while(Robot.gyro.getAngleDegrees() > 45) {
+    		while(Robot.gyro.getAngleDegrees() > 30) {
     		Robot.roboDrive.mecanumDrive_Cartesian(0, 0, .2, 0);
     		}
     		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);

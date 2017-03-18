@@ -6,9 +6,6 @@ import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-/**
- *
- */
 public class Shoot extends Command {
 
 	double speed;
@@ -19,12 +16,10 @@ public class Shoot extends Command {
 	}
 
 	protected void initialize() {
-		Robot.shooterSub.updateSafety(true);
 	}
 
 	protected void execute() {
 		Robot.shooterSub.spin(speed);
-		SmartDashboard.putNumber("CURRENT ON SHOOTER SPEED", speed);
 	}
 
 	protected boolean isFinished() {
@@ -36,6 +31,5 @@ public class Shoot extends Command {
 
 	protected void interrupted() {
 		Robot.shooterSub.stop();
-		System.out.println("Shoot command interrupted!");
 	}
 }

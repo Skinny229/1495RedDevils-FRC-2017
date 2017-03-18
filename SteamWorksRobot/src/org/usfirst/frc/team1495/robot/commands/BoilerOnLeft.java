@@ -21,7 +21,7 @@ public class BoilerOnLeft extends Command {
 	protected void initialize() {
 		Robot.gyro.reset();
 		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
-		Timer.delay(2);
+		Timer.delay(1.5);
 		Robot.shooterSub.spin(RobotMap.shootingSpeed);
 		while(Robot.gyro.getAngleDegrees() > -45) {
 		Robot.roboDrive.mecanumDrive_Cartesian(0, 0, .2, 0);

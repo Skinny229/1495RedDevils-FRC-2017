@@ -16,7 +16,7 @@ public class GearAuto extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-      	Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
+      	Robot.roboDrive.mecanumDrive_Cartesian(0, .25, 0, 0);
     	Timer.delay(4.5);
     	Robot.roboDrive.stopMotor();
     	Timer.delay(2.5);
