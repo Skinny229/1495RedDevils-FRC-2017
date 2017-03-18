@@ -51,9 +51,9 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot.RobotDriveState"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.LeftTurnGearAuto"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerOnRight"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerOnLeft"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 </qualifiedTypeNameHistroy>

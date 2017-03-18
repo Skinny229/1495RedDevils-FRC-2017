@@ -1601,3 +1601,106 @@ java.net.SocketException: Connection reset
 	at java.io.BufferedReader.readLine(Unknown Source)
 	at java.io.BufferedReader.readLine(Unknown Source)
 	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:94)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-03-18 00:08:22.821
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-18 00:16:17.401
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksRobot]]
+  ChaChaDance.java (not open)
+  [Working copy] BoilerOnRight.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnRight
+      BoilerOnRight()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java (not open)
+  [Working copy] BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  LoadServoV2.java (not open)
+  Climb.java (not open)
+  RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeRobotOrientation.java (not open)
+  ChangeDriver.java (not open)
+  Shoot.java (not open)
+  LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-18 00:16:17.416
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-18 00:16:17.499
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-18 00:16:17.499
+!MESSAGE Project: P/SteamWorksRobot
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-18 00:18:02.549
+!MESSAGE Class: SideGearAndShootRed Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-18 00:24:43.651
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-18 00:24:43.666
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
