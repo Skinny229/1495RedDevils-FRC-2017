@@ -2,9 +2,7 @@ package org.usfirst.frc.team1495.robot.commands;
 
 import org.usfirst.frc.team1495.robot.Robot;
 
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Shoot extends Command {
 

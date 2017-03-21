@@ -6,16 +6,14 @@ import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ * The one and ONlY Cha Cha Dance
  */
 public class ChaChaDance extends Command {
 
 	public ChaChaDance() {
-		// Use requires() here to declare subsystem dependencies
-		// eg. requires(chassis);
 	}
 
-	// Called just before this Command runs the first time
+	
 	protected void initialize() {
 
 		Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);

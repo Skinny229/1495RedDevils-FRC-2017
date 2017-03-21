@@ -1,0 +1,87 @@
+package org.usfirst.frc.team1495.robot.commands;
+
+import org.usfirst.frc.team1495.robot.Robot;
+
+import edu.wpi.first.wpilibj.DriverStation;
+import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.command.Command;
+
+/**
+ *
+ */
+public class SideGearAndShootSensor extends Command {
+
+	public SideGearAndShootSensor() {
+		requires(Robot.gyro);
+		requires(Robot.ultra);
+		requires(Robot.loaderSub);
+		requires(Robot.shooterSub);
+	}
+
+	// Called just before this Command runs the first time
+	int onPhase;
+	double turnSpeedPhase1 = .25;
+	boolean hasFinished;
+	
+	DriverStation.Alliance onAlliance;
+	DriverStation.Alliance blue = DriverStation.Alliance.Blue;
+	DriverStation.Alliance red = DriverStation.Alliance.Red;
+	protected void initialize() {
+		Robot.gyro.reset();
+		onPhase = 0;
+		onAlliance = DriverStation.getInstance().getAlliance();
+		hasFinished = false;
+	}
+
+	// Called repeatedly when this Command is scheduled to run
+	protected void execute() {
+		switch (onPhase) {
+		case 0:
+			while (Robot.ultra.getDistanceMM() < 2890 /* Dist to travel for side Gear */) {
+				Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, 0);
+			}
+			onPhase++;
+			break;
+		case 1:
+			while (Robot.gyro.getAngleDegrees() < 45) {
+				if(onAlliance == blue)
+					turnSpeedPhase1 *= -1;
+				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, turnSpeedPhase1, 0);
+			}
+			onPhase++;
+			break;
+		case 2:
+			Robot.roboDrive.mecanumDrive_Cartesian(0, .2, 0, 0);
+			Timer.delay(4);
+			onPhase++;
+			break;
+		case 3:
+			Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
+			Timer.delay(2.5);
+			while((Robot.gyro.getAngleDegrees() > 314) && (Robot.gyro.getAngleDegrees() < 316)){
+				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, .3, 0);
+			}
+			onPhase++;
+			break;
+		case 4:
+			
+			break;
+		default:
+			break;
+		}
+	}
+
+	// Make this return true when this Command no longer needs to run execute()
+	protected boolean isFinished() {
+		return hasFinished;
+	}
+
+	// Called once after isFinished returns true
+	protected void end() {
+	}
+
+	// Called when another command which requires one or more of the same
+	// subsystems is scheduled to run
+	protected void interrupted() {
+	}
+}
