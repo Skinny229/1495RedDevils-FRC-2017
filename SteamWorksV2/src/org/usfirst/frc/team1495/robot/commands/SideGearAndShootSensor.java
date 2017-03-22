@@ -15,13 +15,14 @@ public class SideGearAndShootSensor extends Command {
 
 	public SideGearAndShootSensor() {
 		requires(Robot.gyro);
-		requires(Robot.ultra);
+		requires(Robot.gearUltra);
+		requires(Robot.hopperUltra);
 		requires(Robot.loaderSub);
 		requires(Robot.shooterSub);
 	}
 
 	int onPhase;
-	double turnSpeedPhase1 = .25, toAnglePhase1 = 45;
+	double turnSpeedPhase1 = .25, turnSpeedPhase3 = .3;
 	boolean hasFinished;
 
 	DriverStation.Alliance onAlliance;
@@ -40,19 +41,19 @@ public class SideGearAndShootSensor extends Command {
 		 */
 		if (onAlliance == blue) {
 			turnSpeedPhase1 *= -1;
-
+			turnSpeedPhase3 *= -1;
 		}
 	}
 
 	/*
-	 * Phase 0: Drive Foward Until Distance is met
-	 * Phase 1: Turn 45 Degrees
-	 * Phase 2
-	 * */
+	 * Phase 0: Drive Foward Until Distance is met Phase 1: Turn 45 Degrees
+	 * Phase 2: Drive into the peg and wait Phase 3: Drive out and aline the
+	 * shooter Phase 4: Shoot for the remainder of the Auto period
+	 */
 	protected void execute() {
 		switch (onPhase) {
 		case 0:
-			while (Robot.ultra.getDistanceMM() < 2000  /* Dist to travel for side Gear */) {
+			while (Robot.hopperUltra.getDistanceMMINT() < 2000 ) {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, Robot.gyro.getAngleDegrees());
 			}
 			onPhase++;
@@ -70,10 +71,12 @@ public class SideGearAndShootSensor extends Command {
 			onPhase++;
 			break;
 		case 3:
-			Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
+			while (Robot.gearUltra.getDistanceMMINT() < 750) {
+				Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
+			}
 			Timer.delay(1);
-			while (Math.abs(Robot.gyro.getRawAngleDegrees()) < 80) {
-				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, .3, 0);
+			while (Math.abs(Robot.gyro.getRawAngleDegrees()) < 75) {
+				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, turnSpeedPhase3, 0);
 			}
 			Robot.roboDrive.stopMotor();
 			onPhase++;
@@ -82,10 +85,10 @@ public class SideGearAndShootSensor extends Command {
 			Robot.shooterSub.spin(RobotMap.shootingSpeed);
 			Timer.delay(.4);
 			Robot.loaderSub.spin(RobotMap.LOAD_SPEED);
-		    double sleepTillHere = 15.0 - DriverStation.getInstance().getMatchTime();
+			double sleepTillHere = 15.0 - DriverStation.getInstance().getMatchTime();
 			Timer.delay(sleepTillHere);
 			hasFinished = true;
-			onPhase ++;
+			onPhase++;
 			break;
 		default:
 			System.out.println("WARNING: PHASE SELECTION FOR SIDE GEAR AND SHOOT FAILED! Stopping Autonomous...");

@@ -20,7 +20,8 @@ public class RobotMap {
 	public static final int CLIMBER_SC_PORT = 5;
 	public static final int AGITATOR_SC_PORT = 7;
 	// Analog Inputs
-	public static final int ULTRASONIC_PORT = 0;
+	public static final int ULTRASONIC_HOPPER_PORT = 0;
+	public static final int ULTRASONIC_GEAR_PORT = 1;
 	// Joystick Ports
 	public static final int JOYSTICK_PORT_DRIVER = 1;
 	public static final int CONTROLLER_PORT_OPERATOR = 2;

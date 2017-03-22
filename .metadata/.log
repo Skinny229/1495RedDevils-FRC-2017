@@ -3627,3 +3627,371 @@ Caused by: java.lang.IllegalArgumentException: Widget has the wrong parent
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 15:50:26.500
 !MESSAGE Targets: deploy, Mode: run
+!SESSION 2017-03-21 17:18:42.630 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-21 17:18:54.550
+!MESSAGE Invalid ZIP archive: C:\Users\skinn\wpilib\java\current\lib\WPILib.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-21 17:18:54.554
+!MESSAGE Invalid ZIP archive: C:\Users\skinn\wpilib\java\current\lib\NetworkTables.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-21 17:18:54.555
+!MESSAGE Invalid ZIP archive: C:\Users\skinn\wpilib\java\current\lib\opencv.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-21 17:18:54.556
+!MESSAGE Invalid ZIP archive: C:\Users\skinn\wpilib\java\current\lib\cscore.jar
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-21 17:18:54.792
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Skinny'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-21 17:19:00.377
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-21 17:19:00.378
+!MESSAGE Install necessary for tools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-21 17:19:01.654
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-21 17:19:01.712
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-21 17:19:01.713
+!MESSAGE Install necessary for java
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-21 17:19:03.093
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:19:03.095
+!MESSAGE Updating projects
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-21 17:21:06.701
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-21 17:21:06.702
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:21:56.565
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksV2]]
+  RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java (not open)
+  Climb.java (not open)
+  SideGearAndShootBlue.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootBlue
+      SideGearAndShootBlue()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeRobotOrientation.java (not open)
+  LoadServoV2.java (not open)
+  LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java (not open)
+  ChaChaDance.java (not open)
+  BoilerOnRight.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnRight
+      BoilerOnRight()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SideGearAndShootRed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootRed
+      SideGearAndShootRed()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] SideGearAndShootSensor.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootSensor
+      SideGearAndShootSensor()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java (not open)
+  BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:21:56.565
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:21:56.588
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:21:56.588
+!MESSAGE Project: P/SteamWorksV2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:22:04.324
+!MESSAGE Class: SideGearLoaderSide Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:23:06.275
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksV2]]
+  RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java (not open)
+  Climb.java (not open)
+  SideGearAndShootBlue.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootBlue
+      SideGearAndShootBlue()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeRobotOrientation.java (not open)
+  LoadServoV2.java (not open)
+  LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java (not open)
+  ChaChaDance.java (not open)
+  BoilerOnRight.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnRight
+      BoilerOnRight()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SideGearAndShootRed.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootRed
+      SideGearAndShootRed()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] SideGearAndShootSensor.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootSensor
+      SideGearAndShootSensor()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java (not open)
+  BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SideGearLoaderSide.java (not open)]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:23:06.276
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:23:06.285
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-21 17:23:06.286
+!MESSAGE Project: P/SteamWorksV2
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-03-21 17:27:07.176
+!MESSAGE Full project indexing required:
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\access-bridge-64.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\cldrdata.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\dnsns.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jaccess.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jfxrt.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\localedata.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\nashorn.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunec.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunjce_provider.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunmscapi.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunpkcs11.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\zipfs.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar
+  [*] C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar
+  [+] C:\Users\Skinny\wpilib\java\current\lib\NetworkTables.jar
+  [+] C:\Users\Skinny\wpilib\java\current\lib\WPILib.jar
+  [+] C:\Users\Skinny\wpilib\java\current\lib\cscore.jar
+  [+] C:\Users\Skinny\wpilib\java\current\lib\opencv.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\opencv.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\cscore.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\NetworkTables.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\WPILib.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)

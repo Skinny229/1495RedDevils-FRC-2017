@@ -18,9 +18,8 @@ import org.usfirst.frc.team1495.robot.commands.DoNothing;
 import org.usfirst.frc.team1495.robot.commands.GearAuto;
 import org.usfirst.frc.team1495.robot.commands.LeftTurnGearAuto;
 import org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto;
-import org.usfirst.frc.team1495.robot.commands.SideGearAndShootBlue;
-import org.usfirst.frc.team1495.robot.commands.SideGearAndShootRed;
 import org.usfirst.frc.team1495.robot.commands.SideGearAndShootSensor;
+import org.usfirst.frc.team1495.robot.commands.SideGearLoaderSide;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
 import org.usfirst.frc.team1495.robot.subsystems.TalonSingleMotor;
 import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
@@ -39,7 +38,8 @@ public class Robot extends IterativeRobot {
 	}
 
 	// Initiating Subsystems
-	public static final _Ultrasonic ultra = new _Ultrasonic(RobotMap.ULTRASONIC_PORT);
+	public static final _Ultrasonic hopperUltra = new _Ultrasonic(RobotMap.ULTRASONIC_HOPPER_PORT);
+	public static final _Ultrasonic gearUltra = new _Ultrasonic(RobotMap.ULTRASONIC_GEAR_PORT);
 	public static final ADXRS450Gyro gyro = new ADXRS450Gyro();
 	public static final TalonSingleMotor shooterSub = new TalonSingleMotor(RobotMap.SHOOTER_SC_PORT);
 	public static final TalonSingleMotor climberSub = new TalonSingleMotor(RobotMap.CLIMBER_SC_PORT);
@@ -93,18 +93,18 @@ public class Robot extends IterativeRobot {
 		chooser.addObject("BoilerOnRight", new BoilerOnRight());
 		chooser.addObject("BoilerOnLeft", new BoilerOnLeft());
 		chooser.addObject("Do Nothing", new DoNothing());
-		chooser.addObject("Experimental Side Gear and Shoot RED", new SideGearAndShootRed());
-		chooser.addObject("Experimental Side Gear and Shoot BLUE", new SideGearAndShootBlue());
-		chooser.addObject("SideGear With Sensors", new SideGearAndShootSensor());
+		chooser.addObject("Side Gear and Shooting BOILER SIDE", new SideGearAndShootSensor());
+		chooser.addObject("Side Gear LOADING SIDE", new SideGearLoaderSide());
 		
 		// Adding RobotDrive Options
 		SmartDashboard.putData("Autonomous mode", chooser);
 		// Ensure all data boxes are sent and created before starting match(just
 		// in case)
-		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
+		SmartDashboard.putNumber("GyroAngle", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
-		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
-		SmartDashboard.putString("On Driver: ", "Main Driver");
+		SmartDashboard.putNumber("Hopper Ultrasonic", hopperUltra.getDistanceMMRAW());
+		SmartDashboard.putNumber("Gear Ultrasonic", gearUltra.getDistanceMMRAW());
+		SmartDashboard.putString("On Driver", "Main Driver");
 		gyro.calibrate();
 
 	}
@@ -176,7 +176,8 @@ public class Robot extends IterativeRobot {
 
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
-		SmartDashboard.putNumber("Ultrasonic: ", ultra.getDistanceMM());
+		SmartDashboard.putNumber("Hopper Ultrasonic", hopperUltra.getDistanceMMRAW());
+		SmartDashboard.putNumber("Gear Ultrasonic", gearUltra.getDistanceMMRAW());
 	}
 
 	/**
