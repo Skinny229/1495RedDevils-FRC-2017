@@ -22,6 +22,8 @@ public class RobotMap {
 	// Analog Inputs
 	public static final int ULTRASONIC_HOPPER_PORT = 0;
 	public static final int ULTRASONIC_GEAR_PORT = 1;
+	//Digital Inputs
+	public static final int LIMITSWITCH_GEAR_PORT = 0;
 	// Joystick Ports
 	public static final int JOYSTICK_PORT_DRIVER = 1;
 	public static final int CONTROLLER_PORT_OPERATOR = 2;
@@ -35,6 +37,9 @@ public class RobotMap {
 	//Motor stuff
 	public static final double MOTOR_EXPIRATION = .5;
 	public static final boolean STARTING_MOTOR_SAFETY = false;
+	
+	//SmartDashboard Preferences
+	public static int sideGearPegDist;
 	
 	public static double shootingSpeed = DEFAULT_SHOOTER_SPEED;
 }

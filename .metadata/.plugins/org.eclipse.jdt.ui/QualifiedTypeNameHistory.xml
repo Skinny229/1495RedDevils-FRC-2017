@@ -9,8 +9,6 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.PotentiometerSubsystem"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems._DoubleSolenoid"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Counter"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.LimitSwitch"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestLimitSwitch"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogTrigger"/>
@@ -54,7 +52,11 @@
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerOnRight"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerOnLeft"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.SideGearAndShootSensor"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.SideGearLoaderSide"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Counter"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.LimitSwitchSub"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 </qualifiedTypeNameHistroy>

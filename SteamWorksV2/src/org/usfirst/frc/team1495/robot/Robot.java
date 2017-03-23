@@ -21,6 +21,7 @@ import org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto;
 import org.usfirst.frc.team1495.robot.commands.SideGearAndShootSensor;
 import org.usfirst.frc.team1495.robot.commands.SideGearLoaderSide;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
+import org.usfirst.frc.team1495.robot.subsystems.LimitSwitchSub;
 import org.usfirst.frc.team1495.robot.subsystems.TalonSingleMotor;
 import org.usfirst.frc.team1495.robot.subsystems._Ultrasonic;
 
@@ -40,6 +41,7 @@ public class Robot extends IterativeRobot {
 	// Initiating Subsystems
 	public static final _Ultrasonic hopperUltra = new _Ultrasonic(RobotMap.ULTRASONIC_HOPPER_PORT);
 	public static final _Ultrasonic gearUltra = new _Ultrasonic(RobotMap.ULTRASONIC_GEAR_PORT);
+	public static final LimitSwitchSub gearSwitch = new LimitSwitchSub(RobotMap.LIMITSWITCH_GEAR_PORT);
 	public static final ADXRS450Gyro gyro = new ADXRS450Gyro();
 	public static final TalonSingleMotor shooterSub = new TalonSingleMotor(RobotMap.SHOOTER_SC_PORT);
 	public static final TalonSingleMotor climberSub = new TalonSingleMotor(RobotMap.CLIMBER_SC_PORT);
@@ -48,24 +50,27 @@ public class Robot extends IterativeRobot {
 	// Declaring OI containing buttons with command conditions
 
 	public OI oi;
+	
+	//
+	
 
 	// Initiating RobotDrive with VictorSp's as the speed controllers
 	public static RobotDrive roboDrive = new RobotDrive(
-			new VictorSP(RobotMap.LEFT_FRONT), // 0
-			new VictorSP(RobotMap.LEFT_BACK), // 1
+			new VictorSP(RobotMap.LEFT_FRONT),  // 0
+			new VictorSP(RobotMap.LEFT_BACK),   // 1
 			new VictorSP(RobotMap.RIGHT_FRONT), // 2
 			new VictorSP(RobotMap.RIGHT_BACK)); // 3
 
-	// Initating the JoyonStick
+	// Initating the JoySticks
 	public Joystick stick = new Joystick(RobotMap.JOYSTICK_PORT_DRIVER);
 	public Joystick operatorStick = new Joystick(RobotMap.CONTROLLER_PORT_OPERATOR);
 	public static boolean onMainDriver = true;
 
-	// Creating Choosers
+	// Creating Auto Chooser
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
 
-	// Enum
+	// Enum for Robot Drive Orientation (Value to start on)
 	public static RobotDriveState currentDriveState = RobotDriveState.HOPPERLEAD;
 
 	/**
@@ -76,17 +81,15 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		// init Button Stuff
 		oi = new OI();
-		//roboDrive.setExpiration(.5);
-		roboDrive.setSensitivity(.1);
 		// Setting inverted Motors
 		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kFrontRight, RobotMap.isRightSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearRight, RobotMap.isRightSideInverted);
-		// Enabling Safety
+		// Disabling Safety **Prevents output not updated enough error, FTA confirmed this is OK to disable**
 		roboDrive.setSafetyEnabled(RobotMap.STARTING_MOTOR_SAFETY);
 
-		// Adding Autonomous
+		// Adding Autonomous to Chooser
 		chooser.addDefault("MiddleGear (Default)", new GearAuto());
 		chooser.addObject("LeftTurnGear", new LeftTurnGearAuto());
 		chooser.addObject("RightTurnGear", new RightTurnGearAuto());
@@ -94,9 +97,9 @@ public class Robot extends IterativeRobot {
 		chooser.addObject("BoilerOnLeft", new BoilerOnLeft());
 		chooser.addObject("Do Nothing", new DoNothing());
 		chooser.addObject("Side Gear and Shooting BOILER SIDE", new SideGearAndShootSensor());
-		chooser.addObject("Side Gear LOADING SIDE", new SideGearLoaderSide());
+		chooser.addObject("Side Gear PLAYER STATION SIDE", new SideGearLoaderSide());
 		
-		// Adding RobotDrive Options
+		// Adding  Auto Options to SmartDashboard
 		SmartDashboard.putData("Autonomous mode", chooser);
 		// Ensure all data boxes are sent and created before starting match(just
 		// in case)
@@ -105,6 +108,8 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("Hopper Ultrasonic", hopperUltra.getDistanceMMRAW());
 		SmartDashboard.putNumber("Gear Ultrasonic", gearUltra.getDistanceMMRAW());
 		SmartDashboard.putString("On Driver", "Main Driver");
+		
+		//Calibrating Gyro
 		gyro.calibrate();
 
 	}

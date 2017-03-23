@@ -2,21 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="onStick" key="selection"/>
+		<item value="gearUltra" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="GearUltra"/>
+			<item value="HopperUltra"/>
 			<item value="stick"/>
 			<item value="sitck"/>
 			<item value="m_sensitivity"/>
 			<item value="operatorStick"/>
 			<item value="shooterSub"/>
 			<item value="shootSub"/>
-			<item value="init"/>
 		</list>
 		<list key="replacehistory">
+			<item value="gearUltra"/>
+			<item value="hopperUltra"/>
 			<item value="onStick"/>
 			<item value="operatorController"/>
 			<item value="shooterAdjust"/>

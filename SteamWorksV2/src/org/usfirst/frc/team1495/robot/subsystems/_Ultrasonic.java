@@ -16,11 +16,11 @@ public class _Ultrasonic extends Subsystem {
 
 	public double getDistanceMMRAW() {
 		// Distances less than 300mm will read as 300mm
-		return  ai.getAverageVoltage() * 1000;
+		return  ai.getVoltage() * 997;
 
 	}
 	public int getDistanceMMINT(){
-		return (int) ai.getAverageVoltage();
+		return (int) ai.getVoltage()* 997;
 	}
 
 }
