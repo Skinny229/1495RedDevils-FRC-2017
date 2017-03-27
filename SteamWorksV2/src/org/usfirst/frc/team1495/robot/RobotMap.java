@@ -38,8 +38,9 @@ public class RobotMap {
 	public static final double MOTOR_EXPIRATION = .5;
 	public static final boolean STARTING_MOTOR_SAFETY = false;
 	
-	//SmartDashboard Preferences
-	public static int sideGearPegDist;
+	//Autonomous Preferences
+	public static int sideGearPegDist = 2896;
+	public static double autoShootingSpeed = .75;
 	
 	public static double shootingSpeed = DEFAULT_SHOOTER_SPEED;
 }

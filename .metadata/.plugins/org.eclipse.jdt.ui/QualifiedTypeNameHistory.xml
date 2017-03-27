@@ -57,6 +57,7 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Counter"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.LimitSwitchSub"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Preferences"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 </qualifiedTypeNameHistroy>

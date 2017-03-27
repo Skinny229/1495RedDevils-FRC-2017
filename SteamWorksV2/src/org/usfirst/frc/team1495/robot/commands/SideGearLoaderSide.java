@@ -79,7 +79,7 @@ public class SideGearLoaderSide extends Command {
 			while(Robot.gearUltra.getDistanceMMINT() > 4600){
 			Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, 0);
 			}
-			
+			break;
 		}
     }
 

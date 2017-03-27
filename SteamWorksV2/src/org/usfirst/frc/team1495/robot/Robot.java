@@ -53,6 +53,7 @@ public class Robot extends IterativeRobot {
 	
 	//
 	
+	public DashboardPref switchValues;
 
 	// Initiating RobotDrive with VictorSp's as the speed controllers
 	public static RobotDrive roboDrive = new RobotDrive(
@@ -81,6 +82,7 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		// init Button Stuff
 		oi = new OI();
+		switchValues = new DashboardPref();
 		// Setting inverted Motors
 		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearLeft, RobotMap.isLeftSideInverted);
