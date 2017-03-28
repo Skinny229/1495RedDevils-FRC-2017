@@ -35,7 +35,6 @@ public class RobotMap {
 	public static final double TWISTMULTIPLIER = -.25;
 	public static final double LOAD_SPEED = .55f;
 	//Motor stuff
-	public static final double MOTOR_EXPIRATION = .5;
 	public static final boolean STARTING_MOTOR_SAFETY = false;
 	
 	//Autonomous Preferences

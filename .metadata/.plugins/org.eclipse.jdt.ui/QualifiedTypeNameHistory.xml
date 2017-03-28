@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.UltrasonicTestCommand"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="edu.wpi.cscore.UsbCamera"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.PotentiometerSubsystem"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Preferences"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.networktables.NetworkTable"/>
+<fullyQualifiedTypeName name="edu.wpi.cscore.UsbCamera"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestVision"/>
 </qualifiedTypeNameHistroy>

@@ -20,6 +20,7 @@ import org.usfirst.frc.team1495.robot.commands.LeftTurnGearAuto;
 import org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto;
 import org.usfirst.frc.team1495.robot.commands.SideGearAndShootSensor;
 import org.usfirst.frc.team1495.robot.commands.SideGearLoaderSide;
+import org.usfirst.frc.team1495.robot.commands.TestVision;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
 import org.usfirst.frc.team1495.robot.subsystems.LimitSwitchSub;
 import org.usfirst.frc.team1495.robot.subsystems.TalonSingleMotor;
@@ -73,6 +74,7 @@ public class Robot extends IterativeRobot {
 
 	// Enum for Robot Drive Orientation (Value to start on)
 	public static RobotDriveState currentDriveState = RobotDriveState.HOPPERLEAD;
+	
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -82,7 +84,7 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		// init Button Stuff
 		oi = new OI();
-		switchValues = new DashboardPref();
+		//switchValues = new DashboardPref();
 		// Setting inverted Motors
 		roboDrive.setInvertedMotor(MotorType.kFrontLeft, RobotMap.isLeftSideInverted);
 		roboDrive.setInvertedMotor(MotorType.kRearLeft, RobotMap.isLeftSideInverted);
@@ -110,6 +112,7 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("Hopper Ultrasonic", hopperUltra.getDistanceMMRAW());
 		SmartDashboard.putNumber("Gear Ultrasonic", gearUltra.getDistanceMMRAW());
 		SmartDashboard.putString("On Driver", "Main Driver");
+		SmartDashboard.putData("Vision Get", new TestVision());
 		
 		//Calibrating Gyro
 		gyro.calibrate();
@@ -166,6 +169,11 @@ public class Robot extends IterativeRobot {
 		// this line or comment it out.
 		if (autonomousCommand != null)
 			autonomousCommand.cancel();
+		/*
+		Command testVision;
+		testVision = new TestVision();
+		testVision.start();
+		*/
 
 	}
 

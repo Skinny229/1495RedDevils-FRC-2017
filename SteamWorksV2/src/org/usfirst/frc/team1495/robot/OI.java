@@ -5,6 +5,7 @@ import org.usfirst.frc.team1495.robot.commands.ChangeRobotOrientation;
 import org.usfirst.frc.team1495.robot.commands.Climb;
 import org.usfirst.frc.team1495.robot.commands.LoadServoV2;
 import org.usfirst.frc.team1495.robot.commands.Shoot;
+import org.usfirst.frc.team1495.robot.commands.TestVision;
 import org.usfirst.frc.team1495.robot.commands.adjustShooter;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -35,6 +36,8 @@ public class OI {
 	Button orientationSwitch = new JoystickButton(stick, 11);
 	Button switchDriver = new JoystickButton(stick,12);
 	
+	Button testVision = new JoystickButton(stick,4);
+	
 	Button shoot1 = new JoystickButton(operatorStick,1);
 	Button agitator1 = new JoystickButton(operatorStick,2);
 	Button posAdjust1 = new JoystickButton(operatorStick, 5);
@@ -60,6 +63,8 @@ public class OI {
          negAdjust1.whenPressed(new adjustShooter(false));
          agitator1.whileHeld(new LoadServoV2());
          climb1.whileHeld(new Climb(RobotMap.CLIMB_SPEED));       
+         
+         testVision.whenPressed(new TestVision());
          
          orientationSwitchOther1.whenPressed(new ChangeRobotOrientation(2));
          orientationSwitchOther.whenPressed(new ChangeRobotOrientation(2));
