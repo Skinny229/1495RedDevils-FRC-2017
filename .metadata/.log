@@ -5172,3 +5172,63 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-03-28 07:26:29.860
 !MESSAGE Targets: deploy, Mode: run
+!SESSION 2017-03-30 08:42:44.804 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-03-30 08:43:00.436
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-03-30 08:43:01.299
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-30 08:43:08.287
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-30 08:43:17.113
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-30 08:43:17.485
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-30 08:43:17.685
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-03-30 08:43:17.812
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-30 08:43:17.879
+!MESSAGE Updating projects
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-03-30 08:56:54.588
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-30 08:56:57.281
+!MESSAGE [org.usfirst.frc.team1495.robot.subsystems [in src [in SteamWorksV2]]
+  ServoMotor.java (not open)
+  ADXRS450Gyro.java (not open)
+  LimitSwitchSub.java (not open)
+  TalonSingleMotor.java (not open)
+  _AnalogInput.java (not open)
+  SingleMotor.java (not open)
+  _Ultrasonic.java (not open)]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-30 08:56:57.281
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-30 08:56:57.349
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-30 08:56:57.357
+!MESSAGE Project: P/SteamWorksV2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-03-30 08:57:06.219
+!MESSAGE Class: _LimitSwitch Package: org.usfirst.frc.team1495.robot.subsystems
