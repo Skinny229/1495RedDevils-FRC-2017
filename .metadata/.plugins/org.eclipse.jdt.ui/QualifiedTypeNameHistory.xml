@@ -57,7 +57,7 @@
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Preferences"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.networktables.NetworkTable"/>
 <fullyQualifiedTypeName name="edu.wpi.cscore.UsbCamera"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestVision"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.networktables.NetworkTable"/>
 </qualifiedTypeNameHistroy>

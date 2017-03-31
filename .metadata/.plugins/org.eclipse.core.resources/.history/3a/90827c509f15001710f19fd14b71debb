@@ -24,7 +24,7 @@ public class LimitSwitchSub extends Subsystem {
     }
     
     public boolean isGearLifted(){
-    	return !limitSwitch.get();
+    	return  !limitSwitch.get();
     }
 }
 
