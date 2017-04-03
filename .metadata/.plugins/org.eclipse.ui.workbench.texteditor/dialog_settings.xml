@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="gearUltra" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="GearUltra"/>
-			<item value="HopperUltra"/>
-			<item value="stick"/>
-			<item value="sitck"/>
-			<item value="m_sensitivity"/>
-			<item value="operatorStick"/>
-			<item value="shooterSub"/>
-			<item value="shootSub"/>
+			<item value="Moments"/>
+			<item value="Moment"/>
+			<item value="moments"/>
+			<item value="put"/>
+			<item value="putNumberArray"/>
+			<item value="putNumber"/>
+			<item value="getTable"/>
+			<item value="getTabke"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gearUltra"/>

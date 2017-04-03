@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="edu.wpi.cscore.UsbCamera"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestVision"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.networktables.NetworkTable"/>
+<fullyQualifiedTypeName name="org.opencv.imgproc.Imgproc"/>
 </qualifiedTypeNameHistroy>

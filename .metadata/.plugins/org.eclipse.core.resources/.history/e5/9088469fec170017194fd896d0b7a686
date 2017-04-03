@@ -51,7 +51,7 @@ public class VeryExperimentalVisionAuto extends Command {
 		}
 		
 		//Get Vision Tables
-		visionTable = NetworkTable.getTable("VisionProcessing/GearVisionTable");
+		visionTable = NetworkTable.getTable("GRIP/gearContourReport");
 	}
 
 	/*
@@ -75,6 +75,7 @@ public class VeryExperimentalVisionAuto extends Command {
 			break;
 		case 2:
 			
+				visionTable = NetworkTable.getTable("GRIP/gearContourReport");
 				midXPointActual = visionTable.getNumberArray("centerX",  midXPointDataLostDef);
 				if(!( midXPointActual == midXPointDataLostDef)){
 					
