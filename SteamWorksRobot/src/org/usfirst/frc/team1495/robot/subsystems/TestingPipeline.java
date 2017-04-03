@@ -1,6 +1,7 @@
 package org.usfirst.frc.team1495.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.networktables.NetworkTable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,8 @@ public abstract class TestingPipeline extends Subsystem  {
 	private ArrayList<MatOfPoint> findContoursOutput = new ArrayList<MatOfPoint>();
 	private ArrayList<MatOfPoint> filterContoursOutput = new ArrayList<MatOfPoint>();
 
+	int[] num = filterContoursOutput.get();
+	
 	static {
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 	}
@@ -188,7 +191,8 @@ public abstract class TestingPipeline extends Subsystem  {
 		int method = Imgproc.CHAIN_APPROX_SIMPLE;
 		Imgproc.findContours(input, contours, hierarchy, mode, method);
 	}
-
+	
+	public List<MatOfPoint> output1;
 	/**
 	 * Filters out contours that do not meet certain criteria.
 	 * 
@@ -257,21 +261,39 @@ public abstract class TestingPipeline extends Subsystem  {
 		}
 	}
 	
-	public ArrayList<MatOfPoint> getFilteredContours(){
-		return filterContoursOutput;
+	
+	public void publishTarget(NetworkTable table){
+		
+		double midPointAt,x1,x2;
+		//If there's no target dont continue;
+		if(! (filterContoursOutput.size() == 2))
+			table.putNumber("midPointAt", -1.0);
+			return;
+			
+		Rect rec1 = Imgproc.boundingRect(filterContoursOutput.get(0));
+		Rect rec2 = Imgproc.boundingRect(filterContoursOutput.get(1));
+		x1 = rec1.x;
+		x2 = rec2.x;
+		midPointAt = (x1 + x2) / 2;
+			table.putNumber("midPointAt", midPointAt);
+		
+		
+		
+		
 	}
+	
+	
 	
 	/*
 	 * Before infinite loop
 	 * 
 	 * GripPipline pipe = new GripPipeline();
-	 * NetworkTables visionTable = NetworkTable.getTable("VisionProcessing");
+	 * NetworkTables visionTable = NetworkTable.getTable("VisionProcessing/GearVisionTable");
 	 * 
 	 * After loop
 	 * 
 	 * pipe.process(thisMat);
-	 * ArrayList<MatOfPoint> contoursToBeSent = pipe.getFilteredContours;
-	 * visionTable.putNumberArray(contourToBeSent);
+	 * pipe.publishTarget(visionTable);
 	 * 
 	 * */
 }
