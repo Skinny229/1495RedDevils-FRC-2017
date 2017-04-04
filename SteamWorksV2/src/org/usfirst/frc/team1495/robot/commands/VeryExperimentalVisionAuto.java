@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.networktables.NetworkTable;
  */
 public class VeryExperimentalVisionAuto extends Command {
 
-    public VeryExperimentalVisionAuto() {
+	public VeryExperimentalVisionAuto() {
 		requires(Robot.gyro);
 		requires(Robot.gearUltra);
 		requires(Robot.hopperUltra);
@@ -24,14 +24,14 @@ public class VeryExperimentalVisionAuto extends Command {
 	int onPhase;
 	double turnSpeedPhase1 = .25, turnSpeedPhase3 = .3;
 	boolean hasFinished;
-	
-	//Vision into peg variables
+
+	// Vision into peg variables
 	NetworkTable visionTable;
-	double midxPointWanted, midXPointArray[], midXPointDataLostDef[] = {0.0,0.0,0.0}, midXPointActual;
+	double midxPointWanted, midXPointArray[], midXPointDataLostDef[] = { 0.0, 0.0, 0.0 }, midXPointActual, angleToTurn,
+			angleToTurnSpeed = .25;
 	int targetDataLostCounter;
 	double distToTarget;
-	
-	
+
 	DriverStation.Alliance onAlliance;
 	DriverStation.Alliance blue = DriverStation.Alliance.Blue;
 	DriverStation.Alliance red = DriverStation.Alliance.Red;
@@ -51,7 +51,7 @@ public class VeryExperimentalVisionAuto extends Command {
 			turnSpeedPhase3 *= -1;
 		}
 		targetDataLostCounter = 0;
-		//Get Vision Tables
+		// Get Vision Tables
 		visionTable = NetworkTable.getTable("GRIP/gearContourReport");
 	}
 
@@ -63,7 +63,7 @@ public class VeryExperimentalVisionAuto extends Command {
 	protected void execute() {
 		switch (onPhase) {
 		case 0:
-			while (Robot.hopperUltra.getDistanceMMINT() < 2000 ) {
+			while (Robot.hopperUltra.getDistanceMMINT() < 2895.5) {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, Robot.gyro.getAngleDegrees());
 			}
 			onPhase++;
@@ -75,27 +75,31 @@ public class VeryExperimentalVisionAuto extends Command {
 			onPhase++;
 			break;
 		case 2:
-				midXPointArray = visionTable.getNumberArray("centerX",  midXPointDataLostDef);
-				
-				
-				if( midXPointArray.length == 2){
-					midXPointActual = (midXPointArray[0] + midXPointArray[1]) / 2;
-					
-					
-					
-				}else{
-					System.out.println("Target data not found(either too little or too much targets)! Driving Slow for now");
-					Robot.roboDrive.mecanumDrive_Cartesian(0, .25, 0, 0);
-				    Timer.delay(.2);
-				    targetDataLostCounter++;
-				    if(targetDataLostCounter == 16 || distToTarget < 300 || Robot.gearSwitch.isGearLifted())
-				    	onPhase++;
-				}
-				
-				
-			Timer.delay(.005);
+			midXPointArray = visionTable.getNumberArray("centerX", midXPointDataLostDef);
+			Robot.gyro.reset();
+			if (midXPointArray.length == 2) {
+				midXPointActual = (midXPointArray[0] + midXPointArray[1]) / 2;
+				angleToTurn = Math.toDegrees(Math.atan((240 - midXPointActual) / Math.toDegrees(240 / Math.tan(30))));
+				System.out.println("Turning by: " + angleToTurn + " degrees!");
+				if (Math.signum(angleToTurn) == 1.0)
+					angleToTurnSpeed *= -1;
+				while (Math.abs(Robot.gyro.getRawAngleDegrees()) < angleToTurn)
+					Robot.roboDrive.mecanumDrive_Cartesian(0, 0, angleToTurnSpeed, 0);
+				while (!Robot.gearSwitch.isGearLifted())
+					Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, 0);
+				onPhase++;
+			} else {
+				System.out
+						.println("Target data not found(either too little or too much targets)! Driving Slow for now");
+				Robot.roboDrive.mecanumDrive_Cartesian(0, .25, 0, 0);
+				Timer.delay(.2);
+				targetDataLostCounter++;
+				if (targetDataLostCounter == 16 || Robot.gearSwitch.isGearLifted())
+					onPhase++;
+			}
 			break;
 		case 3:
+			Timer.delay(1.5);
 			while (Robot.gearUltra.getDistanceMMINT() < 750) {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
 			}
