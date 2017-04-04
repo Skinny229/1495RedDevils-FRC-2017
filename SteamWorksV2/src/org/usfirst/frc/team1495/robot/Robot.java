@@ -21,6 +21,7 @@ import org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto;
 import org.usfirst.frc.team1495.robot.commands.SideGearAndShootSensor;
 import org.usfirst.frc.team1495.robot.commands.SideGearLoaderSide;
 import org.usfirst.frc.team1495.robot.commands.TestVision;
+import org.usfirst.frc.team1495.robot.commands.VeryExperimentalVisionAuto;
 import org.usfirst.frc.team1495.robot.subsystems.ADXRS450Gyro;
 import org.usfirst.frc.team1495.robot.subsystems.LimitSwitchSub;
 import org.usfirst.frc.team1495.robot.subsystems.TalonSingleMotor;
@@ -102,6 +103,7 @@ public class Robot extends IterativeRobot {
 		chooser.addObject("Do Nothing", new DoNothing());
 		chooser.addObject("Side Gear and Shooting BOILER SIDE", new SideGearAndShootSensor());
 		chooser.addObject("Side Gear PLAYER STATION SIDE", new SideGearLoaderSide());
+		chooser.addObject("SideGear and shoot Vision", new VeryExperimentalVisionAuto());
 		
 		// Adding  Auto Options to SmartDashboard
 		SmartDashboard.putData("Autonomous mode", chooser);

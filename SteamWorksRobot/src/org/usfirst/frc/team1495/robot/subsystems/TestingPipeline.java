@@ -272,7 +272,7 @@ public abstract class TestingPipeline extends Subsystem  {
 			
 		Rect rec1 = Imgproc.boundingRect(filterContoursOutput.get(0));
 		Rect rec2 = Imgproc.boundingRect(filterContoursOutput.get(1));
-		x1 = rec1.x;
+		x1 = rec1.br().x;
 		x2 = rec2.x;
 		midPointAt = (x1 + x2) / 2;
 			table.putNumber("midPointAt", midPointAt);

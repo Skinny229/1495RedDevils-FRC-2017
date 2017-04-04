@@ -27,8 +27,9 @@ public class VeryExperimentalVisionAuto extends Command {
 	
 	//Vision into peg variables
 	NetworkTable visionTable;
-	double midxPointWantedLeft = 195, midXPointWantedRight = 250, midXPointActual[], midXPointDataLostDef[] = {0.0,0.0,0.0};
+	double midxPointWanted, midXPointArray[], midXPointDataLostDef[] = {0.0,0.0,0.0}, midXPointActual;
 	int targetDataLostCounter;
+	double distToTarget;
 	
 	
 	DriverStation.Alliance onAlliance;
@@ -49,9 +50,9 @@ public class VeryExperimentalVisionAuto extends Command {
 			turnSpeedPhase1 *= -1;
 			turnSpeedPhase3 *= -1;
 		}
-		
+		targetDataLostCounter = 0;
 		//Get Vision Tables
-		visionTable = NetworkTable.getTable("VisionProcessing/GearVisionTable");
+		visionTable = NetworkTable.getTable("GRIP/gearContourReport");
 	}
 
 	/*
@@ -74,17 +75,20 @@ public class VeryExperimentalVisionAuto extends Command {
 			onPhase++;
 			break;
 		case 2:
-			
-				midXPointActual = visionTable.getNumberArray("centerX",  midXPointDataLostDef);
-				if(!( midXPointActual == midXPointDataLostDef)){
+				midXPointArray = visionTable.getNumberArray("centerX",  midXPointDataLostDef);
+				
+				
+				if( midXPointArray.length == 2){
+					midXPointActual = (midXPointArray[0] + midXPointArray[1]) / 2;
+					
 					
 					
 				}else{
-					System.out.println("Target data not found! Retrying and driving slow for now");
-					Robot.roboDrive.mecanumDrive_Cartesian(0, .1, 0, 0);
+					System.out.println("Target data not found(either too little or too much targets)! Driving Slow for now");
+					Robot.roboDrive.mecanumDrive_Cartesian(0, .25, 0, 0);
 				    Timer.delay(.2);
 				    targetDataLostCounter++;
-				    if(targetDataLostCounter == 8)
+				    if(targetDataLostCounter == 16 || distToTarget < 300 || Robot.gearSwitch.isGearLifted())
 				    	onPhase++;
 				}
 				

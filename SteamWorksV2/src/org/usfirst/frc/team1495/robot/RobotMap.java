@@ -37,6 +37,8 @@ public class RobotMap {
 	//Motor stuff
 	public static final boolean STARTING_MOTOR_SAFETY = false;
 	
+	public static final double focalLength = 240/Math.toDegrees(Math.tan(30));
+	
 	//Autonomous Preferences
 	public static int sideGearPegDist = 2896;
 	public static double autoShootingSpeed = .75;

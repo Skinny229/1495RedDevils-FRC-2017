@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.PotentiometerSubsystem"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems._DoubleSolenoid"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.LimitSwitch"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestLimitSwitch"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogTrigger"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.Subsystem"/>
@@ -31,7 +25,6 @@
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.adjustShooter"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.DoNothing"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerAuto"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.ChaChaDance"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerAutoBlue"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.BoilerAutoRed"/>
@@ -42,7 +35,6 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.ChangeDriver"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.ChangeRobotOrientation"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot.RobotDriveState"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.LeftTurnGearAuto"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.RightTurnGearAuto"/>
@@ -53,11 +45,19 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Counter"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.LimitSwitchSub"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Preferences"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.RobotMap"/>
 <fullyQualifiedTypeName name="edu.wpi.cscore.UsbCamera"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.TestVision"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.networktables.NetworkTable"/>
 <fullyQualifiedTypeName name="org.opencv.imgproc.Imgproc"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Spark"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems.headSub"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.MoveHead"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.VeryExperimentalVisionAuto"/>
 </qualifiedTypeNameHistroy>
