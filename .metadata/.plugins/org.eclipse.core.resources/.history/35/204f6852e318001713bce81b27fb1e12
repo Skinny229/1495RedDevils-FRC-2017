@@ -111,8 +111,8 @@ public class VeryExperimentalVisionAuto extends Command {
 					hasFinished=true;
 				}
 				
-				onPhase++;
 				
+				onPhase++;
 			} else {
 				//Runs if we have the wanted amount of targets
 				System.out.println("Target data not found(either too little or too much targets)! Driving Slow for now");
