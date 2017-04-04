@@ -230,4 +230,9 @@ public class Robot extends IterativeRobot {
 
 		}
 	}
+	
+	public boolean isTeleOp(){
+		return isOperatorControl();
+	}
+	
 }
