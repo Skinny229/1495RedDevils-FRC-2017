@@ -151,7 +151,7 @@ public class VeryExperimentalVisionAuto extends Command {
 			Timer.delay(.4);
 			Robot.loaderSub.spin(RobotMap.LOAD_SPEED);
 			double sleepTillHere;
-			if(DriverStation.getInstance().getMatchTime() < 2 || DriverStation.getInstance().isOperatorControl()){
+			if(DriverStation.getInstance().getMatchTime() < 3 || DriverStation.getInstance().isOperatorControl()){
 			hasFinished = true;
 			break;
 			}

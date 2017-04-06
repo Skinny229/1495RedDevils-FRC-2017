@@ -22,8 +22,8 @@
       <grip:Input step="1" socket="0"/>
       <grip:Input step="1" socket="1">
         <value>
-          <double>80.93525179856115</double>
-          <double>102.72727272727273</double>
+          <double>58.69706995676895</double>
+          <double>90.93049394901723</double>
         </value>
       </grip:Input>
       <grip:Input step="1" socket="2">
@@ -76,7 +76,7 @@
     <grip:Step name="Filter Contours">
       <grip:Input step="5" socket="0"/>
       <grip:Input step="5" socket="1">
-        <value>50.0</value>
+        <value>100.0</value>
       </grip:Input>
       <grip:Input step="5" socket="2">
         <value>0.0</value>
@@ -140,12 +140,16 @@
   </steps>
   <connections>
     <grip:Connection>
-      <grip:Output step="5" socket="0" previewed="true"/>
-      <grip:Input step="6" socket="0"/>
+      <grip:Output step="2" socket="0" previewed="false"/>
+      <grip:Input step="3" socket="0"/>
     </grip:Connection>
     <grip:Connection>
       <grip:Output source="0" socket="0" previewed="true"/>
       <grip:Input step="0" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="0" socket="0" previewed="false"/>
+      <grip:Input step="1" socket="0"/>
     </grip:Connection>
     <grip:Connection>
       <grip:Output step="3" socket="0" previewed="false"/>
@@ -156,16 +160,12 @@
       <grip:Input step="2" socket="0"/>
     </grip:Connection>
     <grip:Connection>
+      <grip:Output step="5" socket="0" previewed="true"/>
+      <grip:Input step="6" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
       <grip:Output step="4" socket="0" previewed="false"/>
       <grip:Input step="5" socket="0"/>
-    </grip:Connection>
-    <grip:Connection>
-      <grip:Output step="2" socket="0" previewed="false"/>
-      <grip:Input step="3" socket="0"/>
-    </grip:Connection>
-    <grip:Connection>
-      <grip:Output step="0" socket="0" previewed="false"/>
-      <grip:Input step="1" socket="0"/>
     </grip:Connection>
   </connections>
   <settings>
@@ -181,7 +181,7 @@
     <language>Java</language>
     <className>GripPipelinePipe</className>
     <implementWpilibPipeline>true</implementWpilibPipeline>
-    <saveDir>C:\Users\skinn\GRIP</saveDir>
+    <saveDir>C:\Users\agrobotics\GRIP</saveDir>
     <packageName></packageName>
     <moduleName>grip</moduleName>
   </codeGenerationSettings>

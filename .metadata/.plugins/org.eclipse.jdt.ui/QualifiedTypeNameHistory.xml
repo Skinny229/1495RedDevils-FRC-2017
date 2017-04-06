@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Compressor"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.subsystems._Compressor"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.FiveFootAndTurn"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.management.timer.Timer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.Shoot"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.commands.GoBackNShoot"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotBase"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team1495.robot.Robot"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DriverStation"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
