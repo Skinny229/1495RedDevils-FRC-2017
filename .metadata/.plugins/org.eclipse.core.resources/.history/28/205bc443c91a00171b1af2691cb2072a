@@ -25,8 +25,6 @@ public class RecordAllSensorData extends Command {
     	
     	
     	System.out.println("Gyro angle at: " + Robot.gyro);
-    	System.out.println("Hopper Ultrasonic at(MMINT): " + Robot.hopperUltra.getDistanceMMINT());
-    	//System.out.println("");
     }
 
     // Called repeatedly when this Command is scheduled to run
