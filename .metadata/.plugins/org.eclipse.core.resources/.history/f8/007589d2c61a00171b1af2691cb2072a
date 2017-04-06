@@ -138,7 +138,9 @@ public class VeryExperimentalVisionAuto extends Command {
 			Timer.delay(3.0);
 			break;
 		case 4:
+			
 			Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
+			
 			Timer.delay(1);
 			while (Math.abs(Robot.gyro.getRawAngleDegrees()) < 75) {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, turnSpeedPhase3, 0);
@@ -150,12 +152,7 @@ public class VeryExperimentalVisionAuto extends Command {
 			Robot.shooterSub.spin(RobotMap.shootingSpeed);
 			Timer.delay(.4);
 			Robot.loaderSub.spin(RobotMap.LOAD_SPEED);
-			double sleepTillHere;
-			if(DriverStation.getInstance().getMatchTime() < 2 || DriverStation.getInstance().isOperatorControl()){
-			hasFinished = true;
-			break;
-			}
-			sleepTillHere = 15.0 - DriverStation.getInstance().getMatchTime();
+			double sleepTillHere = 15.0 - DriverStation.getInstance().getMatchTime();
 			Timer.delay(sleepTillHere);
 			hasFinished = true;
 			onPhase++;

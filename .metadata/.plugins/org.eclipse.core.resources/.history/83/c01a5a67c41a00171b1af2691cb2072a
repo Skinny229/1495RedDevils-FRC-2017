@@ -11,6 +11,7 @@ public class GearAuto extends Command {
 
     public GearAuto() {
 		requires(Robot.gyro);
+		requires(Robot.gearUltra);
 		requires(Robot.hopperUltra);
 		requires(Robot.loaderSub);
 		requires(Robot.shooterSub);

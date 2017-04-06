@@ -112,6 +112,7 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("GyroAngle", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Hopper Ultrasonic", hopperUltra.getDistanceMMRAW());
+		SmartDashboard.putNumber("Gear Ultrasonic", gearUltra.getDistanceMMRAW());
 		SmartDashboard.putString("On Driver", "Main Driver");
 		SmartDashboard.putData("Vision Get", new TestVision());
 		
@@ -193,6 +194,7 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("GyroAngle: ", gyro.getAngleDegrees());
 		SmartDashboard.putData(" ", gyro.getSendable());
 		SmartDashboard.putNumber("Hopper Ultrasonic", hopperUltra.getDistanceMMRAW());
+		SmartDashboard.putNumber("Gear Ultrasonic", gearUltra.getDistanceMMRAW());
 	}
 
 	/**

@@ -14,6 +14,7 @@ public class SideGearLoaderSide extends Command {
     public SideGearLoaderSide() {
     	requires(Robot.gyro);
     	requires(Robot.hopperUltra);
+    	requires(Robot.gearUltra);
     	requires(Robot.gearSwitch);
     }
 
@@ -75,7 +76,9 @@ public class SideGearLoaderSide extends Command {
 			onPhase++;
 			break;
 		case 5:
-			hasFinished = true;
+			while(Robot.gearUltra.getDistanceMMINT() > 4600){
+			Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, 0);
+			}
 			break;
 		}
     }

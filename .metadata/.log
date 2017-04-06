@@ -6687,3 +6687,60 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jface.text 2 0 2017-04-06 08:02:45.967
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-04-06 08:35:18.413
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\charsets.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\access-bridge-32.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\cldrdata.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\dnsns.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\jaccess.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\jfxrt.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\localedata.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\nashorn.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\sunec.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\sunmscapi.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\ext\zipfs.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\jce.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\jfr.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\jsse.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\resources.jar
+  [+] C:\Program Files (x86)\Java\jre1.8.0_121\lib\rt.jar
+  [+] C:\Users\agrobotics\wpilib\java\current\lib\NetworkTables.jar
+  [+] C:\Users\agrobotics\wpilib\java\current\lib\WPILib.jar
+  [+] C:\Users\agrobotics\wpilib\java\current\lib\cscore.jar
+  [+] C:\Users\agrobotics\wpilib\java\current\lib\opencv.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\cldrdata.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\nashorn.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\access-bridge-64.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunmscapi.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\opencv.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunec.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunpkcs11.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jaccess.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\cscore.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\NetworkTables.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jfxrt.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\zipfs.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\localedata.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunjce_provider.jar
+  [-] C:\Users\skinn\wpilib\java\current\lib\WPILib.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\dnsns.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar
+  [-] C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)

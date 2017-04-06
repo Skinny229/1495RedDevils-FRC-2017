@@ -70,9 +70,10 @@ public class SideGearAndShootSensor extends Command {
 			onPhase++;
 			break;
 		case 3:
-			Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
-			
-			Timer.delay(.5);
+			while (Robot.gearUltra.getDistanceMMINT() < 750) {
+				Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
+			}
+			Timer.delay(1);
 			while (Math.abs(Robot.gyro.getRawAngleDegrees()) < 75) {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, turnSpeedPhase3, 0);
 			}

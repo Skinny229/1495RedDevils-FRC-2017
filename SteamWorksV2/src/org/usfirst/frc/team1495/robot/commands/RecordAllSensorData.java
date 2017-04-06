@@ -14,7 +14,6 @@ public class RecordAllSensorData extends Command {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
 		requires(Robot.gyro);
-		requires(Robot.gearUltra);
 		requires(Robot.hopperUltra);
     }
 
