@@ -1,7 +1,6 @@
 package org.usfirst.frc.team1495.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.networktables.NetworkTable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +25,6 @@ public abstract class TestingPipeline extends Subsystem  {
 	private ArrayList<MatOfPoint> findContoursOutput = new ArrayList<MatOfPoint>();
 	private ArrayList<MatOfPoint> filterContoursOutput = new ArrayList<MatOfPoint>();
 
-	int[] num = filterContoursOutput.get();
-	
 	static {
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 	}
@@ -191,8 +188,7 @@ public abstract class TestingPipeline extends Subsystem  {
 		int method = Imgproc.CHAIN_APPROX_SIMPLE;
 		Imgproc.findContours(input, contours, hierarchy, mode, method);
 	}
-	
-	public List<MatOfPoint> output1;
+
 	/**
 	 * Filters out contours that do not meet certain criteria.
 	 * 
@@ -261,6 +257,7 @@ public abstract class TestingPipeline extends Subsystem  {
 		}
 	}
 	
+<<<<<<< HEAD
 	
 	public void publishTarget(NetworkTable table){
 		
@@ -280,20 +277,23 @@ public abstract class TestingPipeline extends Subsystem  {
 		
 		
 		
+=======
+	public ArrayList<MatOfPoint> getFilteredContours(){
+		return filterContoursOutput;
+>>>>>>> parent of 1a85e8c... update
 	}
-	
-	
 	
 	/*
 	 * Before infinite loop
 	 * 
 	 * GripPipline pipe = new GripPipeline();
-	 * NetworkTables visionTable = NetworkTable.getTable("VisionProcessing/GearVisionTable");
+	 * NetworkTables visionTable = NetworkTable.getTable("VisionProcessing");
 	 * 
 	 * After loop
 	 * 
 	 * pipe.process(thisMat);
-	 * pipe.publishTarget(visionTable);
+	 * ArrayList<MatOfPoint> contoursToBeSent = pipe.getFilteredContours;
+	 * visionTable.putNumberArray(contourToBeSent);
 	 * 
 	 * */
 }
