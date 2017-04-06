@@ -104,6 +104,7 @@ public class Robot extends IterativeRobot {
 		chooser.addObject("Side Gear and Shooting BOILER SIDE", new SideGearAndShootSensor());
 		chooser.addObject("Side Gear PLAYER STATION SIDE", new SideGearLoaderSide());
 		chooser.addObject("SideGear and shoot Vision", new VeryExperimentalVisionAuto());
+		chooser.addObject("Adjust Angle", new TestVision());
 		
 		// Adding  Auto Options to SmartDashboard
 		SmartDashboard.putData("Autonomous mode", chooser);

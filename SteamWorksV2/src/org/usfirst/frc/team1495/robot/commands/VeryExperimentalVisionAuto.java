@@ -4,7 +4,6 @@ import org.usfirst.frc.team1495.robot.Robot;
 import org.usfirst.frc.team1495.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.DriverStation;
-import edu.wpi.first.wpilibj.RobotBase;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.networktables.NetworkTable;
@@ -74,38 +73,47 @@ public class VeryExperimentalVisionAuto extends Command {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, turnSpeedPhase1, 0);
 			}
 			onPhase++;
+			Robot.roboDrive.stopMotor();
 			break;
 		case 2:
-			//Get contourTarget info from the networktables
-			midXPointArray = visionTable.getNumberArray("centerX", midXPointDataLostDef);
-			//Reset Gyro for accurate turn
-			Robot.gyro.reset();
 			
+			midXPointArray = visionTable.getNumberArray("centerX", midXPointDataLostDef);
+
+			
+			Timer.delay(.125);
 			//If we have 2 Targets lets cotinue
 			if (midXPointArray.length == 2) {
 				
+				for(int i = 0; i < 2; i ++){
+					Robot.gyro.reset();
 				//Calculate MidPoint of the targets (Where we want to go)
 				midXPointActual = (midXPointArray[0] + midXPointArray[1]) / 2;
 				
 				//Asuming the camera is in the middle with resolution 640x480 and 60 horizontal focal view of the camera...
 				//We can obtain the number of degrees using simple trig tan functions
-				angleToTurn = Math.toDegrees(Math.atan((240 - midXPointActual) / Math.toDegrees(240 / Math.tan(30))));
+				System.out.println("MidXPoint: " + midXPointActual);
+				angleToTurn = Math.toDegrees(Math.atan((320 - midXPointActual) / Math.toDegrees((320 / Math.tan(30)))));
 				System.out.println("Turning by: " + angleToTurn + " degrees!");
 				
-				//Depending on what way we're turning adjust the direction of the turn accordingly...
-				if (Math.signum(angleToTurn) == 1.0){
+				if(midXPointActual > 320)
 					angleToTurnSpeed *= -1;
-				}
+				else
+					angleToTurnSpeed *= 1;
 				
+				System.out.println("Got here");
 				//Keeps turning until angle offset is reached according to our calculations...
-				while (Math.abs(Robot.gyro.getRawAngleDegrees()) < angleToTurn){
+				while (Robot.gyro.getRawAngleDegrees() < angleToTurn){
 					Robot.roboDrive.mecanumDrive_Cartesian(0, 0, angleToTurnSpeed, 0);
 				}
-				//Keep Driving foward until gear is lifted or if we're in teleop mode
-				while (Robot.gearSwitch.isGearLifted() || ! DriverStation.getInstance().isOperatorControl()){
-					Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, 0);
-				}
 				
+				}
+				System.out.println("Finished. At: " + Robot.gyro.getRawAngleDegrees());
+				hasFinished = true;
+				}else{
+					System.out.println("Targets not found!");
+					hasFinished = true;
+					}
+				}
 				//End autonomous if teleop mode has started. Usually this will run if the gear has not been picked up
 				if(DriverStation.getInstance().isOperatorControl()){
 					hasFinished=true;
@@ -119,7 +127,7 @@ public class VeryExperimentalVisionAuto extends Command {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, .25, 0, 0);
 				Timer.delay(.2);
 				targetDataLostCounter++;
-				if (targetDataLostCounter == 16 || Robot.gearSwitch.isGearLifted() || !DriverStation.getInstance().isOperatorControl())
+				if (targetDataLostCounter == 16 && !Robot.gearSwitch.isGearLifted() && !DriverStation.getInstance().isOperatorControl())
 					onPhase++;
 			}
 			break;
