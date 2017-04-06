@@ -95,33 +95,20 @@ public class VeryExperimentalVisionAuto extends Command {
 				angleToTurn = Math.toDegrees(Math.atan((320 - midXPointActual) / Math.toDegrees((320 / Math.tan(30)))));
 				System.out.println("Turning by: " + angleToTurn + " degrees!");
 				
-				if(midXPointActual > 320)
+				if(midXPointActual < 320)
 					angleToTurnSpeed *= -1;
-				else
-					angleToTurnSpeed *= 1;
 				
 				System.out.println("Got here");
 				//Keeps turning until angle offset is reached according to our calculations...
-				while (Robot.gyro.getRawAngleDegrees() < angleToTurn){
+				while (Math.abs(Robot.gyro.getRawAngleDegrees()) < Math.abs(angleToTurn)){
 					Robot.roboDrive.mecanumDrive_Cartesian(0, 0, angleToTurnSpeed, 0);
 				}
-				
 				}
 				System.out.println("Finished. At: " + Robot.gyro.getRawAngleDegrees());
-				hasFinished = true;
-				}else{
-					System.out.println("Targets not found!");
-					hasFinished = true;
-					}
-				}
-				//End autonomous if teleop mode has started. Usually this will run if the gear has not been picked up
-				if(DriverStation.getInstance().isOperatorControl()){
-					hasFinished=true;
-				}
-				
+				hasFinished = true;	
 				onPhase++;
 				
-			} else {
+				} else {
 				//Runs if we have the wanted amount of targets
 				System.out.println("Target data not found(either too little or too much targets)! Driving Slow for now");
 				Robot.roboDrive.mecanumDrive_Cartesian(0, .25, 0, 0);
@@ -157,7 +144,8 @@ public class VeryExperimentalVisionAuto extends Command {
 			hasFinished = true;
 			break;
 		}
-	}
+		
+}
 
 	// Make this return true when this Command no longer needs to run execute()
 	protected boolean isFinished() {
