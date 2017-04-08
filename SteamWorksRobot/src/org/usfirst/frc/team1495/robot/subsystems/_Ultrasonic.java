@@ -14,10 +14,13 @@ public class _Ultrasonic extends Subsystem {
 	protected void initDefaultCommand() {
 	}
 
-	public double getDistanceMM() {
+	public double getDistanceMMRAW() {
 		// Distances less than 300mm will read as 300mm
-		return ai.getAverageVoltage() * 1000;
+		return  ai.getVoltage() * 997;
 
+	}
+	public int getDistanceMMINT(){
+		return (int) ai.getVoltage()* 997;
 	}
 
 }

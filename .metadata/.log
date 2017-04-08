@@ -6750,3 +6750,1992 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 09:02:14.297
 !MESSAGE Targets: deploy, Mode: run
+!SESSION 2017-04-06 11:48:24.311 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-06 11:48:41.715
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-06 11:48:42.115
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-06 11:48:52.180
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 11:48:55.213
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 11:48:55.452
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 11:48:55.535
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 11:48:55.601
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 11:48:55.652
+!MESSAGE Updating projects
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 11:51:56.477
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 11:51:56.487
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 11:52:24.043
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 11:52:24.050
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 11:52:28.461
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 11:52:28.511
+!MESSAGE Unknown Host: http://eclipse-color-theme.github.com/update/content.xml
+!STACK 0
+java.net.UnknownHostException: eclipse-color-theme.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 11:52:28.542
+!MESSAGE Unknown Host: https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.xml
+!STACK 0
+java.net.UnknownHostException: raw.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 11:52:28.596
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.6/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 11:52:28.680
+!MESSAGE Unknown Host: http://download.eclipse.org/webtools/repository/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 11:52:28.830
+!MESSAGE Unknown Host: http://first.wpi.edu/FRC/roborio/release/eclipse/content.xml
+!STACK 0
+java.net.UnknownHostException: first.wpi.edu
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 11:52:28.889
+!MESSAGE Unknown Host: http://www.genuitec.com/updates/webclipse/ci/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 11:54:50.411
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 11:54:50.426
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 11:59:31.818
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 11:59:31.836
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 12:38:24.916
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksV2]]
+  RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java (not open)
+  Climb.java (not open)
+  GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      int onPhase
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeRobotOrientation.java (not open)
+  LoadServoV2.java (not open)
+  MidGearAndShoot.java (not open)
+  LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java (not open)
+  RecordAllSensorData.java (not open)
+  ChaChaDance.java (not open)
+  BoilerOnRight.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnRight
+      BoilerOnRight()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] SideGearAndShootSensor.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootSensor
+      SideGearAndShootSensor()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java (not open)
+  TestVision.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class TestVision
+      TestVision()
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      double distToTarget
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] SideGearLoaderSide.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearLoaderSide
+      SideGearLoaderSide()
+      int onPhase
+      double turnSpeedPhase1
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] VeryExperimentalVisionAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class VeryExperimentalVisionAuto
+      VeryExperimentalVisionAuto()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      boolean targetWasLost
+      double distToTarget
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 12:38:24.930
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 12:38:24.993
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 12:38:25.005
+!MESSAGE Project: P/SteamWorksV2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 12:38:30.068
+!MESSAGE Class: VisionLoaderSide Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 13:27:32.364
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 13:27:32.380
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 13:54:32.517
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 13:54:32.529
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:02:24.960
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:02:24.976
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:03:57.096
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:03:57.111
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:07:26.096
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:07:26.110
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:08:28.701
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:08:28.713
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:10:55.882
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:10:55.890
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:12:29.690
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:12:29.699
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:30:24.844
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:30:24.861
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:30:58.212
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:30:58.225
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:32:23.968
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:32:23.976
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:34:46.971
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:34:46.997
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:35:10.597
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:35:10.603
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:37:12.755
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:37:12.762
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:40:03.669
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:40:03.678
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:48:14.577
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:48:14.585
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:50:13.427
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 14:50:13.435
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY com.genuitec.eclipse.webclipse.evergreen 4 0 2017-04-06 14:51:13.296
+!MESSAGE Failed to access metadata repository under http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci4a
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unknown Host: http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci4a/content.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:243)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess$FinishInstallation$1.run(EvergreenUpdateProcess.java:469)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 14:51:13.297
+!MESSAGE Unknown Host: http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci4a/content.xml
+!STACK 0
+java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-04-06 15:33:49.163 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-06 15:34:11.026
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-06 15:34:11.085
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 15:34:18.681
+!MESSAGE Installing tools if necessary
+
+!ENTRY com.genuitec.eclipse.core 4 0 2017-04-06 15:34:18.779
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.A(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-06 15:34:18.977
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 15:34:19.029
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 15:34:19.155
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-06 15:34:19.229
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:34:19.257
+!MESSAGE Updating projects
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:36:10.673
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:36:10.689
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:38:01.682
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:38:01.693
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:38:37.424
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:38:37.433
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:39:53.257
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:39:53.267
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:40:17.133
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:40:17.142
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:41:34.844
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:41:34.850
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:48:06.500
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:48:06.506
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:56:05.943
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 15:56:05.954
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:01:17.169
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:01:17.177
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:07:06.024
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:07:06.035
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:09:53.997
+!MESSAGE Last deploy running
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:09:54.144
+!MESSAGE Waiting
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:09:54.156
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:09:54.162
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:11:52.079
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:11:52.099
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:14:05.602
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:14:05.610
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:22:10.497
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksV2]]
+  VisionLoaderSide.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class VisionLoaderSide
+      VisionLoaderSide()
+      int onPhase
+      double turnSpeedPhase1
+      boolean hasFinished
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      boolean targetWasLost
+      double distToTarget
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java (not open)
+  Climb.java (not open)
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      int onPhase
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeRobotOrientation.java (not open)
+  LoadServoV2.java (not open)
+  MidGearAndShoot.java (not open)
+  LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java (not open)
+  RecordAllSensorData.java (not open)
+  ChaChaDance.java (not open)
+  BoilerOnRight.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnRight
+      BoilerOnRight()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SideGearAndShootSensor.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootSensor
+      SideGearAndShootSensor()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java (not open)
+  [Working copy] TestVision.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class TestVision
+      TestVision()
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      double distToTarget
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SideGearLoaderSide.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearLoaderSide
+      SideGearLoaderSide()
+      int onPhase
+      double turnSpeedPhase1
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] VeryExperimentalVisionAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class VeryExperimentalVisionAuto
+      VeryExperimentalVisionAuto()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      boolean targetWasLost
+      double distToTarget
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:22:10.512
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:22:10.584
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:22:10.601
+!MESSAGE Project: P/SteamWorksV2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:22:27.746
+!MESSAGE Class: VisionPegBlueBoiler Package: org.usfirst.frc.team1495.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:24:07.229
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:24:07.245
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:25:07.323
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:25:07.348
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 16:25:42.542
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 16:25:42.606
+!MESSAGE Unknown Host: http://eclipse-color-theme.github.com/update/content.xml
+!STACK 0
+java.net.UnknownHostException: eclipse-color-theme.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 16:25:42.646
+!MESSAGE Unknown Host: https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.xml
+!STACK 0
+java.net.UnknownHostException: raw.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 16:25:42.748
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.6/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 16:25:42.815
+!MESSAGE Unknown Host: http://download.eclipse.org/webtools/repository/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 16:25:42.905
+!MESSAGE Unknown Host: http://first.wpi.edu/FRC/roborio/release/eclipse/content.xml
+!STACK 0
+java.net.UnknownHostException: first.wpi.edu
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-06 16:25:42.979
+!MESSAGE Unknown Host: http://www.genuitec.com/updates/webclipse/ci/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:29:24.145
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:29:24.167
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:30:57.099
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:30:57.119
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:31:56.130
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:31:56.160
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:36:16.968
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:36:16.993
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:37:38.678
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:37:38.698
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:39:27.891
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:39:27.909
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:41:09.852
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:41:09.869
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:45:07.177
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:45:07.191
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:46:13.455
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 16:46:13.473
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 17:49:42.419
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 17:49:42.466
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:02:52.981
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:02:52.989
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:06:01.063
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:06:01.072
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:09:55.585
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:09:55.593
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:12:52.540
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:12:52.550
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:19:11.381
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-06 18:19:11.387
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2017-04-07 07:52:54.725 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-07 07:53:05.097
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-07 07:53:05.160
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-07 07:53:18.664
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.core 4 0 2017-04-07 07:53:21.070
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.A(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-07 07:53:25.086
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-07 07:53:25.102
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-07 07:53:25.149
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-07 07:53:25.164
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 07:53:25.164
+!MESSAGE Updating projects
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:02:50.427
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:02:50.435
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:04:52.185
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:04:52.192
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-07 08:05:29.366
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-07 08:05:29.388
+!MESSAGE Unknown Host: http://eclipse-color-theme.github.com/update/content.xml
+!STACK 0
+java.net.UnknownHostException: eclipse-color-theme.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-07 08:05:29.408
+!MESSAGE Unknown Host: https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.xml
+!STACK 0
+java.net.UnknownHostException: raw.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-07 08:05:29.430
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.6/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-07 08:05:29.451
+!MESSAGE Unknown Host: http://download.eclipse.org/webtools/repository/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-07 08:05:29.486
+!MESSAGE Unknown Host: http://first.wpi.edu/FRC/roborio/release/eclipse/content.xml
+!STACK 0
+java.net.UnknownHostException: first.wpi.edu
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-07 08:05:29.509
+!MESSAGE Unknown Host: http://www.genuitec.com/updates/webclipse/ci/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-07 08:13:42.858
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-07 08:13:42.878
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:14:15.266
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:14:15.279
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:15:31.315
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:15:31.327
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:16:44.459
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:16:44.470
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:18:17.100
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:18:17.111
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:19:18.351
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:19:18.362
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:20:23.300
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:20:23.311
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:21:15.353
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:21:15.363
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:28:14.797
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:28:14.808
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:32:51.683
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:32:51.694
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:36:13.835
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:36:13.844
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:38:03.404
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:38:03.413
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:39:51.035
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:39:51.042
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:41:27.049
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:41:27.054
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:42:06.817
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:42:06.823
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:47:52.913
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:47:52.919
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:49:22.319
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 08:49:22.324
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 09:02:54.418
+!MESSAGE [org.usfirst.frc.team1495.robot.commands [in src [in SteamWorksV2]]
+  [Working copy] VisionLoaderSide.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class VisionLoaderSide
+      VisionLoaderSide()
+      int onPhase
+      double turnSpeedPhase1
+      boolean hasFinished
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      boolean targetWasLost
+      double distToTarget
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  RightTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RightTurnGearAuto
+      RightTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeDriver.java (not open)
+  Climb.java (not open)
+  [Working copy] GearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class GearAuto
+      GearAuto()
+      int onPhase
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChangeRobotOrientation.java (not open)
+  LoadServoV2.java (not open)
+  MidGearAndShoot.java (not open)
+  LeftTurnGearAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class LeftTurnGearAuto
+      LeftTurnGearAuto()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java (not open)
+  RecordAllSensorData.java (not open)
+  [Working copy] VisionPegBlueBoiler.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class VisionPegBlueBoiler
+      VisionPegBlueBoiler()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      boolean targetWasLost
+      double distToTarget
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ChaChaDance.java (not open)
+  BoilerOnRight.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnRight
+      BoilerOnRight()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SideGearAndShootSensor.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearAndShootSensor
+      SideGearAndShootSensor()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DoNothing.java
+    package org.usfirst.frc.team1495.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class DoNothing
+      DoNothing()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  adjustShooter.java (not open)
+  TestVision.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class TestVision
+      TestVision()
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      double distToTarget
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SideGearLoaderSide.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SideGearLoaderSide
+      SideGearLoaderSide()
+      int onPhase
+      double turnSpeedPhase1
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      boolean hasFinished
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  BoilerOnLeft.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class BoilerOnLeft
+      BoilerOnLeft()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] VeryExperimentalVisionAuto.java
+    package org.usfirst.frc.team1495.robot.commands
+    import org.usfirst.frc.team1495.robot.Robot
+    import org.usfirst.frc.team1495.robot.RobotMap
+    import edu.wpi.first.wpilibj.DriverStation
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    class VeryExperimentalVisionAuto
+      VeryExperimentalVisionAuto()
+      int onPhase
+      double turnSpeedPhase1
+      double turnSpeedPhase3
+      boolean hasFinished
+      NetworkTable visionTable
+      double midxPointWanted
+      double[] midXPointArray
+      double[] midXPointDataLostDef
+      double midXPointActual
+      double angleToTurn
+      double angleToTurnSpeed
+      int targetDataLostCounter
+      boolean targetWasLost
+      double distToTarget
+      DriverStation.Alliance onAlliance
+      DriverStation.Alliance blue
+      DriverStation.Alliance red
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 09:02:54.432
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 09:02:54.508
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 09:02:54.522
+!MESSAGE Project: P/SteamWorksV2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 10:02:35.673
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 10:02:35.692
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 10:03:19.273
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 10:03:19.286
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 10:04:01.338
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 10:04:01.349
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:21:54.655
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:21:54.666
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:24:11.923
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:24:11.933
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:44:22.720
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:44:22.732
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:55:38.634
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 12:55:38.643
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:52:20.834
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:52:20.845
+!MESSAGE Targets: simulate, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:52:33.439
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:52:33.446
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:54:03.146
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:54:03.152
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:55:09.726
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:55:09.733
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:57:43.428
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:57:43.435
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:58:32.661
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 16:58:32.667
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 17:01:10.089
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-07 17:01:10.095
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2017-04-08 08:29:02.894 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-08 08:29:10.575
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-04-08 08:29:10.634
+!MESSAGE Darkest Dark theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-08 08:29:14.807
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.core 4 0 2017-04-08 08:29:15.005
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.A(Unknown Source)
+	at com.genuitec.eclipse.core.account.internal.GenuitecAccountManagerImpl$_A.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-08 08:29:17.052
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-08 08:29:17.082
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-08 08:29:17.100
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2017-04-08 08:29:17.205
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-08 08:29:17.264
+!MESSAGE Updating projects
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-08 09:21:08.308
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-08 09:21:08.329
+!MESSAGE Unknown Host: http://eclipse-color-theme.github.com/update/content.xml
+!STACK 0
+java.net.UnknownHostException: eclipse-color-theme.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-08 09:21:08.353
+!MESSAGE Unknown Host: https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.xml
+!STACK 0
+java.net.UnknownHostException: raw.github.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-08 09:21:08.382
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.6/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-08 09:21:08.408
+!MESSAGE Unknown Host: http://download.eclipse.org/webtools/repository/neon/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-08 09:21:08.446
+!MESSAGE Unknown Host: http://first.wpi.edu/FRC/roborio/release/eclipse/content.xml
+!STACK 0
+java.net.UnknownHostException: first.wpi.edu
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-04-08 09:21:08.473
+!MESSAGE Unknown Host: http://www.genuitec.com/updates/webclipse/ci/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-08 09:22:43.141
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-08 09:22:43.163
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-08 09:22:52.719
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-08 09:22:52.731
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-08 09:49:22.159
+!MESSAGE Running ant file: C:\Users\skinn\Documents\GitHub\1495FRC_AG\SteamWorksV2\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-04-08 09:49:22.172
+!MESSAGE Targets: deploy, Mode: run

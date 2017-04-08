@@ -46,10 +46,6 @@ public class VeryExperimentalVisionAuto extends Command {
 		 * the DriverStation does not send the alliance, it will auto run on RED
 		 * SIDE
 		 */
-		if (onAlliance == blue) {
-			turnSpeedPhase1 *= -1;
-			turnSpeedPhase3 *= -1;
-		}
 		targetDataLostCounter = 0;
 		// Get Vision Tables
 		visionTable = NetworkTable.getTable("GRIP/gearContourReport");
@@ -64,13 +60,14 @@ public class VeryExperimentalVisionAuto extends Command {
 	protected void execute() {
 		switch (onPhase) {
 		case 0:
-			while (Robot.hopperUltra.getDistanceMMINT() < 2895.5) {
-				Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, Robot.gyro.getAngleDegrees());
-			}
+			    //Dont tell T we are using this sensor
+		        
+				Robot.roboDrive.mecanumDrive_Cartesian(0, .25, 0, Robot.gyro.getAngleDegrees());
+				Timer.delay(3.7);
 			onPhase++;
 			break;
 		case 1:
-			while (Math.abs(Robot.gyro.getRawAngleDegrees()) < 60) {
+			while (Math.abs(Robot.gyro.getRawAngleDegrees()) < 45) {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, turnSpeedPhase1, 0);
 			}
 			onPhase++;
@@ -80,12 +77,11 @@ public class VeryExperimentalVisionAuto extends Command {
 			
 			midXPointArray = visionTable.getNumberArray("centerX", midXPointDataLostDef);
 
-			
-			Timer.delay(.125);
 			//If we have 2 Targets lets cotinue
 			if (midXPointArray.length == 2) {
 				System.out.println("TARGETS FOUND");
-				for(int i = 0; i < 2; i ++){
+				for(int i = 0; i < 1; i ++){
+					
 					System.out.println("Cycle:" + (i+1));
 					Robot.gyro.reset();
 				//Calculate MidPoint of the targets (Where we want to go)
@@ -100,21 +96,32 @@ public class VeryExperimentalVisionAuto extends Command {
 				//Asuming the camera is in the middle with resolution 640x480 and 60 horizontal focal view of the camera...
 				//We can obtain the number of degrees using simple trig tan functions
 				System.out.println("MidXPoint: " + midXPointActual);
-				angleToTurn = Math.toDegrees(Math.atan((320 - midXPointActual) / Math.toDegrees((320 / Math.tan(30)))));
+				angleToTurn = Math.toDegrees(Math.atan((340 - midXPointActual) / Math.toDegrees((340 / Math.tan(32)))));
 				System.out.println("Turning by: " + angleToTurn + " degrees!");
 				
-				if(midXPointActual < 320)
+				if(midXPointActual > 320)
 					angleToTurnSpeed *= -1;
 				
 				System.out.println("Got here");
+				
 				//Keeps turning until angle offset is reached according to our calculations...
-				while (Math.abs(Robot.gyro.getRawAngleDegrees()) < Math.abs(angleToTurn)){
-					Robot.roboDrive.mecanumDrive_Cartesian(0, 0, angleToTurnSpeed, 0);
-				 }
+				if(angleToTurn > 0){
+					while (Robot.gyro.getRawAngleDegrees() > angleToTurn){
+						Robot.roboDrive.mecanumDrive_Cartesian(0, 0, angleToTurnSpeed, 0);
+					 }
+					Robot.roboDrive.stopMotor();
+				}else{
+					while (Robot.gyro.getRawAngleDegrees() < angleToTurn){
+						Robot.roboDrive.mecanumDrive_Cartesian(0, 0, angleToTurnSpeed, 0);
+					}
+					Robot.roboDrive.stopMotor();
+				}
+				
+				
+				
 				}
 				System.out.println("Finished. At: " + Robot.gyro.getRawAngleDegrees());
-				hasFinished = true;	
-				onPhase++;
+				//onPhase++;
 				
 				} else {
 				//Runs if we have the wanted amount of targets
@@ -126,47 +133,48 @@ public class VeryExperimentalVisionAuto extends Command {
 					onPhase++;
 					targetWasLost = true;
 			}
+			onPhase++;
 			break;
 			
 		case 3:
+			System.out.println("GOT HERE ???");
 			Robot.gyro.reset();
-			if(targetWasLost){
-				onPhase++;
-				break;
-				}
+			onPhase++;
 			Robot.roboDrive.mecanumDrive_Cartesian(0, .3, 0, 0);
 			Timer.delay(3.0);
+			Robot.roboDrive.stopMotor();
+			Timer.delay(1.5);
 			break;
 		case 4:
 			Robot.roboDrive.mecanumDrive_Cartesian(0, -.3, 0, 0);
 			Timer.delay(1);
+			/*
 			while (Math.abs(Robot.gyro.getRawAngleDegrees()) < 75) {
 				Robot.roboDrive.mecanumDrive_Cartesian(0, 0, turnSpeedPhase3, 0);
-			}
+			}*/
 			Robot.roboDrive.stopMotor();
 			onPhase++;
+			hasFinished = true;
 			break;
-		case 5:
+	/*	case 5:
+			double startAngle = Robot.gyro.getRawAngleDegrees();
+			while(Robot.gyro.getRawAngleDegrees() < startAngle + 90) {
+			Robot.roboDrive.mecanumDrive_Cartesian(0, 0, .3, 0);
+			}
+		case 6:
 			Robot.shooterSub.spin(RobotMap.shootingSpeed);
 			Timer.delay(.4);
 			Robot.loaderSub.spin(RobotMap.LOAD_SPEED);
-			double sleepTillHere;
-			if(DriverStation.getInstance().getMatchTime() < 3 || DriverStation.getInstance().isOperatorControl()){
-			hasFinished = true;
-			break;
-			}
-			sleepTillHere = 15.0 - DriverStation.getInstance().getMatchTime();
-			Timer.delay(sleepTillHere);
+			Timer.delay(1);
 			hasFinished = true;
 			onPhase++;
-			break;
+			break; */
 		default:
 			System.out.println("WARNING: PHASE SELECTION FOR SIDE GEAR AND SHOOT FAILED! Stopping Autonomous...");
 			hasFinished = true;
 			break;
 		}
-		
-}
+	}
 
 	// Make this return true when this Command no longer needs to run execute()
 	protected boolean isFinished() {
