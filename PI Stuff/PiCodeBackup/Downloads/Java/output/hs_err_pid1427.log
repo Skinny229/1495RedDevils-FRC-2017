@@ -1,0 +1,38 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x63742fd0, pid=1427, tid=1587254368
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_65-b17) (build 1.8.0_65-b17)
+# Java VM: Java HotSpot(TM) Client VM (25.65-b01 mixed mode linux-arm )
+# Problematic frame:
+# C  0x63742fd0
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 2 (SEGV_ACCERR), si_addr: 0x63742fd0
+
+Registers:
+  r0  = 0x63743820
+  r1  = 0x00000000
+  r2  = 0x00000001
+  r3  = 0x63742fd0
+  r4  = 0x41000002
+  r5  = 0x76ecd5bc
+  r6  = 0x61dc0544
+  r7  = 0x00000008
+  r8  = 0x637435e8
+  r9  = 0x61dc061c
+  r10 = 0x63743820
+  fp  = 0x637435e8
+  r12 = 0x61dbe34c
+  sp  = 0x5e9b8b28
+  lr  = 0x61a38cac
